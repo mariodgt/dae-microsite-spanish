@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html class="no-js"><head>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Timeshares & Time Share Exchange Service-DAELive.com</title>
+
+
+<!-- ICONS FOR DEVICES -->
+
+
+<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+<!--    STYLESHEETS    -->
+
+<link rel='stylesheet' type='text/css' href='styles/dae.css' />
+
+<!--[if lte IE 10]>
+<link rel='stylesheet' type='text/css' href='languages/common/ie-shim.css' />
+<script type='text/javascript' src='js/ie-shim.js'></script>
+<!-- <![endif]-->
+
+<!--      SCRIPTS      -->
+
+<script type='text/javascript' src='js/modernizr-custom.js'></script>
+<script type='text/javascript' src='js/jquery-1.10.2.min.js'></script>
+<script type='text/javascript' src='js/jquery-ui.custom.min.js'></script>
+<script type='text/javascript' src='js/materialize.custom.min.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+
+<meta name="description" content="We offer our members both an international and domestic time share exchange service. We also provide our clients with an extensive selection of timeshares from across the globe." />
+<meta name="keywords" content="timeshare, time shares, timeshare exchange, timeshare exchange service, time share exchanges, timeshare exchange service, timeshare resorts"/>
+
+<script>
+$(document).ready(function() {  
+(function doLables () {
+var lbl;
+$('table th').each(function(i){
+lbl = $(this).html();
+$('table tr').find('td:eq('+i+')').wrapInner('<span>').prepend('<label>'+lbl+'</label>');
+  });
+})();
+});
+</script>
+
+
+</head>
+
+
+<!--      BEGIN PAGE & ID     -->
+
+<body>
+
+
+<!--      ASP.NET FORM PLACEHOLDER     -->
+
+<form method="post" action="./" id="aspnetForm"  >
+
+<input type="checkbox" id="offCanvasNav" />
+<div id="container">
+
+
+<!--      HEADER BAR      -->
+
+<header>
+<div id="headerInner">
+
+
+<div id="headerLeft">
+<div id="siteLogo">
+<img src="images/dae_logo_white.svg" alt="DAE" height="53" width="100" />
+</div><!--/#siteLogo -->
+
+</div><!--/#headerLeft -->
+
+
+<!--      MENU      -->
+
+<nav>
+<ul>
+<li><a href="benefits.html">Member Benefits </a></li>
+<li>Destinations</li>
+<li><a href="join.html">Join for Free</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+
+<div id="headerRight">
+<div id="languageSelector" class="dd-proxy-trigger">
+<span>EN</span>
+    <ul id="languageList" class="dd-proxy" data-target="#languageListDD">
+    	<li data-lang="EN" class="selected">English</li>
+        <li data-lang="TH">Thai</li>
+        <li data-lang="ZH">Chinese</li>
+        <li data-lang="AR">Arabic</li>
+        <li data-lang="ES">Spanish</li>
+     </ul>
+     <!--This select is hidden. The list above changes its values-->
+	<select id="languageListDD" class="replaced">
+	<option selected="selected" value="EN">English</option>
+	<option value="TH">Thai</option>
+	<option value="ZH">Chinese</option>
+	<option value="AR">Arabic</option>
+	<option value="ES">Spanish</option>
+	</select>
+</div><!--/#languageSelector -->
+
+<!--LOGIN button and LOGIN Flyout --> 
+<!--checkbox hides/shows login flyout w/o JS -->
+<input id="loginFlyoutTrigger" type="checkbox" style="display: none" />
+<div id="headerLogin">
+<label for="loginFlyoutTrigger" class="button ghost light small">LOGIN</label>
+<div id="loginFlyout" class="light">
+<div class="inner-wrapper">
+<h3 class="h1 alt">Login</h3>
+<div class="row">
+<div class="grid-1-2">
+<div class="input-field">
+<input id="memberID" type="text"  autocomplete="off">
+<label for="memberID">Email or Member #</label>
+</div>
+<p>Don't have an account? <a href="#"><u>Sign Up</u></a></p>
+</div>
+<!--/.grid-1-2 -->
+<div class="grid-1-2">
+<div class="input-field">
+<input type="password" name="memberPW" autocomplete="off" />
+<label for="memberPW">Password</label>
+</div>
+<p><a href="#">Forgot password?</a></p>
+</div>
+<!--/.grid-1-2 --> 
+</div>
+<!--/.row -->
+<div class="row">
+<div class="grid-1-2 end flex center-v">
+<div class="check">
+<input type="checkbox" id="rememberMe" name="rememberMe" checked />
+<label for="rememberMe">Remember me</label>
+<!-- DEV NOTE: label MUST have a "for" attribute for checkbox replacement to work. 
+ASP.NET code: <asp:label AssociatedControlId="rememberMe" runat="server" ... />
+This will keep the names the same when ASP rewites the control names and IDs.
+--> 
+
+</div>
+<!--/.check -->
+
+<input type="submit" class="button ghost medium" value="GO" />
+</div>
+<!--/.grid-1-2 --> 
+
+</div>
+<!--/.row -->
+
+<div class="row">
+<div class="or">OR</div>
+</div>
+<!--/.row -->
+
+<div class="row">
+<div class="grid-1-2"> <a href="#" class="icon-facebook button social ghost large">Login with Facebook</a> </div>
+<!--/.grid-1-2 -->
+
+<div class="grid-1-2"> <a href="#" class="icon-googleplus button social ghost large">Login with Google+</a> </div>
+<!--/.grid-1-2 --> 
+
+</div>
+<!--/.row --> 
+
+</div>
+<!--/.inner-wrapper --> 
+</div>
+<!--/#loginFlyout --> 
+
+</div>
+<!--/#headerLogin --> 
+<!--/LOGIN button and LOGIN Flyout -->
+
+<label class="icon-menu ir" for="offCanvasNav">Menu</label>
+</div><!--/#headerRight -->
+
+
+
+</div><!--/#headerInner -->
+
+</header>
+
+
+<!--      CONTENT WRAPPER     -->
+
+
+<div id="contentWrapper">
+<div id="resortProfilePage">
+<div class="title-bar">
+<div>
+<a href="" class="icon-back">Back</a>
+<h1>Pacific View Resort</h1>
+<h2>Australia, Queensland</h2>
+</div>
+<div class="icon-inclusive">All-Inclusive</div>
+
+
+</div><!--/#titleBar -->
+
+<div id="lightboxWrapper">
+
+<div class="lightbox row">
+<div id="lightboxTitle" class="row">
+<!--<h3>Caloundra Sunshine Coast</h3>-->
+<a href="#modalChooseAvailability" class="dark-trigger button medium ghost light see-availability">SEE AVAILABILITY</a>
+</div><!--/#lightBoxTitle-->
+</div><!--/.lightbox /.row-->
+
+
+<div class="lightbox row">
+<div id="imageBox">
+  <div><img src="images/resorts/pacific_view/photo_1.jpg" alt="Pacific View description" /></div>
+  <ul class="thumbs">
+  <li><img src="images/resorts/pacific_view/photo_1.jpg" alt="Pacific View description" /></li>
+  <li><img src="images/resorts/pacific_view/photo_2.jpg" alt="Pacific View description" /></li>
+  <li><img src="images/resorts/pacific_view/photo_3.jpg" alt="Pacific View description" /></li>
+  <li><img src="images/resorts/pacific_view/photo_4.jpg" alt="Pacific View description" /></li>
+  <li><img src="images/resorts/pacific_view/photo_5.jpg" alt="Pacific View description" /></li>
+  <!-- If you have a video, put in a thumbnail and add the (YouTube) 11-digit embed code to the data value -->
+  <li><img src="images/resorts/pacific_view/photo_6v.jpg" alt="Pacific View description" data-video="TP-LNEU9tWw"/></li>
+  <!-- Repeated images to test scrolling -->
+  <!-- Testing scale down from large photo: photo_1-large.jpg is 1024x647 -->
+   <li><img src="images/resorts/pacific_view/photo_1-large.jpg" alt="Pacific View description" /></li>
+  <li><img src="images/resorts/pacific_view/photo_2.jpg" alt="Pacific View description" /></li>
+  <li><img src="images/resorts/pacific_view/photo_3.jpg" alt="Pacific View description" /></li>
+  <li><img src="images/resorts/pacific_view/photo_4.jpg" alt="Pacific View description" /></li>
+  <li><img src="images/resorts/pacific_view/photo_5.jpg" alt="Pacific View description" /></li>
+  <li><img src="images/resorts/pacific_view/photo_6.jpg" alt="Pacific View description" /></li>
+</ul><!-- /.thumbs -->
+</div><!-- /#imageBox -->
+
+</div><!--/.lightbox /.row-->
+
+
+
+<div class="lightbox row">
+
+<div id="lightboxDetails" class="row">
+<dl>
+<dt>ADDRESS</dt>
+<dd>34 Victoria Terrace, Kings Beach, CALOUNDRA, QLD, 4551 Australia</dd>
+
+<dt>Closest Airport(s)</dt>
+<dd>Sydney INT/Domestic 4 Hours<br />
+Mourya 5 Minutes</dd>
+</dl>
+<dl>
+<dt>WEBSITE</dt>
+<dd>classicholidays.com.au</dd>
+
+<dt>EMAIL</dt>
+<dd>admin@pacificview.com.au</dd>
+
+<dt>PHONE</dt>
+<dd>+61 (0)7 5491 1200</dd>
+
+</dl>
+<a href="#" class="button medium ghost light">MAP/DIRECTIONS</a>
+</div><!--/#lightBoxTitle-->
+</div><!--/.lightbox /.row-->
+
+
+
+
+<div class="lightbox row light-row">
+<div id="lightboxSubTabs">
+<ul class="sub-tabs">
+        <li class="active"><a href="#overviewSubTabContent">Overview</a></li>     
+        <li><a href="#facilitiesSubTabContent">Facilities</a></li> 
+        <li><a href="#ai-infoSubTabContent">All-Inclusive Information</a></li>  
+        <li><a href="#infoSubTabContent">Important Information</a></li> 
+        <li><a href="#reviewsSubTabContent">Reviews</a></li> 
+    </ul>
+
+<div id="overviewSubTabContent">
+    <div id="lightboxText" class="excerpt row">
+        <h4 class="tab-title"><span>Pacific View Resort</span><br>Destination Overview</h4>
+        <a id="resortAvailability" class="button medium ghost right see-availability">SEE AVAILABILITY</a>
+        <p>Pacific View Timeshare Resort is located on Caloundra's picturesque Wickham Point, neatly tucked between the family haven of Kings Beach and Shelly Beach. Featuring stunning ocean views south to Bribie Island and across the Pacific Ocean to the great sand dunes of Moreton Island.</p>
+        <p>Just one hour from Brisbane, Caloundra is the southern gateway to the Sunshine Coast, and is said to mean ‘the beautiful place' in the language of the Aboriginal people who lived there. It is very popular with families with plenty of places youngsters can swim safely and good surf for mum and dad.</p>
+        <p>The Sunshine Coast is a popular destination and the coastline from Bribie Island, Caloundra, Maroochydore, Mooloolaba, Coolum through to Noosa Head is world class, with panoramic seascapes and inviting shorelines for surfing, sports or just lazing on the beach.</p>
+        <p>Pacific View Timeshare Resort comprises 30 two-bedroom units, each with a full kitchen, bathroom, LCD television and DVD player, wireless internet facilities, direct dial telephone, microwave, dishwasher, washing machine and dryer.</p>
+        <p>Water views are plentiful, whether ocean or the resort pool. Located&nbsp;over three wings,&nbsp;avid ocean viewers&nbsp;will enjoy the spectacular view from the waterfront units providing the opportunity to watch the great ships and ocean liners glide their way through the channel.</p>
+        <p>The units are compact, but bright and comfortable, and feature a balcony overlooking either the pool or ocean, or a private courtyard where you can enjoy the sea breezes while enjoying a 'sundowner'.</p>
+        <p>Pacific View Timeshare Resort offers facilities that allow guests who simply wish to relax to enjoy their total holiday within the tropical resort grounds.</p>
+        <p>Savour the glorious Queensland weather and sun yourself by the large solar heated swimming pool and surrounding area. Or soak yourself in the outdoor heated spa, or one of two saunas.</p>
+        <p>Dine 'al fresco' at the outdoor covered barbeque area, located alongside the communal Recreation Lounge.</p>
+        <p>When more energy is on offer, there's half court tennis - brilliant for the kids and family to enjoy together, or the large recreation lounge which provides table tennis, television and a fun environment for&nbsp;entertainment.</p>
+        <p>A mini library and lounges ensure there are alternative places for peace and quiet to access within the resort.</p>
+        <p>Activities close by include boating, fishing, sailing, swimming, water skiing, water slides, squash, tennis, golf, croquet and bowls.</p>
+        <p>For the surfers, Kings, Dicky and Kawana beaches are the spots to hit when you want to catch the waves. For a relaxing stroll, try areas such as Shelly Beach, Moffat Beach or Lake Currimundi for picnics and safe swimming for the children.</p>
+        <p>Caloundra has many good restaurants some located at Kings Beach &amp; Bullcock beach , with many attractions a short drive - Australia Zoo, The Ginger Factory, Mooloolaba Beach, Noosa Heads, Underwater World, Sunshine Plaza at Maroochydore and Kawana Waters which are a large shopping centres and ideal for a spot of retail therapy.</p>
+        <p>For evening entertainment, the resort is walking distance to a great selection of local clubs, pubs, restaurants and cafes.</p>
+        <p>A stay at Pacific View puts you at the centre of everything this wonderful area has to offer and it is the ideal choice for a laid back getaway.</p>
+
+</div><!--/.excerpt row -->
+		<div class="mask">Show More</div>
+
+</div><!--/#overviewSubTabContent -->
+
+<div id="facilitiesSubTabContent">
+<div id="lightboxFacilities" class="row">
+    <h4 class="tab-title"><span>New South Wales</span><br>Facilities</h4>
+        <a id="resortAvailability" class="button medium ghost right see-availability">SEE AVAILABILITY</a>
+    <ul class="row">
+    <li class="head">Unit Configuration
+        <ul>
+        <li>1 Bedroom - 1 Bathroom</li>
+        <li>1 Bedroom - Mini Kitchen</li>
+        <li>2 Bedroom - 2 Bathroom</li>
+        <li>2 Bedroom - Full Kitchen</li>
+        </ul>
+     </li>
+     <li class="head">Unit
+        <ul>
+        <li>Air Conditioning</li>
+        <li>Balcony</li>
+        <li>Cable TV</li>
+        <li>Colour TV
+        <li>Dishwasher</li>
+        <li>Fridge</li>
+        <li>Hairdryer</li>
+        <li>Heating</li>
+        <li>Hot plates</li>
+        <li>Microwave</li>
+        <li>Safe</li>
+        <li>Washer/Dryer</li>
+        </ul>
+     </li>
+     <li class="head">Resort
+        <ul>
+        <li>BBQ's / Braai</li>
+        <li>Children's Play Equipment</li>
+        <li>Elevator/Lift</li>
+        <li>Gymnasium</li>
+        <li>Heated Spa - Outdoor</li>
+        <li>Heated Swimming Pool - Outdoor</li>
+        <li>Internet Facilities</li>
+        <li>Parking</li>
+        <li>Tour Desk</li>
+        </ul>
+     </li>
+     <li class="head">Area
+        <ul>
+        <li>Bar / Cocktail Lounge</li>
+        <li>Beach</li>
+        <li>Boating</li>
+        <li>Cinemas</li>
+        <li>Conference Facilities</li>
+        <li>Entertainment</li>
+        <li>Fishing</li>
+        <li>Restaurants</li>
+        <li>Scenic Drives</li>
+        <li>Shopping Malls</li>
+        <li>Supermarket</li>
+        </ul>
+     </li>
+    </ul>
+    </div>
+</div><!--/#facilitiesSubTabContent -->
+
+
+<div id="ai-infoSubTabContent">
+<div id="lightboxImportantInfo" class="row">
+    <h4 class="tab-title"><span>New South Wales</span><br>All-Inclusive Info</h4>
+        <a id="resortAvailability" class="button medium ghost right see-availability">SEE AVAILABILITY</a>
+<p>Mandatory adults only all-inclusive charge applies and is payable on arrival. The all-inclusive fee is not included in the exchange/rental price. Rates are in USD and are subject to change. The minimum stay requirement is seven (7) nights.</p>
+<div class="rates narrow">
+  <h5 class="c">2017 Standard All-Inclusive Rates</h5>
+  <table>
+    <thead>
+      <tr>
+        <th>Studio &amp; 1 Bedroom<br /><span>(per person per night)<span></th>
+        <th>Adults</th>
+        <th>Children (3&#8209;12)</th>
+        <th>Teen (13&#8209;17)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>23 Dec - 03 Jan, 2017</td>
+        <td>$221</td>
+        <td>$112</td>
+        <td>$156</td>
+      </tr>
+      <tr>
+        <td>04 Jan - 30 Apr, 2017</td>
+        <td>$152</td>
+        <td>$77</td>
+        <td>$92</td>
+      </tr>
+      <tr>
+        <td>01 May - 16 Aug, 2017</td>
+        <td>$96</td>
+        <td>$77</td>
+        <td>$92</td>
+      </tr>
+      <tr>
+        <td>17 Aug - 31 Oct, 2017</td>
+        <td>$96</td>
+        <td>$77</td>
+        <td>$92</td>
+      </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+</div><!--/#ai-infoSubTabContent -->
+
+<div id="infoSubTabContent">
+<div id="lightboxImportantInfo" class="row">
+    <h4 class="tab-title"><span>New South Wales</span><br>Important Info</h4>
+        <a id="resortAvailability" class="button medium ghost right see-availability">SEE AVAILABILITY</a>
+<p>1. A valid credit card is required at check in. The Resort is a basic older style property. A car isrequired to really enjoy this area. No Pets Allowed.</p>
+<p>2. Late Arrivals: If you expect to arrive late for check in, please ensure you telephone the resort (on the above number) prior to arriving to make arrangements for the key. A daily or weekly mooring hire is charged, where appropriate. The boat ramp is open with 15 berthing bays.</p>
+<p>3. For cot hire, or any special requests, please contact the resort directly.</p>
+<p>4. Disabled unit available upon request.</p>
+
+</div>
+</div><!--/#infoSubTabContent -->
+
+<div id="reviewsSubTabContent">
+<div id="lightboxReviews" class="row">
+    <h4 class="tab-title"><span>New South Wales</span><br>Member Reviews</h4>
+        <a id="resortAvailability" class="button medium ghost right see-availability">SEE AVAILABILITY</a>
+
+ <!--begin review-->
+<div class="review">    
+<p class="review-date"><strong>05 May 2015</strong> <span class="rating r50"></span></p>
+
+<div class="review-content">
+
+<p><span class="review-title">It Was Great!</span><br>
+Igendam, explique latur? Itio. Itas sitiund elitatur, sinia volum eaquati re voluptat offici autendebis dolupta quiatatur? Hariore perores rehendi ius. Sum aperio evelisquati assinus et odi oditati cum nullo volorpore vollaborro illoremquis dolorernati vel et ini doluptatquis mostio ipicipsam dolesti ossumqui unt ut qui dic tecus ium volorep edigendam, ommolorerum susciae optae volor si.</p>
+</div><!--end review content-->
+<div class="review-details">
+<p><strong>What this Member Liked Most:</strong> Sum aperio evelisquati assinus et odi oditati cum nullo volorpore vollaborro illoremquis dolorernati vel et ini doluptatq</p>
+
+<p><strong>Stayed:</strong> Don Pancho Beach Resort 03/10/15</p>
+</div><!--end review details-->
+</div><!--end review-->
+
+
+
+<!--begin review-->
+<div class="review">
+<p class="review-date"><strong>23 April 2015</strong> <span class="rating r40"></span></p>
+
+<div class="review-content">
+
+<p><span class="review-title">Wonderful destination!</span><br>
+Igendam, explique latur? Itio. Itas sitiund elitatur, sinia volum eaquati re voluptat offici autendebis dolupta quiatatur? Hariore perores rehendi ius. Sum aperio evelisquati assinus et odi oditati cum nullo volorpore vollaborro illoremquis dolorernati.</p>
+</div><!--end review content-->
+
+<div class="review-details">
+<p><strong>What this Member Liked Most:</strong> Sum aperio evelisquati assinus et odi oditati cum nullo volorpore vollaborro illoremquis dolorernati vel et ini doluptatq</p>
+<p><strong>Stayed:</strong> Don Pancho Beach Resort 03/10/15</p>
+</div><!--end review details-->
+</div><!--end review-->
+
+</div>
+</div><!--/#reviewsSubTabContent -->
+
+</div><!--/#lightboxSubTabs -->
+</div><!--/.lightbox /.row-->
+
+
+</div><!--/#lightboxWrapper -->
+
+
+<div id="modalChooseAvailability" class="modal light-opaque">
+        <div class="modal-content">
+        <a href="#!" class=" modal-action modal-close icon-close-empty"></a>
+        <div id="calendarHeader">
+          <div class="row">
+            <div class="input-field">
+              <select id="select-ExchangeLength">
+                <option value="Exchange: 7 Nights" selected>Exchange: 7 Nights</option>
+                <option value="Bonus: 7 Nights">Bonus: 7 Nights</option>
+                <option value="Rental: 7 Nights">Rental: 7 Nights</option>
+                <option value="Rental: 5 Nights">Rental: 5 Nights</option>
+                <option value="Rental: 3 Nights">Rental: 3 Nights</option>
+              </select>
+          </div> 
+          <div class="input-field">
+              <select id="select-UnitType">
+                <option value="All Unit Types" selected>All Unit Types</option>
+                <option value="2 Bedroom Units">2 Bedroom Units</option>
+                <option value="2 Bedroom Units">3 Bedroom Units</option>
+              </select>
+          </div> 
+          <p id="selectedTerm">13 January 2017 &ndash; 19 January 2017</p>  
+          </div><!--/.row-->
+          <div class="row date-legend">
+          <h1>2017</h1>
+          <p id="selectedLegend">Available Check-In Dates for <span>Exchange: 7 Nights</span></p>
+          </div><!--/.row-->
+          </div>
+          <div id="calendarBody">
+            <table>
+              <caption>January</caption>
+              <thead>
+                <tr>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>T</th>
+                  <th>W</th>
+                  <th>T</th>
+                  <th>F</th>
+                  <th>S</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div>1</div></td>
+                  <td><div>2</div></td>
+                  <td><div>3</div></td>
+                  <td><div>4</div></td>
+                  <td><div>5</div></td>
+                  <td><div class="available-x7">6</div></td>
+                  <td><div>7</div></td>
+                </tr>
+                <tr>
+                  <td><div>8</div></td>
+                  <td><div>9</div></td>
+                  <td><div>10</div></td>
+                  <td><div>11</div></td>
+                  <td><div>12</div></td>
+                  <td><div class="available-x7 selected">13</div></td>
+                  <td><div class="available-x7 selected">14</div></td>
+                </tr>
+                <tr>
+                  <td><div class="available-x7 selected">15</div></td>
+                  <td><div class="available-x7 selected">16</div></td>
+                  <td><div class="available-x7 selected">17</div></td>
+                  <td><div class="available-x7 selected">18</div></td>
+                  <td><div class="available-x7 selected">19</div></td>
+                  <td><div class="available-x7">20</div></td>
+                  <td><div>21</div></td>
+                </tr>
+                <tr>
+                  <td><div>22</div></td>
+                  <td><div>23</div></td>
+                  <td><div>24</div></td>
+                  <td><div>25</div></td>
+                  <td><div>26</div></td>
+                  <td><div class="available-x7">27</div></td>
+                  <td><div>28</div></td>
+                </tr>
+                <tr>
+                  <td><div>29</div></td>
+                  <td><div>30</div></td>
+                  <td><div>31</div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                </tr>
+              </tbody>
+
+            </table>
+             <table>
+              <caption>February</caption>
+              <thead>
+                <tr>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>T</th>
+                  <th>W</th>
+                  <th>T</th>
+                  <th>F</th>
+                  <th>S</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div>1</div></td>
+                  <td><div>2</div></td>
+                  <td><div>3</div></td>
+                  <td><div>4</div></td>
+                  <td><div>5</div></td>
+                  <td><div class="available-x7">6</div></td>
+                  <td><div>7</div></td>
+                </tr>
+                <tr>
+                  <td><div>8</div></td>
+                  <td><div>9</div></td>
+                  <td><div>10</div></td>
+                  <td><div>11</div></td>
+                  <td><div>12</div></td>
+                  <td><div class="available-x7 selected">13</div></td>
+                  <td><div class="available-x7 selected">14</div></td>
+                </tr>
+                <tr>
+                  <td><div class="available-x7 selected">15</div></td>
+                  <td><div class="available-x7 selected">16</div></td>
+                  <td><div class="available-x7 selected">17</div></td>
+                  <td><div class="available-x7 selected">18</div></td>
+                  <td><div class="available-x7 selected">19</div></td>
+                  <td><div class="available-x7">20</div></td>
+                  <td><div>21</div></td>
+                </tr>
+                <tr>
+                  <td><div>22</div></td>
+                  <td><div>23</div></td>
+                  <td><div>24</div></td>
+                  <td><div>25</div></td>
+                  <td><div>26</div></td>
+                  <td><div class="available-x7">27</div></td>
+                  <td><div>28</div></td>
+                </tr>
+                <tr>
+                  <td><div>29</div></td>
+                  <td><div>30</div></td>
+                  <td><div>31</div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                </tr>
+              </tbody>
+
+            </table>
+             <table>
+              <caption>March</caption>
+              <thead>
+                <tr>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>T</th>
+                  <th>W</th>
+                  <th>T</th>
+                  <th>F</th>
+                  <th>S</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div>1</div></td>
+                  <td><div>2</div></td>
+                  <td><div>3</div></td>
+                  <td><div>4</div></td>
+                  <td><div>5</div></td>
+                  <td><div class="available-rental">6</div></td>
+                  <td><div>7</div></td>
+                </tr>
+                <tr>
+                  <td><div>8</div></td>
+                  <td><div>9</div></td>
+                  <td><div>10</div></td>
+                  <td><div>11</div></td>
+                  <td><div>12</div></td>
+                  <td><div class="available-rental selected">13</div></td>
+                  <td><div class="available-rental selected">14</div></td>
+                </tr>
+                <tr>
+                  <td><div class="available-rental selected">15</div></td>
+                  <td><div class="available-rental selected">16</div></td>
+                  <td><div class="available-rental selected">17</div></td>
+                  <td><div class="available-rental selected">18</div></td>
+                  <td><div class="available-rental selected">19</div></td>
+                  <td><div class="available-rental">20</div></td>
+                  <td><div>21</div></td>
+                </tr>
+                <tr>
+                  <td><div>22</div></td>
+                  <td><div>23</div></td>
+                  <td><div>24</div></td>
+                  <td><div>25</div></td>
+                  <td><div>26</div></td>
+                  <td><div class="available-rental">27</div></td>
+                  <td><div>28</div></td>
+                </tr>
+                <tr>
+                  <td><div>29</div></td>
+                  <td><div>30</div></td>
+                  <td><div>31</div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                </tr>
+              </tbody>
+
+            </table>
+             <table>
+              <caption>April</caption>
+              <thead>
+                <tr>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>T</th>
+                  <th>W</th>
+                  <th>T</th>
+                  <th>F</th>
+                  <th>S</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div>1</div></td>
+                  <td><div>2</div></td>
+                  <td><div>3</div></td>
+                  <td><div>4</div></td>
+                  <td><div>5</div></td>
+                  <td><div class="available-bonus">6</div></td>
+                  <td><div>7</div></td>
+                </tr>
+                <tr>
+                  <td><div>8</div></td>
+                  <td><div>9</div></td>
+                  <td><div>10</div></td>
+                  <td><div>11</div></td>
+                  <td><div>12</div></td>
+                  <td><div class="available-bonus selected">13</div></td>
+                  <td><div class="available-bonus selected">14</div></td>
+                </tr>
+                <tr>
+                  <td><div class="available-bonus selected">15</div></td>
+                  <td><div class="available-bonus selected">16</div></td>
+                  <td><div class="available-bonus selected">17</div></td>
+                  <td><div class="available-bonus selected">18</div></td>
+                  <td><div class="available-bonus selected">19</div></td>
+                  <td><div class="available-bonus">20</div></td>
+                  <td><div>21</div></td>
+                </tr>
+                <tr>
+                  <td><div>22</div></td>
+                  <td><div>23</div></td>
+                  <td><div>24</div></td>
+                  <td><div>25</div></td>
+                  <td><div>26</div></td>
+                  <td><div class="available-bonus">27</div></td>
+                  <td><div>28</div></td>
+                </tr>
+                <tr>
+                  <td><div>29</div></td>
+                  <td><div>30</div></td>
+                  <td><div>31</div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                </tr>
+              </tbody>
+
+            </table>
+             <table>
+              <caption>May</caption>
+              <thead>
+                <tr>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>T</th>
+                  <th>W</th>
+                  <th>T</th>
+                  <th>F</th>
+                  <th>S</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div>1</div></td>
+                  <td><div>2</div></td>
+                  <td><div>3</div></td>
+                  <td><div>4</div></td>
+                  <td><div>5</div></td>
+                  <td><div class="available-x7">6</div></td>
+                  <td><div>7</div></td>
+                </tr>
+                <tr>
+                  <td><div>8</div></td>
+                  <td><div>9</div></td>
+                  <td><div>10</div></td>
+                  <td><div>11</div></td>
+                  <td><div>12</div></td>
+                  <td><div class="available-x7 selected">13</div></td>
+                  <td><div class="available-x7 selected">14</div></td>
+                </tr>
+                <tr>
+                  <td><div class="available-x7 selected">15</div></td>
+                  <td><div class="available-x7 selected">16</div></td>
+                  <td><div class="available-x7 selected">17</div></td>
+                  <td><div class="available-x7 selected">18</div></td>
+                  <td><div class="available-x7 selected">19</div></td>
+                  <td><div class="available-x7">20</div></td>
+                  <td><div>21</div></td>
+                </tr>
+                <tr>
+                  <td><div>22</div></td>
+                  <td><div>23</div></td>
+                  <td><div>24</div></td>
+                  <td><div>25</div></td>
+                  <td><div>26</div></td>
+                  <td><div class="available-x7">27</div></td>
+                  <td><div>28</div></td>
+                </tr>
+                <tr>
+                  <td><div>29</div></td>
+                  <td><div>30</div></td>
+                  <td><div>31</div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                </tr>
+              </tbody>
+
+            </table>
+             <table>
+              <caption>June</caption>
+              <thead>
+                <tr>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>T</th>
+                  <th>W</th>
+                  <th>T</th>
+                  <th>F</th>
+                  <th>S</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div>1</div></td>
+                  <td><div>2</div></td>
+                  <td><div>3</div></td>
+                  <td><div>4</div></td>
+                  <td><div>5</div></td>
+                  <td><div class="available-x7">6</div></td>
+                  <td><div>7</div></td>
+                </tr>
+                <tr>
+                  <td><div>8</div></td>
+                  <td><div>9</div></td>
+                  <td><div>10</div></td>
+                  <td><div>11</div></td>
+                  <td><div>12</div></td>
+                  <td><div class="available-x7 selected">13</div></td>
+                  <td><div class="available-x7 selected">14</div></td>
+                </tr>
+                <tr>
+                  <td><div class="available-x7 selected">15</div></td>
+                  <td><div class="available-x7 selected">16</div></td>
+                  <td><div class="available-x7 selected">17</div></td>
+                  <td><div class="available-x7 selected">18</div></td>
+                  <td><div class="available-x7 selected">19</div></td>
+                  <td><div class="available-x7">20</div></td>
+                  <td><div>21</div></td>
+                </tr>
+                <tr>
+                  <td><div>22</div></td>
+                  <td><div>23</div></td>
+                  <td><div>24</div></td>
+                  <td><div>25</div></td>
+                  <td><div>26</div></td>
+                  <td><div class="available-x7">27</div></td>
+                  <td><div>28</div></td>
+                </tr>
+                <tr>
+                  <td><div>29</div></td>
+                  <td><div>30</div></td>
+                  <td><div>31</div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                </tr>
+              </tbody>
+
+            </table>
+             <table>
+              <caption>July</caption>
+              <thead>
+                <tr>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>T</th>
+                  <th>W</th>
+                  <th>T</th>
+                  <th>F</th>
+                  <th>S</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div>1</div></td>
+                  <td><div>2</div></td>
+                  <td><div>3</div></td>
+                  <td><div>4</div></td>
+                  <td><div>5</div></td>
+                  <td><div class="available-x7">6</div></td>
+                  <td><div>7</div></td>
+                </tr>
+                <tr>
+                  <td><div>8</div></td>
+                  <td><div>9</div></td>
+                  <td><div>10</div></td>
+                  <td><div>11</div></td>
+                  <td><div>12</div></td>
+                  <td><div class="available-x7 selected">13</div></td>
+                  <td><div class="available-x7 selected">14</div></td>
+                </tr>
+                <tr>
+                  <td><div class="available-x7 selected">15</div></td>
+                  <td><div class="available-x7 selected">16</div></td>
+                  <td><div class="available-x7 selected">17</div></td>
+                  <td><div class="available-x7 selected">18</div></td>
+                  <td><div class="available-x7 selected">19</div></td>
+                  <td><div class="available-x7">20</div></td>
+                  <td><div>21</div></td>
+                </tr>
+                <tr>
+                  <td><div>22</div></td>
+                  <td><div>23</div></td>
+                  <td><div>24</div></td>
+                  <td><div>25</div></td>
+                  <td><div>26</div></td>
+                  <td><div class="available-x7">27</div></td>
+                  <td><div>28</div></td>
+                </tr>
+                <tr>
+                  <td><div>29</div></td>
+                  <td><div>30</div></td>
+                  <td><div>31</div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                </tr>
+              </tbody>
+
+            </table>
+             <table>
+              <caption>August</caption>
+              <thead>
+                <tr>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>T</th>
+                  <th>W</th>
+                  <th>T</th>
+                  <th>F</th>
+                  <th>S</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div>1</div></td>
+                  <td><div>2</div></td>
+                  <td><div>3</div></td>
+                  <td><div>4</div></td>
+                  <td><div>5</div></td>
+                  <td><div class="available-x7">6</div></td>
+                  <td><div>7</div></td>
+                </tr>
+                <tr>
+                  <td><div>8</div></td>
+                  <td><div>9</div></td>
+                  <td><div>10</div></td>
+                  <td><div>11</div></td>
+                  <td><div>12</div></td>
+                  <td><div class="available-x7 selected">13</div></td>
+                  <td><div class="available-x7 selected">14</div></td>
+                </tr>
+                <tr>
+                  <td><div class="available-x7 selected">15</div></td>
+                  <td><div class="available-x7 selected">16</div></td>
+                  <td><div class="available-x7 selected">17</div></td>
+                  <td><div class="available-x7 selected">18</div></td>
+                  <td><div class="available-x7 selected">19</div></td>
+                  <td><div class="available-x7">20</div></td>
+                  <td><div>21</div></td>
+                </tr>
+                <tr>
+                  <td><div>22</div></td>
+                  <td><div>23</div></td>
+                  <td><div>24</div></td>
+                  <td><div>25</div></td>
+                  <td><div>26</div></td>
+                  <td><div class="available-x7">27</div></td>
+                  <td><div>28</div></td>
+                </tr>
+                <tr>
+                  <td><div>29</div></td>
+                  <td><div>30</div></td>
+                  <td><div>31</div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                </tr>
+              </tbody>
+
+            </table>
+             <table>
+              <caption>September</caption>
+              <thead>
+                <tr>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>T</th>
+                  <th>W</th>
+                  <th>T</th>
+                  <th>F</th>
+                  <th>S</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div>1</div></td>
+                  <td><div>2</div></td>
+                  <td><div>3</div></td>
+                  <td><div>4</div></td>
+                  <td><div>5</div></td>
+                  <td><div class="available-x7">6</div></td>
+                  <td><div>7</div></td>
+                </tr>
+                <tr>
+                  <td><div>8</div></td>
+                  <td><div>9</div></td>
+                  <td><div>10</div></td>
+                  <td><div>11</div></td>
+                  <td><div>12</div></td>
+                  <td><div class="available-x7 selected">13</div></td>
+                  <td><div class="available-x7 selected">14</div></td>
+                </tr>
+                <tr>
+                  <td><div class="available-x7 selected">15</div></td>
+                  <td><div class="available-x7 selected">16</div></td>
+                  <td><div class="available-x7 selected">17</div></td>
+                  <td><div class="available-x7 selected">18</div></td>
+                  <td><div class="available-x7 selected">19</div></td>
+                  <td><div class="available-x7">20</div></td>
+                  <td><div>21</div></td>
+                </tr>
+                <tr>
+                  <td><div>22</div></td>
+                  <td><div>23</div></td>
+                  <td><div>24</div></td>
+                  <td><div>25</div></td>
+                  <td><div>26</div></td>
+                  <td><div class="available-x7">27</div></td>
+                  <td><div>28</div></td>
+                </tr>
+                <tr>
+                  <td><div>29</div></td>
+                  <td><div>30</div></td>
+                  <td><div>31</div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                </tr>
+              </tbody>
+
+            </table>
+             <table>
+              <caption>October</caption>
+              <thead>
+                <tr>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>T</th>
+                  <th>W</th>
+                  <th>T</th>
+                  <th>F</th>
+                  <th>S</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div>1</div></td>
+                  <td><div>2</div></td>
+                  <td><div>3</div></td>
+                  <td><div>4</div></td>
+                  <td><div>5</div></td>
+                  <td><div class="available-x7">6</div></td>
+                  <td><div>7</div></td>
+                </tr>
+                <tr>
+                  <td><div>8</div></td>
+                  <td><div>9</div></td>
+                  <td><div>10</div></td>
+                  <td><div>11</div></td>
+                  <td><div>12</div></td>
+                  <td><div class="available-x7 selected">13</div></td>
+                  <td><div class="available-x7 selected">14</div></td>
+                </tr>
+                <tr>
+                  <td><div class="available-x7 selected">15</div></td>
+                  <td><div class="available-x7 selected">16</div></td>
+                  <td><div class="available-x7 selected">17</div></td>
+                  <td><div class="available-x7 selected">18</div></td>
+                  <td><div class="available-x7 selected">19</div></td>
+                  <td><div class="available-x7">20</div></td>
+                  <td><div>21</div></td>
+                </tr>
+                <tr>
+                  <td><div>22</div></td>
+                  <td><div>23</div></td>
+                  <td><div>24</div></td>
+                  <td><div>25</div></td>
+                  <td><div>26</div></td>
+                  <td><div class="available-x7">27</div></td>
+                  <td><div>28</div></td>
+                </tr>
+                <tr>
+                  <td><div>29</div></td>
+                  <td><div>30</div></td>
+                  <td><div>31</div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                </tr>
+              </tbody>
+
+            </table>
+             <table>
+              <caption>November</caption>
+              <thead>
+                <tr>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>T</th>
+                  <th>W</th>
+                  <th>T</th>
+                  <th>F</th>
+                  <th>S</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div>1</div></td>
+                  <td><div>2</div></td>
+                  <td><div>3</div></td>
+                  <td><div>4</div></td>
+                  <td><div>5</div></td>
+                  <td><div class="available-x7">6</div></td>
+                  <td><div>7</div></td>
+                </tr>
+                <tr>
+                  <td><div>8</div></td>
+                  <td><div>9</div></td>
+                  <td><div>10</div></td>
+                  <td><div>11</div></td>
+                  <td><div>12</div></td>
+                  <td><div class="available-x7 selected">13</div></td>
+                  <td><div class="available-x7 selected">14</div></td>
+                </tr>
+                <tr>
+                  <td><div class="available-x7 selected">15</div></td>
+                  <td><div class="available-x7 selected">16</div></td>
+                  <td><div class="available-x7 selected">17</div></td>
+                  <td><div class="available-x7 selected">18</div></td>
+                  <td><div class="available-x7 selected">19</div></td>
+                  <td><div class="available-x7">20</div></td>
+                  <td><div>21</div></td>
+                </tr>
+                <tr>
+                  <td><div>22</div></td>
+                  <td><div>23</div></td>
+                  <td><div>24</div></td>
+                  <td><div>25</div></td>
+                  <td><div>26</div></td>
+                  <td><div class="available-x7">27</div></td>
+                  <td><div>28</div></td>
+                </tr>
+                <tr>
+                  <td><div>29</div></td>
+                  <td><div>30</div></td>
+                  <td><div>31</div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                </tr>
+              </tbody>
+
+            </table>
+             <table>
+              <caption>December</caption>
+              <thead>
+                <tr>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>T</th>
+                  <th>W</th>
+                  <th>T</th>
+                  <th>F</th>
+                  <th>S</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div>1</div></td>
+                  <td><div>2</div></td>
+                  <td><div>3</div></td>
+                  <td><div>4</div></td>
+                  <td><div>5</div></td>
+                  <td><div class="available-x7">6</div></td>
+                  <td><div>7</div></td>
+                </tr>
+                <tr>
+                  <td><div>8</div></td>
+                  <td><div>9</div></td>
+                  <td><div>10</div></td>
+                  <td><div>11</div></td>
+                  <td><div>12</div></td>
+                  <td><div class="available-x7 selected">13</div></td>
+                  <td><div class="available-x7 selected">14</div></td>
+                </tr>
+                <tr>
+                  <td><div class="available-x7 selected">15</div></td>
+                  <td><div class="available-x7 selected">16</div></td>
+                  <td><div class="available-x7 selected">17</div></td>
+                  <td><div class="available-x7 selected">18</div></td>
+                  <td><div class="available-x7 selected">19</div></td>
+                  <td><div class="available-x7">20</div></td>
+                  <td><div>21</div></td>
+                </tr>
+                <tr>
+                  <td><div>22</div></td>
+                  <td><div>23</div></td>
+                  <td><div>24</div></td>
+                  <td><div>25</div></td>
+                  <td><div>26</div></td>
+                  <td><div class="available-x7">27</div></td>
+                  <td><div>28</div></td>
+                </tr>
+                <tr>
+                  <td><div>29</div></td>
+                  <td><div>30</div></td>
+                  <td><div>31</div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                </tr>
+              </tbody>
+
+            </table>
+
+
+          </div><!--/#calendarBody-->
+          <div class="row right">
+            <span id="dateChoiceHolder"><strong>Selected Dates: </strong><span id="availSelDateFrom">13 Oct, 2017</span> to <span id="availSelDateTo">20 Oct, 2017</span></span>
+            <ul class="button-line">
+              <li><input type="submit" class="button ghost medium" value="BOOK" /></li>
+              <li><input type="submit" class="button ghost medium" value="HOLD" /></li>
+            </ul>  
+          </div><!--/.row.right-->
+        </div><!--/.modal-content-->
+</div><!--/#modalChooseAvailability -->
+
+</div><!--/#resortProfilePage -->
+</div><!--/#contentWrapper -->
+
+
+
+<!--     FOOTER/COPYRIGHT     -->
+
+<div id="footer">
+<div id="footerInner">
+<div class="row m-accordion">
+<div class="footer-links">
+<h4>Member Benefits</h4>
+<ul>
+<li><a href="benefits.html">Explore Benefits</a></li>
+<li><a href="exchange.html">Exchange</a></li>
+<li><a href="discounts.html">Discounts</a></li>
+<li><a href="rewards.html">Rewards</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>Destinations</h4>
+<ul>
+<li><a href="destinations.html">Overview</a></li>
+<li><a href="search-destinations.html">Search Destinations</a></li>
+<li><a href="custom-request.html">Custom Request</a></li>
+<li><a href="trending.html">See What's Trending</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>Join for Free</h4>
+<ul>
+<li><a href="join.html">Get Started Now</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>About</h4>
+<ul>
+<li><a href="about.html">About DAE</a></li>
+<li><a href="company-overwiew.html">Company Overview</a></li>
+<li><a href="b2b.html">Business Solutions</a></li>
+</ul>
+</div>
+<div class="footer-links last">
+<h4>Contact</h4>
+<ul>
+<li><a href="contact.html">Get in Touch</a></li>
+<li><a href="contact-members.html">Owners/Members</a></li>
+<li><a href="contact-b2b.html">Business Solutions</a></li>
+</ul>
+</div>
+</div>
+<!--/.footer-links -->
+
+<div class="row">
+<div id="logoPhone">
+<div class="icon-dae_logo" itemprop="telephone"><a href="tel:+18004681799">800.468.1799</a></div>
+</div>
+<div id="footerSocial">
+<h5>Connect</h5>
+<ul>
+<li><a class="icon-facebook" href="https://www.facebook.com/daelive/" target="_blank"><span class="ir">Facebook</span></a></li>
+<li><a class="icon-twitter" href="https://twitter.com/dialanexchange" target="_blank"><span class="ir">Facebook</span></a></li>
+<li><a class="icon-linkedin" href="https://www.linkedin.com/company/dial-an-exchange_2" target="_blank"><span class="ir">Facebook</span></a></li>
+
+</ul>
+
+</div>
+</div>
+
+<div class="row">
+<ul id="footerLowerLinks">
+<li><a href="privacy.html">Privacy Policy</a></li>
+<li><a href="privacy.html">Terms & Conditions</a></li>
+<li><a href="privacy.html">Disclosure</a></li>
+</ul><!--/#footerLowerLinks -->
+
+<p id="copyright">&copy; 2016 Dial An Exchange Pty Ltd 1.25.7 | US</p>
+</div><!--/.row -->
+
+</div><!--/#footerInner -->
+</div><!--/#footer -->
+
+<a id="backToTop" class="icon-arrow-up" href="#"><span class="ir">Click to return to top of page</span></a>
+
+
+
+
+
+</div><!--/#container -->
+
+
+</form><!--/aspnetForm -->
+
+</body>
+</html>

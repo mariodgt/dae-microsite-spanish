@@ -1,0 +1,226 @@
+a {text-decoration: none;}
+.uppercase {text-transform: uppercase;}
+
+
+.ct {color:#005abb;}
+
+h1,.h1{ @include header($h1-size, 1.2em, $brand-font, #333); }
+
+h1.alt,.h1.alt{ @include header($h1-size, 1.2em, $brand-font-thin, #333); }
+
+
+h2,.h2{ @include header($h2-size, 1.2em, $brand-font, #333); }
+h2.alt,.h2.alt{ @include header($h2-size, 1.2em, $brand-font-thin, $brand-color); }
+h2.c,.h2.c{ color: $brand-color; }
+.c.c{ color: $brand-color;}
+
+
+
+h3,.h3{ @include header($h3-size, 1.2em, $brand-font-light, #333); }
+.med { font-family: $brand-font;}
+
+h4,.h4{ @include header($h4-size, 1.2em, $brand-font, #000); }
+#contentWrapper .h4-size {font-size: $h4-size}
+
+h5,.h5{ @include header($h5-size, 1.2em, $brand-font, #000); }
+#contentWrapper h5.c,.h5.c{ color: $brand-color; }
+
+.med { font-family: $brand-font;}
+
+.light.light {
+color: #fff;
+}
+
+p {
+    max-width: 100%;
+    @include breakpoint(below-desktop){
+    max-width: 96vw;
+    }
+}
+
+.note {
+	font: normal 16px/1.2 $brand-font-light;
+&.aster {
+	padding-left: 1.2em;
+	position: relative;
+	&:before {
+	content: '*';
+	position: absolute;
+	left: 0;
+	top: 0;
+	}
+}
+}
+
+.light h1.alt,.light .h1.alt,
+.light h2,.light .h2,
+.light a,.light *,
+.light .input-field label{ color: #fff;}
+
+.intro-text {
+font: normal 20px/25px $brand-font-light;
+margin-bottom: 80px;
+}
+
+.text-block {
+	text-align: center;
+	padding-bottom: 26px;;
+	h1 {
+	margin-bottom: 17px;
+	}
+	p{
+	font: normal $p-size#{"/"}1.25 $brand-font-light;
+	margin-bottom: 26px;
+	
+	}
+}
+
+.check-list {
+	@include display-flex; 
+    @include justify-content($justify: space-around);
+	@include flex-flow(row,wrap);
+	margin-top: 40px;
+	margin-bottom: 90px;
+	ul {
+		width: 40%;
+    	@include breakpoint(phone-p) {
+		width: 100%;
+		}
+		@include breakpoint(phone) {
+		width: 100%;
+		}
+		li {
+			list-style: none;
+			color: #333;
+			margin-bottom: .2em;
+			padding-left: 32px;
+		    position: relative;
+		    min-height: 26px;
+		    line-height: 26px;
+		    font-size: 20px;
+			&:before {
+				content: '\e805';
+				font-family: dae;
+				color: #999;
+    			font-size: 26px;
+    			position: absolute;
+	    		left: 0;
+    			top: 0;
+			}
+		}
+		.light & li,.light & li:before {
+			color: #fff;
+		}
+		
+		
+		
+	}
+	&.single ul {
+	width: auto;
+	}
+	&.check-c li:before {
+			color: $brand-color;
+		}
+	
+}	
+
+
+#contentWrapper .dark-icon li:before {
+			color: #666;
+		}
+.dash {
+	li {
+		font-family: $brand-font-light;
+		&:before {
+		content: '-\00a0';
+		}
+	}
+}
+
+
+@include breakpoint(phone) {
+.feature-row {
+    padding: 60px 2vw;
+}
+.box-wrapper, .check-list {
+    flex-direction: column;
+}
+.check-list {
+    margin-left: 3vw;
+}
+.check-list ul li {
+    font-size: 4.7vw;
+    position: relative;
+    padding-left: 1.8em;
+    margin-top: .1em;
+    margin-bottom: 1em;
+}
+.check-list ul li:before {
+    font-size: 7vw;
+    position: absolute;
+    left: 0;
+    top: -.1em;
+
+}
+
+#frYouRequest .feature-row-inner {
+	.button.large {
+    	top: -53px;
+		}
+		.icon-ion-ios-search:before {
+			font-size: 100px;
+			display: inline-block;
+			width: 300px;
+			position: absolute;
+			top: -138px;
+			margin: 0;
+			left: 0;
+		}
+	}
+
+
+}
+
+p.intro {
+    margin-top: 25px;
+    line-height: 25px;
+    margin-bottom: 30px;
+		em {
+			font-family: $brand-font;
+			color: $brand-color;
+			font-style: normal;
+		}
+}
+
+.bullet {
+list-style: disc;
+padding-left: 1.2em;
+}
+
+.featured-link{
+    margin-top: 70px;
+    margin-bottom: 60px;
+    font: normal 20px/1.2 korolev-light;
+    color: #000;
+    border-bottom: solid 1px #000;
+}
+
+.total-text {
+	font: normal 30px/1.2 $brand-font-light;
+}
+
+ul.plus {
+	margin-top: 12px;
+    margin-bottom: 16px;
+	li{
+	padding: 10px 0 10px 1em;
+    position: relative;
+	&:before {
+		content: '+';
+    margin-right: .5em;
+    position: absolute;
+    left: 0;
+	}
+	}
+
+}

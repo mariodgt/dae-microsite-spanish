@@ -1,0 +1,12 @@
+<option value="0" selected>Choose your option</option>
+<option value="50">Cyprus</option>
+<option value="31">Europe - Central</option>
+<option value="32">Europe - Eastern</option>
+<option value="46">Europe - Other</option>
+<option value="33">France</option>
+<option value="34">Ireland</option>
+<option value="48">Italy</option>
+<option value="49">Malta</option>
+<option value="39">Portugal</option>
+<option value="43">Spain</option>
+<option value="44">UK</option>

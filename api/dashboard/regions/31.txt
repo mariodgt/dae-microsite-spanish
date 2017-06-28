@@ -1,0 +1,10 @@
+<option value="">Select a Region</option>
+<option value="C8">Austria</option>
+<option value="C79">Croatia</option>
+<option value="C19">Czech Republic</option>
+<option value="C7">Germany</option>
+<option value="C52">Hungary</option>
+<option value="C60">Poland</option>
+<option value="C114">Slovakia</option>
+<option value="C95">Slovenia</option>
+<option value="C16">Switzerland</option>

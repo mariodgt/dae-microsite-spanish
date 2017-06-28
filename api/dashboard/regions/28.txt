@@ -1,0 +1,9 @@
+<option value="">Select a Region</option>
+<option value="A">ACT</option>
+<option value="N">New South Wales</option>
+<option value="P">Northern Territory</option>
+<option value="Q">Queensland</option>
+<option value="S">South Australia</option>
+<option value="T">Tasmania</option>
+<option value="V">Victoria</option>
+<option value="W">Western Australia</option>

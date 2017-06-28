@@ -1,0 +1,387 @@
+header {
+  @include linear-gradient(68deg, $gradient1-1 0%, $gradient1-2 51%, $gradient1-3 100%);
+  height: 83px;
+  font: normal 18px/1.2 $brand-font;
+  	ul {
+		list-style: none;
+		}
+	nav a {
+		font-size: 16px;
+	}	
+}
+
+
+
+[id$=headerInner] {
+    width: 1104px;
+    max-width: 90vw;
+    margin: 0 auto;
+    @include display-flex;  
+    @include justify-content($justify: space-between);
+	@include align-items($align: center);
+    padding-top: 15px;
+}
+[id$=siteLogo] {
+	display: inline-block;
+	text-align: left;
+	width: 120px;
+		img { 
+			width: 100px;
+			height: auto;
+		}
+}
+	.no-svg [id$=siteLogo] {
+		background: url(images/dae_logo_white.png) no-repeat 50% 50%;
+		height: 56px;
+	}
+	.no-svg [id$=siteLogo] img {
+			display: none;
+	}
+	nav {
+		@include  flex($grow: 0, $shrink: 1, $basis: 60%);
+		@include display-flex; 
+		margin: 0 5vw;
+			 > ul {
+				@include display-flex; 
+				@include justify-content($justify: space-around);
+				text-align: center;
+				width: 100%;
+				
+			 	> li {
+						@include flex;
+						@include  flex($grow: 1, $shrink: 1, $basis: auto);
+						color: #000;
+						@include breakpoint(header) {
+							color: #999;
+						}
+						 > a {
+							color: #fff;
+							text-decoration: none;
+							
+							&:hover {
+								color: #000;
+							}
+						}
+				}
+			}
+				
+	}
+	
+/* LOGIN and Language selector */	
+[id$=headerRight] {
+    @include display-flex; 
+    @include  flex($grow: 0, $shrink: 1, $basis: 200px);
+    @include justify-content($justify: space-between);
+    max-width: 22vw;
+}
+
+[id$=languageSelector] {
+    margin-top: 4px;
+	 > span {
+		font-family: $brand-font-light;
+		color: #fff;
+	}	
+}
+	
+[id$=languageList] {
+	padding: 0 9px;
+	min-width: 125px;
+	.no-touchevents .dd-proxy-trigger:hover &,.dd-proxy-trigger.hover & {
+		padding: 16px 9px;
+	}
+	li {	
+		font-size: 17px;
+		line-height: 23px;
+			&:hover {
+				color: #000;
+			}
+		
+	}	
+}
+
+[id$=headerLogin] {
+		@include breakpoint(header) {
+		width: 0;
+		&:before {
+		content: '\F419';
+	    font-family: dae;
+	    font-size: 30px;
+	    position: absolute;
+	    top: 18px;
+	    right: 12px;
+	    color: #fff;
+		}
+	}
+	& > label {
+	color: #fff;
+		@include breakpoint(header) {
+		color: transparent!important;
+		background: transparent!important;
+	    border: 0;
+	    font-size: 0;
+	    width: 32px;
+	    position: absolute;
+	    right: 4px;
+		}
+	}
+}	
+
+
+.or {
+    width: 100%;
+    text-align: center;
+    font: normal 26px/1.2 $brand-font-light;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+
+[id$=loginFlyout] {
+	 @include linear-gradient(68deg, darken($gradient1-1, 20%) 0%, darken($gradient1-2,20%) 51%, darken($gradient1-3, 20%) 100%);
+	 opacity: .95;
+	max-height: 0;
+	left: 0;
+	position: absolute;
+	top: 83px;
+	width: 100%;
+	z-index: 98;
+	font: normal 16px/30px $brand-font-light;
+	.grid-1-2 {
+		width: auto;
+		@include breakpoint(phone-p) {
+	    		margin-top: 2rem;
+	    }
+	}
+	.input-field + p {
+    text-indent: 12px;
+	}
+	
+}
+[id$=loginFlyoutTrigger] + [id$=headerLogin] > label:after {
+    content: '\E80C';
+    font-family: dae;
+    color: #fff;
+    display: none;
+    position: absolute;
+    right: 0;
+    height: 45px;
+    width: 45px;
+    top: 112px;
+    font-size: 45px;
+    z-index: 99;
+}
+[id$=loginFlyoutTrigger]:checked + [id$=headerLogin] {
+		[id$=loginFlyout] {
+		max-height: 200vh; /* approximate max height */
+		height: 598px;
+		overflow: visible;
+		@include transition(all,0.75s,cubic-bezier(0, 1, 0.5, 1));
+			
+		}
+		> label {
+			background: $button-color;
+			border-color: $button-color;
+			&:after {
+			display: inline-block;
+			}
+		}
+
+}
+[id$=loginFlyoutTrigger]:not(:checked) + [id$=headerLogin] [id$=loginFlyout] {
+			@include transition(all,0.5s,cubic-bezier(0, 1, 0.5, 1));
+			max-height: 0;
+			height: 0;
+			overflow-y: hidden;
+}
+
+[id$=loginFlyout] .inner-wrapper {
+	width: 720px;
+	max-width: 100vw;
+    margin: 68px auto;
+   .check {
+   	margin-right: 20px;
+   }
+    label.active {
+	margin: 0;
+    top: 0px;
+    color: #fff;
+	}
+
+}
+
+[id$=loginFlyout] .inner-wrapper .h1 {
+    margin-left: 25px;
+    margin-bottom: 27px;
+}
+
+/* Off-Canvas Nav */
+#offCanvasNav,.icon-menu {
+display: none;
+}
+
+@include breakpoint(header) {
+	body {
+	@include linear-gradient(68deg, darken($gradient1-1, 20%) 0%, darken($gradient1-2,20%) 51%, darken($gradient1-3, 20%) 100%);
+	min-height: 100vh;
+
+	}
+	.icon-menu {
+	display: block;
+	top: 4px;
+    position: absolute;
+    left: 14px;
+    top: 20px;
+	}
+	header {
+	height: 63px;
+	}
+	.dd-proxy-trigger .dd-proxy,[id$=loginFlyout] {
+		top: 63px;
+	}
+	[id$=headerInner] {
+	padding-top: 10px;
+    padding-left: 50%;
+	}
+	[id$=siteLogo] {
+		width: 100px;
+		margin-left: -55px;
+		 img {
+			width: 80px;
+
+		}
+	}
+	#container {
+		width: 100vw;
+		overflow:hidden;
+		background: #fff;
+		left: 0;
+		position: relative;
+		@include transition(left,0.3s,ease-out);
+		nav {
+		width: 270px;
+		left: -270px;
+		margin: 0;
+		top: 0;
+		height: 100%;
+		position: absolute;
+		
+			> ul {
+				text-align: left;
+				width: 100%;
+				display: inline-block;
+				margin-top: 24px;
+				> li {
+				width: 100%;
+				text-align: left;
+				padding: 16px 10%;
+					a {
+					color: #fff;
+					}
+				}
+			}		
+		}
+	
+		#offCanvasNav:checked + & {
+				position:absolute;
+				left: 270px;
+				overflow: visible;
+					
+					nav {
+					    
+					
+					
+					}
+		}
+	}
+
+
+	.icon-menu:before {
+		font-size: 18px;
+		color: #fff;
+		display: block;
+	}
+}	
+
+@include breakpoint(phone) {
+		[id$=loginFlyoutTrigger]:checked + [id$=headerLogin] {
+				 & > label:after {
+					right: -40px;
+					top: 65px;
+				}
+				 [id$=loginFlyout] {
+				 height: auto;
+				}
+			}
+	[id$=loginFlyout]  {
+		.inner-wrapper {
+			width: 660px;
+			max-width: 100vw;
+			margin: 24px auto;
+				.h1 {
+					margin-bottom: 0;
+				}
+		}
+		
+		.row {
+			width: 100vw;
+			padding: 0 4vw;
+			.button {
+			margin-bottom: 24px;
+			}
+		}
+	}
+	
+
+
+}
+
+
+#contentWrapper .booking-header {
+	@include justify-content(flex-start);
+	h1 {
+		@include flex(1,1,50%);
+		margin-top: 20px;
+		margin-bottom: 38px;
+		font-size: 32px;
+		padding-left: 1em;
+		@include breakpoint(below-tablet) {
+		min-width: 100%;
+		margin-bottom: 24px;
+		padding-left: 0;
+		}
+		@include breakpoint(tablet-p) {
+		min-width: 100%;
+		margin-bottom: 24px;
+		padding-left: 0;
+		}
+		 > .title {
+		 	color: $arrow-color;
+			font-size: 22px;
+			display: inline-block;
+			margin-bottom: 12px;
+		 }
+	}
+	.booking-details {
+	@include flex(1,1,50%);
+    margin-top: auto;
+    margin-bottom: 38px;
+	border-left: solid 1px #000;
+	padding-left: 20px;
+	@include breakpoint(below-tablet) {
+		min-width: 100%;
+		border-left: 0;
+		border-top: solid 1px #000;
+		padding-left: 0;
+		padding-top: 20px;
+		}
+		@include breakpoint(tablet-p) {
+		min-width: 100%;
+		border-left: 0;
+		border-top: solid 1px #000;
+		padding-left: 0;
+		padding-top: 20px;
+		}
+	}
+
+
+}//.booking-header

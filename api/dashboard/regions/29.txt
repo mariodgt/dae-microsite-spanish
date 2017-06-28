@@ -1,0 +1,7 @@
+<option value="">Select a Region</option>
+<option value="A">Alberta</option>
+<option value="B">British Columbia</option>
+<option value="M">Manitoba</option>
+<option value="O">Ontario</option>
+<option value="X">Other Canada</option>
+<option value="Q">Quebec</option>

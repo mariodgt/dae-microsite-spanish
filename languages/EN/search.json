@@ -1,0 +1,67 @@
+{
+  "28": {
+ 	"id": "28",
+	"country": "Australia",
+ 	"regions": [{
+ 		"area": "New South Wales",
+ 		"code": "N",
+		"url": "/resorts.html"
+
+ 	}, {
+ 		"area": "Northern Territory",
+ 		"code": "P",
+		"url": "/resorts.html"
+ 	}, {
+ 		"area": "Queensland",
+ 		"code": "Q",
+		"url": "/resorts.html"
+ 	}, {
+ 		"area": "South Australia",
+ 		"code": "S",
+		"url": "/resorts.html"
+ 	}, {
+ 		"area": "Tasmania",
+ 		"code": "T",
+		"url": "/resorts.html"
+ 	}, {
+ 		"area": "Victoria",
+ 		"code": "V",
+		"url": "/resorts.html"
+ 	}, {
+ 		"area": "Western Australia",
+ 		"code": "w",
+		"url": "/resorts.html"
+ 	}]
+
+ }, 
+ "29": {
+	 "id": "29",
+ 	"country": "Canada",
+ 	"regions": [{
+ 		"area": "Alberta",
+ 		"code": "A",
+		"url": "/resorts.html"
+
+ 	}, {
+ 		"area": "British Columbia",
+ 		"code": "B",
+		"url": "/resorts.html"
+ 	}, {
+ 		"area": "Manitoba",
+ 		"code": "M",
+		"url": "/resorts.html"
+ 	}, {
+ 		"area": "Ontario",
+ 		"code": "O",
+		"url": "/resorts.html"
+ 	}, {
+ 		"area": "Other Canada",
+ 		"code": "X",
+		"url": "/resorts.html"
+ 	}, {
+ 		"area": "Quebec",
+ 		"code": "Q",
+		"url": "/resorts.html"
+ 	}]
+ }
+}

@@ -1,0 +1,17 @@
+<option value="">Select a Region</option>
+<option value="7">Aruba</option>
+<option value="2">Bahamas</option>
+<option value="1">Barbados</option>
+<option value="B">Belize</option>
+<option value="9">Bermuda</option>
+<option value="8">Cayman Islands</option>
+<option value="C">Costa Rica</option>
+<option value="4">Dominican Republic</option>
+<option value="G">Guatemala</option>
+<option value="I">Honduras</option>
+<option value="0">Jamaica</option>
+<option value="D">Other Caribbean</option>
+<option value="P">Puerto Rico</option>
+<option value="N">St Maarten/Netherlands Antilles</option>
+<option value="S">St Martin(French)</option>
+<option value="3">Us Virgin Islands</option>

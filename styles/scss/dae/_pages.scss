@@ -1,0 +1,425 @@
+//Other smaller, miscellaneous pages
+
+//Gold Advantage upgrade
+#gaUpgradeSlider {
+	
+	.sy-box {
+		max-height: 567px;
+	}
+
+	p {
+		font: normal 22px/1.2 Korolev-Medium;
+		margin-top: 22px;
+		}
+	@include breakpoint(tablet-p){
+		.sy-caption-wrap .sy-caption {
+			margin: auto auto;
+			width: 90vw;
+			font-size: 8vw;
+			p{
+			font-size: 4vw;
+			}
+		}
+		.sy-slide > img {
+			margin: 0;
+		}
+	}//@include
+	@include breakpoint(x-wide){ 
+		.sy-caption-wrap {
+		max-height: 60%;
+		}
+	}	
+}	
+
+
+
+[id=goldAdvantageFeature] {
+	& + h1 {
+		@include breakpoint(desktop) {
+		margin-top:93px
+		}
+	}
+	
+}
+	#goldAdvantageFeature .text-block .custom-text-style {
+		font-size: 26px;
+		margin-bottom: -10px;
+		max-width: 900px;
+	}
+	
+@media (width: 768px) and (orientation: portrait) {
+#joinForFreeSlider .sy-caption p{
+	    font-size: 3vw;
+    line-height: 1.2;
+}	
+}
+
+.heart-shape {
+	width: 169px;
+	margin: 0 auto;
+	img {
+		margin:80px 0 30px;
+	}
+}
+
+[id=incredibleDestinations] {
+	.text-block {
+	max-width: 90%;
+		@include breakpoint(tablet-w){
+		max-width: 800px;
+		}
+
+		
+	margin: 0 auto;
+	h2 {
+		max-width: 600px;
+		margin: 92px auto 22px;
+	}
+	p {
+		font: normal 20px/35px $brand-font-light;
+		
+	}
+	}//.text-block
+	
+	[id=idFeatureBlock] {
+    background-image: url(images/offset-box-bg.jpg);	
+	}
+
+} //[id=incredibleDestinations] 
+
+
+[id=goldAdvantageBenefitList] {
+	    padding-bottom: 48px;
+	
+	.narrow {max-width: 800px;}	
+
+}//[id=goldAdvantageBenefitList]
+
+
+[id=daeFeeComparison] {
+
+	h2 {
+		margin: 22px 0;
+		& + p {
+			font: normal 20px/1.2 $brand-font-light;
+		}
+	}
+	.compare-blocks {
+	    @include display-flex;
+		@include flex-flow(row, wrap);
+		@include justify-content(space-around);
+		margin-top: 54px;
+		& > li {
+		margin: 70px 6px 54px;
+		width: 259px;
+		background: $gray-bg;
+		max-width: 258px;
+		position: relative;
+		ul {
+		    padding: 20px;
+			li {
+				padding: 2px 0;
+				text-align: left;
+				font: normal 40px/40px $brand-font-light;
+				
+					& + li{
+						border-top: solid 1px #DFDFE0;
+					}
+					
+				small {
+					font-size: 20px;
+					display: inline-block;
+					width: 100%;
+					text-align: left;
+				}	
+				sub {
+				font: normal 18px/1.2 $brand-font-light;
+				top: -10px;
+    			position: relative;
+				}
+			}
+		}
+			&:before {
+			content: '\f4d7';
+			font-family: dae;
+		    margin-top: -70px;
+		    font-size: 55px;
+		    color: $header-dark-gray;
+		    width: 100%;
+		    text-align: center;
+		    background: #fff;
+		    display: inline-block;
+		    padding-bottom: 10px;
+			}
+			h3 {
+				width: 100%;
+				height: 90px;
+				background: $header-dark-gray;
+				color: #fff;
+				font: normal 30px/90px $brand-font-light;
+				white-space: no-wrap;
+				text-align: center;
+				
+			}//h3
+			&.dae-rates {
+				&:before {
+				content: '\E825';
+				color: $dash6;
+				}
+				h3 {
+					background-color: $dash6;
+					font-size: 45px;
+				}
+				ul {
+					background: url(images/dae-box-bg.png) no-repeat 50% 0;
+					li {
+						color: $dash6;
+						small {
+							color: #000;
+						}
+					}
+				}
+			}//.dae-rates	
+		}//li
+	
+	}//.compare-blocks
+
+}//[id=daeFeeComparison] 
+
+.circle-feature {
+	padding-top: 12px;
+	padding-bottom: 32px;
+}
+[id=gasBenefitsHeader] {
+	max-width: 860px;
+    margin-bottom: 84px;
+    margin: -100px auto 78px;
+    line-height: 100%;
+}
+[id=gasUpgradeSave30] {
+    max-width: 650px;
+    margin-top: 58px;
+    margin-bottom: -16px;
+}
+
+
+//About Page about.html
+
+[id=aboutPage] .sy-caption-wrap .sy-caption {
+font-size: 30px;
+padding-bottom: 0;
+@include breakpoint(below-tablet) {
+	font-size: 24px;
+}
+
+}
+@media (min-width: 800px) {
+[id=aboutPage] .sy-caption-wrap .sy-caption {
+	padding-bottom: 50px;
+	}
+}
+
+[id=overviewFeatureBlock] {
+    background-image: url(images/bg-nomembershipfees.jpg);
+    .content-box {
+    margin: 37% auto 0;
+    min-height: 357px;
+	}
+}
+#overviewTabContent,#partnershipsTabContent {
+	.dashbar-wrapper {
+	    padding-bottom: 0;
+	    	.dash2 {
+	    margin-bottom: 0;
+		}
+	}
+}
+
+#aboutBFB {
+	.dash2 {
+	background: $dash2;
+	}
+	h2 {
+    max-width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    	}
+    }
+
+
+#solutionsTabContent {
+	padding-bottom: 80px;
+	h2 {max-width: 600px
+	}
+}
+
+
+[id=contactPage] 
+{
+	.sy-caption-wrap .sy-caption {
+	font-size: 30px;
+	}
+	.intro {
+	font: normal 20px/25px $brand-font-light;
+	margin-top: 80px;
+	margin-bottom: 40px;
+	text-align: center;
+	}
+	[id=contactFormContent] {
+		max-width: 780px;
+
+		@include breakpoint(tablet-p){
+		max-width: 90vw;
+		}
+		.form-column {
+		@include breakpoint(desktop) {
+		width: 50%;
+		}
+		max-width: 390px;
+		-ms-flex-item-align: start;
+		align-self: flex-start;
+		}
+	}
+	.long {
+		.input-field {
+		width: 340px;
+		}
+	}
+	dt {
+	font-size: 14px;
+	}
+	dd{
+	font-size: 18px;
+	margin: 0 0 24px 0;
+		a {
+		color: #000;
+		}
+	}
+	[id=regionalOfficeData] dl{
+	display: none
+	}
+	[id=regionalOfficeData] #Australia{
+	display: block;
+	}
+}
+
+#lightboxWrapper  {
+	.facilities {
+		@include display-flex;
+	    @include flex-flow(row, wrap);
+			.head {
+				font-family: $brand-font;
+				@include flex(1, 1, 300px);
+			}
+			ul {
+		    margin-bottom: 2rem;
+			}
+	}//.facilities
+
+	.review {
+		padding-bottom: 40px;
+		.review-content p .review-title {
+		font: normal 20px/24px $brand-font;
+		color: $brand-color;
+		}
+		.rating {
+		margin-right: 10px;
+			&:after {
+			    content: '\E825';
+			    color: $brand-color;
+			    font-family: dae;
+			    letter-spacing: .1em;
+			    font-size: 30px;
+			}
+			&.r20:after {
+			content: '\E825\E825\';
+			}
+			&.r30:after {
+			content: '\E825\E825\E825\';
+			}
+			&.r40:after {
+			content: '\E825\E825\E825\E825';
+			}
+			&.r50:after {
+			content: '\E825\E825\E825\E825\E825';
+			}
+		}
+	}
+}
+
+//STATIC LOGIN PAGE
+
+#loginPage {
+		#headerRight {
+		@include flex-basis(150px);
+		}
+	.nav-contact {
+	    left: 22px;
+	    margin: 0;
+	    top: 23px;
+	    position: absolute;
+	    color: #fff;
+	    line-height: 29px;
+	    }
+	label[for="rememberMe"] {
+	    white-space: nowrap;
+	    @include breakpoint(phablet) {
+	    margin-left: -2rem;
+	    }
+		}
+		
+}
+
+[id=loginStatic] {
+	background: url(images/bg_login-activate.jpg) no-repeat 50% 0/cover;
+	min-height: 578px;
+		.inner-wrapper {
+		margin-top: 0;
+		padding-top: 54px;
+	    width: 660px;
+	    max-width: 100%;
+	    @include breakpoint(phone-p) {
+	    	.grid-1-2:first-child {
+	    		margin-bottom: 1rem;
+	    	}
+	    }
+	    
+			h3:first-child {
+			margin-bottom: 22px;
+    		padding-left: 20px;
+			}
+		}
+
+		.input-field {
+			label {
+    		color: #fff;
+    		}
+    		& + p {
+    		font-family: $brand-font-light;
+
+    		}
+    	}
+    	.check label {
+    	font-family: $brand-font-light;
+    	font-size: 16px;
+    	}
+    	input:-webkit-autofill,
+		input:-webkit-autofill:hover,
+		input:-webkit-autofill:focus,
+		input:-webkit-autofill:active {
+		-webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+		-webkit-transition-delay: 9999s;
+		}
+		input:-webkit-autofill {
+		    color: #fff;
+		}
+		.social {
+		    margin-bottom: 24px;
+		}
+	
+}//[id=loginStatic]
+
+
+
+
+

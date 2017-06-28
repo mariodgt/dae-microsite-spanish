@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html class="no-js"><head>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Timeshares & Time Share Exchange Service-DAELive.com</title>
+
+
+<!-- ICONS FOR DEVICES -->
+
+
+<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+<!--    STYLESHEETS    -->
+
+<link rel='stylesheet' type='text/css' href='styles/slippry.css' />
+<link rel='stylesheet' type='text/css' href='styles/dae.css' />
+
+
+<!--[if lte IE 10]>
+<link rel='stylesheet' type='text/css' href='languages/common/ie-shim.css' />
+<script type='text/javascript' src='js/ie-shim.js'></script>
+<!-- <![endif]-->
+
+<!--      SCRIPTS      -->
+
+<script type='text/javascript' src='js/modernizr-custom.js'></script>
+<script type='text/javascript' src='js/jquery-1.10.2.min.js'></script>
+<script type='text/javascript' src='js/materialize.custom.min.js'></script>
+
+<script type='text/javascript' src='js/custom.js'></script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+
+<meta name="description" content="We offer our members both an international and domestic time share exchange service. We also provide our clients with an extensive selection of timeshares from across the globe." />
+<meta name="keywords" content="timeshare, time shares, timeshare exchange, timeshare exchange service, time share exchanges, timeshare exchange service, timeshare resorts"/>
+</head>
+
+
+<!--      BEGIN PAGE & ID     -->
+
+<body>
+
+
+<!--      ASP.NET FORM PLACEHOLDER     -->
+
+<form method="post" action="./" id="aspnetForm"  >
+
+<input type="checkbox" id="offCanvasNav" />
+<div id="container">
+
+
+<!--      HEADER BAR      -->
+
+<header>
+<div id="headerInner">
+
+
+<div id="headerLeft">
+<div id="siteLogo">
+<img src="images/dae_logo_white.svg" alt="DAE" height="53" width="100" />
+</div><!--/#siteLogo -->
+
+</div><!--/#headerLeft -->
+
+
+<!--      MENU      -->
+
+<nav>
+<ul>
+<li><a href="benefits.html">Member Benefits </a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="join.html">Join for Free</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+
+<div id="headerRight">
+<div id="languageSelector" class="dd-proxy-trigger">
+<span>EN</span>
+    <ul id="languageList" class="dd-proxy" data-target="#languageListDD">
+    	<li data-lang="EN" class="selected">English</li>
+        <li data-lang="TH">Thai</li>
+        <li data-lang="ZH">Chinese</li>
+        <li data-lang="AR">Arabic</li>
+        <li data-lang="ES">Spanish</li>
+     </ul>
+     <!--This select is hidden. The list above changes its values-->
+	<select id="languageListDD" class="replaced">
+	<option selected="selected" value="EN">English</option>
+	<option value="TH">Thai</option>
+	<option value="ZH">Chinese</option>
+	<option value="AR">Arabic</option>
+	<option value="ES">Spanish</option>
+	</select>
+</div><!--/#languageSelector -->
+
+<!--LOGIN buttin and LOGIN Flyout -->
+<!--checkbox hides/shows login flyout w/o JS -->
+<input id="loginFlyoutTrigger" type="checkbox" style="display: none" />
+<div id="headerLogin">
+<label for="loginFlyoutTrigger" class="button ghost light small">LOGIN</label>
+
+<div id="loginFlyout" class="light">
+<div class="inner-wrapper">
+<h3 class="h1 alt">Login</h3>
+<div class="row">
+<div class="grid-1-2">
+<div class="input-field">
+          <input id="memberID" type="text"  autocomplete="off">
+          <label for="memberID">Email or Member #</label>
+        </div>    
+
+<p>Don't have an account? <a href="#"><u>Sign Up</u></a></p>
+</div><!--/.grid-1-2 -->
+<div class="grid-1-2">
+<div class="input-field">
+<input type="password" name="memberPW" autocomplete="off" />
+<label for="memberPW">Password</label>
+</div>
+<p><a href="#">Forgot password?</a></p>
+</div><!--/.grid-1-2 -->
+</div><!--/.row -->
+<div class="row">
+<div class="grid-1-2 end flex center-v">
+<div class="check">
+<input type="checkbox" id="rememberMe" name="rememberMe" checked />
+<label for="rememberMe">Remember me</label> 
+<!-- DEV NOTE: label MUST have a "for" attribute for checkbox replacement to work. 
+ASP.NET code: <asp:label AssociatedControlId="rememberMe" runat="server" ... />
+This will keep the names the same when ASP rewites the control names and IDs.
+-->
+
+</div><!--/.check -->
+
+<input type="submit" class="button ghost medium" value="GO" />
+</div><!--/.grid-1-2 -->
+
+</div><!--/.row -->
+
+<div class="row">
+<div class="or">OR</div>
+</div><!--/.row -->
+
+<div class="row">
+<div class="grid-1-2">
+<a href="#" class="icon-facebook button social ghost large">Login with Facebook</a>
+</div><!--/.grid-1-2 -->
+
+<div class="grid-1-2">
+<a href="#" class="icon-googleplus button social ghost large">Login with Google+</a>
+</div><!--/.grid-1-2 -->
+
+</div><!--/.row -->
+
+
+</div><!--/.inner-wrapper -->
+</div><!--/#loginFlyout -->
+
+
+</div><!--/#headerLogin -->
+<!--/LOGIN buttin and LOGIN Flyout -->
+
+<label class="icon-menu ir" for="offCanvasNav">Menu</label>
+</div><!--/#headerRight -->
+
+
+
+</div><!--/#headerInner -->
+</header>
+
+
+<!--      CONTENT WRAPPER     -->
+
+
+<div id="contentWrapper" class="static-slider">
+<div id="dashboardBookingPage">
+
+
+<!--     TOP SLIDER      -->
+
+
+<div id="headerBanner">
+	<ul>
+    	<li>
+            <label>NAME</label>
+            <span>Francis Taylor</span>
+        </li>
+        <li>
+            <label>MEMBER NUMBER</label>
+            <span>541689</span>
+        </li>
+        <li>
+            <label>MY REGION</label>
+            <span>Nor/Cen/Sou America</span>
+        </li>
+        <li class="icon-profile">My Profile</li>
+    
+    
+    </ul>
+     
+  </div><!--/#headerBanner -->
+  
+
+<div id="dashResultGrid" class="row booking-header">
+<h1><span class="title">You Are Booking</span>
+<br />Breakfree Fortitude Valley
+<br/><span>Brisbane, Queensland, AU</span></h1>
+<div class="booking-details">
+<strong>5-12 November, 2017</strong><br />
+7 Night Exchange / $149<br />
+1 Bedroom Deluxe Oceanfront / Sleeps 4
+</div><!--/.booking-details -->
+</div><!--/#dashResultGrid -->
+
+
+
+<div id="bookingSequence">
+<div class="grid-holder">
+
+<ul id="progressBar" class="row">
+<li class="step">1. Verify</li>
+<li>2. Payment</li>
+<li>3. Confirmation</li>
+</ul><!--#progressBar -->
+
+
+<div id="bookingForm-MemberDetails" class="sequence-panel" data-step="0">
+<div class="row">
+	<h2 class="h3">Who's Checking In?</h2>
+</div>
+
+<div id="memberGuestRow" class="row">
+   <ul class="check long top-space bottom-space">
+       <li>
+       <input type="radio" id="rbExisting" name="rbGuest" value="existing" checked="" data-trigger="change" data-target="#contactSelect">
+       	<label for="rbExisting">Existing contact </label>
+        
+          <select id="contactSelect" data-load="/api/profile/contact/" data-target="#contactDetails" class="initialized">
+              	<option value="20130">Peter Vanderhorst</option>
+               	<option value="675480">Dawn VANDERHORST</option>
+                <option value="0">Add New Guest</option>
+          </select>
+          </li>
+      </ul>   
+</div>
+<div class="row">
+   <h2 class="h3">Confirm contact details</h2>
+</div>
+<div class="row">
+	<ul class="check top-space bottom-space">
+      	<li>
+           	<input type="radio" id="rbMyGuest" name="rbGuest" value="newguest" data-load="/api/profile/contact/0/?x=" data-target="#contactDetails">
+            <label for="rbMyGuest">My Guest (Free)</label>
+       </li>
+</ul>
+</div>
+<div id="memberInfoForm" class="member-form editable disabled">
+<div class="row">
+<label>ADDRESS ME AS</label>
+<div class="input-field">
+
+    <select>
+      <option value="" selected>Mr</option>
+      <option value="1">Mrs</option>
+      <option value="2">Ms</option>
+      <option value="3">Miss</option>
+      <option value="3">Dr</option>
+    </select>
+</div>  
+</div>
+<div class="row required-row">
+<label for="b-FirstName">FIRST NAME</label>
+<div class="input-field">
+    <input id="b-FirstName" type="text" value="Todd" />
+</div>  
+</div>
+<div class="row required-row">
+<label for="b-LastName">LAST NAME</label>
+<div class="input-field">
+    <input id="b-LastName" type="text" value="Skelton" />
+</div>  
+</div>
+<div class="row">
+<label for="b-Nickname">NICKNAME</label>
+<div class="input-field incomplete">
+    <input id="b-Nickname" type="text" value="Not Specified" />
+</div> 
+</div>
+<div class="row required-row">
+<label for="b-Email">EMAIL ADDRESS</label>
+<div class="input-field">
+    <input id="b-Email" type="email" value="todd@gmail.com" />
+</div> 
+</div>
+<div class="row required-row">
+<label for="b-Phone1">PRIMARY PHONE</label>
+<div class="input-field">
+    <input id="b-Phone1" type="tel" value="954-679-3569" />
+</div> 
+</div>
+<div class="row">
+<label for="b-Phone2">SECONDARY PHONE</label>
+<div class="input-field">
+    <input id="b-Phone2" type="tel" value="954-438-2568" />
+</div> 
+</div>
+<div class="row">
+<label for="b-Address">ADDRESS 1</label>
+<div class="input-field">
+    <input id  type="text" value="3359 SE Ocean Blvd" />
+</div>
+</div>
+<div class="row">
+<label for="b-Address2">ADDRESS 2</label>
+<div class="input-field">
+    <input id="b-Address2" type="text" value="" />
+</div>
+</div>
+<div class="row required-row">
+<label for="b-Country">COUNTRY</label>
+<div class="input-field">
+    <select id="b-Country" >
+      <option value="0" selected>United States</option>
+      <option value="1">Australia</option>
+      <option value="2">United Kingdom</option>
+      <option value="3">France</option>
+      <option value="3">Etc.</option>
+    </select>
+</div>
+</div>
+<div class="row">
+<label for="b-City">CITY/TOWN</label>
+<div class="input-field">
+    <input id="b-City" type="text" value="Fort Lauderdale" />
+</div>
+</div>
+<div class="row">
+<label for="b-State">STATE/REGION</label>
+<div class="input-field">
+    <input id="b-State" type="text" value="Florida" />
+</div>
+</div>
+<div class="row">
+<label for="b-Zip">POSTCODE</label>
+<div class="input-field">
+    <input id="b-Zip" type="tel" value="33308" />
+</div>
+</div>
+<p class="required-legend row">* required fields</p>
+<div class="row">
+<label>&nbsp;</label>
+<div class="edit-save">
+    <a id="b-Edit" type="submit" class="button ghost form-toggle-edit">EDIT</a>
+     <a id="b-Save" type="submit" class="button ghost form-toggle-save">SAVE</a>
+</div>
+</div>
+<div id="wci-NextButtonWrapper1" class="row right">
+<button type="button" class="button ghost medium next-panel">NEXT</button>
+</div>
+</div><!-- #memberInfoForm -->
+
+
+</div><!--/#bookingForm-MemberDetails -->
+
+
+<div id="bookingForm-SelectCredit" class="sequence-panel" data-step="0">
+<div class="row">
+<h2 class="h3">Select the DAE Credit you would like to use</h2>
+</div>
+<div class="row check spaced">
+<div>
+<input type="radio" name="wci-Credit" id="wci-Credit1">
+<label for="wci-Credit1"><span>Breakfree Fortitude Valley - Credit ID: 689345 - Exp. 1 Nov, 2015<br />
+Note: Due to unit size, the upgrade fee for this booking is $20.</span></label>
+</div>
+</div><!--/.row -->
+<div class="row check spaced">
+<div>
+<input type="radio" name="wci-Credit" id="wci-Credit2">
+<label for="wci-Credit2"><span>Breakfree Fortitude Valley - Credit ID: 689345 - Exp. 1 Nov, 2015<br />
+Note: Due to unit size, the upgrade fee for this booking is $20.</span></label>
+</div>
+
+</div><!--/.row -->
+<div id="wci-NextButtonWrapper2" class="row">
+<ul class="button-line right">
+<li><button type="button" class="button ghost medium prev-panel">BACK</button></li>
+<li><button type="button" class="button ghost medium next-panel">NEXT</button></li>
+</ul>
+</div>
+</div><!--/#bookingFormPart2 -->
+
+
+<div id="bookingForm-BankAndBook" class="sequence-panel" data-step="0">
+<div class="row">
+<h2 class="h3">Bank &amp; Book</h2>
+<p>Select a registered week that you would like to convert into a deposit credit to be used for this booking.</p>
+</div>
+<div class="row check header-row">
+<div class="row-left">Club/Resort</div>
+<div class="row-right">
+<div>Unit/Points</div>
+<div>Anniversary</div>
+<div>Third Column</div>
+</div>
+</div>
+<div class="row check">
+<div class="row-left">
+<input type="checkbox" id="wci-BankBook1" name="wci-BankBook1" checked="">
+<label for="wci-BankBook1"><span><span class="h3">Marriot World Harbour</span></br>
+<strong>Samantha and David Ovenflocken</strong><br />
+<span class="note">Note: Due to unit size, the upgrade fee for this booking is $20</span></span></label>
+</div>
+<div class="row-right">
+<div>
+<span class="ir">Unit/Points</span>
+1 Bedroom
+</div>
+<div>
+<span class="ir">Anniversary</span>
+22 Nov
+</div>
+<div>
+<span class="ir">Third Column</span>
+Value
+</div>
+</div>
+</div><!--/.row -->
+<div class="row check">
+<div class="row-left">
+<input type="checkbox" id="wci-BankBook2" name="wci-BankBook2" checked="">
+<label for="wci-BankBook2"><span><span class="h3">Silverleaf Apple Mountain</span></br>
+<strong>Samantha and David Ovenflocken</strong></span></label>
+</div>
+<div class="row-right">
+<div>
+<span class="ir">Unit/Points</span>
+2 Bedroom
+</div>
+<div>
+<span class="ir">Anniversary</span>
+05 Feb
+</div>
+<div>
+<span class="ir">Third Column</span>
+Input
+</div>
+</div>
+<div class="spacer" style="height: 44px;"></div>
+</div><!--/.row -->
+<div id="wci-NextButtonWrapper3" class="row">
+<ul class="button-line right">
+<li><button type="button" class="button ghost medium prev-panel">BACK</button></li>
+<li><button type="button" class="button ghost medium next-panel">NEXT</button></li>
+</ul>
+</div>
+</div><!--/#bookingForm-BankAndBook -->
+
+
+<div id="bookingForm-PayAndBook" class="sequence-panel" data-step="1">
+<div class="row">
+<h2 class="h3">Pay &amp; Book</h2>
+<div class="grid-1-2">
+<div class="input-button">
+<div class="input-field">
+   <input id="bf-promoCode" type="text"  autocomplete="off">
+   <label for="bf-promoCOde">Enter Promo Code</label>
+</div> 
+<button type="button" class="button small ghost">SUBMIT</button>   
+</div>
+<div class="input-button">
+<div class="input-field">
+   <input id="bf-voucherCode" type="text"  autocomplete="off">
+   <label for="bf-voucherCode">Enter Voucher Code</label>
+</div> 
+<button type="button" class="button small ghost">SUBMIT</button>   
+</div>
+
+
+<div class="total-block dl-block">
+<h3 class="med">Your Discounts = $80</h3>
+<dl>
+<dt>WRLD180 Promotion applied</dt>
+<dd>- $10</dd>
+
+<dt>SAVE20% Voucher applied</dt>
+<dd>- $10</dd>
+
+<dt>Monetary Credit applied:</dt>
+<dd>- $50</dd>
+
+<dt>1,000 daeRewards applied:</dt>
+<dd>- $10 <a class="modal-trigger" href="#modalApplyRewards">edit</a></dd>
+
+</dl>
+
+<!--Modal: Apply rewards from edit link -->
+<div id="modalApplyRewards" class="modal">
+    <div class="modal-content">
+    <a href="#!" class="modal-action modal-close icon-close-empty"></a>
+    <h4 class="h1">You have 1,000 daeRewards</h4>
+      <p class="p1">Please enter how many daeRewards you would like to apply towards this booking.<br />(100 daeRewards points = $1.00)</p>
+      <div class="input-field">
+   <input id="rewardsEnter" type="tel"  autocomplete="off" value="800" aria-label="rewards points to be used">
+</div> 
+    <div id="rewardsCalc" class="right">
+    <p>Save $<span>8.00</span></p>
+    <button type="button" class="button medium light ghost">APPLY</button>  
+            </div>
+    
+    </div>
+</div>
+<!--/Modal: Apply rewards from edit link -->
+
+
+
+</div><!-- /total-block -->
+
+</div><!-- /grid-1-2 -->
+
+<div class="grid-1-2">
+<div id="bookingItimization" class="dl-block">
+<dl>
+<dt>Exchange Fee:</dt>
+<dd>$149</dd>
+
+<dt>Unit Upgrade:</dt>
+<dd>$19</dd>
+
+<dt>One Year of Gold Advantage:</dt>
+<dd>$59</dd>
+
+<dt><a href="javascript:void();">CPO Cancellation</a></dt>
+<dd>$15<a href="javascript:void();">remove</a></dd>
+
+<dt>Total Before Discounts:</dt>
+<dd>$242</dd>
+
+<dt class="ct">Discounts applied</dt>
+<dd class="ct">- $80</dd>
+
+</dl>
+
+<div id="bookingTotal">
+<p class="h1 right price">TOTAL: $182 <span>USD</span></p>
+</div>
+
+
+<div id="wci-NextButtonWrapper4">
+<ul class="button-line right">
+<li><button type="button" class="button ghost medium prev-panel">BACK</button></li>
+<li><button type="button" class="button ghost medium next-panel">NEXT</button></li>
+</ul>
+</div>
+
+</div><!-- /total-block -->
+</div>
+</div><!-- /grid-1-2 -->
+
+</div><!--/#bookingForm-PayAndBook -->
+
+<div id="bookingForm-PaymentMethod" class="sequence-panel" data-step="1">
+<div id="paymentFormContent">
+<div id="paymentHeader" class="row">
+<h2 class="h3">Pay &amp; Book <img id="ccImg" src="images/creditcards.png" alt="We take Amex, Visa, and MasterCard as payment" width="291" height="56" /></h2>
+
+<img src="images/go-daddy-secured.png" alt="Site secured by GoDaddy" width="191" height="40" />
+</div><!-- /row -->
+
+<div id="paymentSection">
+<div class="row">
+	<div class="input-field">
+          <input id="pb-CreditCard" type="text">
+          <label for="pb-CreditCard">Card Number</label>
+        </div>
+    	<div class="input-field half">
+          <input id="pb-CCV" type="text" >
+          <label for="pb-CCV">CCV</label>
+        </div>
+
+</div><!--/.row -->
+
+<div class="row">
+	<div class="input-field">
+          <input id="pb-NameOnCard" type="text">
+          <label for="pb-NameOnCard">Name on Card</label>
+        </div>
+</div><!--/.row -->
+<div class="row">
+<div class="input-field third">
+    <select id="pb-ExpMonth">
+      <option value="" disabled selected>Exp. Month</option>
+      <option value="1">01-Jan</option>
+      <option value="2">02-Feb</option>
+      <option value="3">03-Mar</option>
+    </select>
+    </div>
+    <div class="input-field third">
+    <select id="pb-ExpYear">
+      <option value="" disabled selected>Exp. Year</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+    </select>
+    </div>
+</div><!--/.row -->
+<div class="row">
+	<div class="input-field">
+          <input id="pb-Address" type="text">
+          <label for="pb-Address">Address</label>
+        </div>
+    	<div class="input-field half">
+          <input id="pb-Zip" type="text" >
+          <label for="pb-Zip">Zip Code</label>
+        </div>
+
+</div><!--/.row -->
+<div class="row check">
+<div>
+<input type="checkbox" id="pb-TACAgree" name="pb-TACAgree" checked="">
+<label for="pb-TACAgree"><span>I understand and agree that my credit card will be charged immediately for the above transaction amount indicated and that this transaction is bound by the terms and conditions of Dial An Exchange for the membership period purchased.<br />
+<small>Please Note: you will be charged by our the office that services this destination, and it will show on your credit card as  "DIAL AN EXCHANGE MIAMI QL AUS"</small>
+</span></label>
+</div>
+</div><!--/.row -->
+
+
+</div><!--/#paymentSection -->
+
+<div id="paymentTotalRow" class="row">
+<div class="total-block">
+<p id="bookingTotalTotal" class="h1 price">TOTAL: $123 <span>USD</span><br />
+<small>Price Includes GST where available</small></p>
+</div>
+<div id="pb-NextButtonWrapper5">
+<ul class="button-line right">
+<li><button type="button" class="button ghost medium prev-panel">BACK</button></li>
+<li><input type="submit" class="button ghost medium" value="COMPLETE"/></li>
+</ul>
+</div><!--#pb-NextButtonWrapper5 -->
+
+</div><!--/.row -->
+</div><!--#paymentFormContent -->
+
+<div id="paymentPending" class="sequence-panel">
+<div class="spinner"></div>
+<h1>START PACKING YOUR BAGS!</h1>
+<h3 class="c">PLEASE WAIT, YOUR PAYMENT IS PROCESSING.</h3>
+<span id="wci-NextButtonWrapper6">
+<a style="margin-top: 44px;display: inline-block;" class="button ghost">[temporary dismiss]</a>
+</span>
+</div>
+</div><!--/#bookingForm-PaymentMethod -->
+
+
+<div class="sequence-panel js-print-box" data-step="2">
+<div id="paymentConfirmedHeader" class="row">
+<h2 class="h3">Confirmed</h2>
+<p>You can view this confirmation at any time by choosing My Bookings from your member dashboard.</p>
+</div><!-- /row -->
+
+
+
+<div class="row">
+    <ul id="Print-Email" class="right js-no-print">
+        <li class="icon-printer"><a href="#" class="js-print-button">PRINT</a></li>
+        <li class="icon-email"><a href="mailto:">EMAIL</a></li>
+    </ul><!-- /row -->
+<div class="row sr-grid">
+
+<ul class="list-boxes">
+	<li id="bookedResort">
+    <div>
+    <img src="images/destinations/australia/queensland/breakfree/thumb_1.jpg" width="259" height="180" alt="Ocean Reef Club" />
+    </div>
+    <div class="list-content">
+    	<div class="list-top">
+            <p>
+            Breakfree Fortitude Valley
+            <span>Brisbane, Queensland, AU</span>
+            </p>
+    	</div>
+    	<div class="list-bottom">
+            <p>1234 Oaklong Way, Queensland 2428, Australia
+            <strong>Assistance?</strong> 800.468.1799<br />
+            <strong>Resort Phone:</strong> 000.123.4567
+        	</p>
+        </div>
+    </div>
+    
+    
+    </li>
+  
+    
+</ul><!--/.list-boxes -->
+
+<div id="bookingConfirmationBar">
+<p>Reference Number: 330349</p><p>Payment Gateway Ref.: 0405191633224949:YYYM</p>
+</div><!--/ -->
+
+</div><!--/.row /.sr-grid -->
+
+
+<div id="bookingConfirmationSummary" class="row">
+
+<div class="total-block dl-block brand">
+<dl class="wrap">
+<dt>MEMBER</dt>
+<dd>Todd Skelton</dd>
+
+<dt>DAE MEMBER NUMBER</dt>
+<dd>45792816754</dd>
+
+<dt>NAME OF GUEST CHECKING IN:</dt>
+<dd>John Smith<br />1 Adult, 2 Children</dd>
+
+<dt>CPO OPTION</dt>
+<dd>Accepted</dd>
+
+</dl>
+</div><!--/.total-block -->
+<div class="total-block dl-block brand">
+<dl class="wrap">
+<dt>CHECK-IN:</dt>
+<dd>04 Oct, 2016 at 4:00PM</dd>
+
+<dt>CHECK-OUT:</dt>
+<dd>04 Oct, 2016 at 4:00PM</dd>
+
+<dt>NIGHTS:</dt>
+<dd>7</dd>
+
+<dt>UNIT TYPE:</dt>
+<dd>1 Bedroom (sleeps 2)</dd>
+
+</dl>
+</div><!--/.total-block -->
+<div class="total-block dl-block brand">
+<dl>
+<dt>Exchange Fee: </dt>
+<dd>$49</dd>
+
+<dt>Unit Upgrade:</dt>
+<dd>$19</dd>
+
+<dt>daeRewards Applied:</dt>
+<dd>$0</dd>
+
+<dt>Monetary credit Applied:</dt>
+<dd>$0</dd>
+
+<dt><a href="#">CPO Cancellation</a></dt>
+<dd>$15</dd>
+
+</dl>
+</div><!--/.total-block -->
+<div id="bookingConfirmationTotal" class="total-block dl-block">
+<div>
+<p id="bctTotalPaid">TOTAL PAID: $183 USD</p>
+<p id="bctBalance">BALANCE: $0</p>
+</div>
+</div><!--/.total-block -->
+
+
+</div><!--/#bookingConfirmationTotal -->
+
+
+
+</div><!--/#bookingForm-Confirmation -->
+
+</div><!--/.grid-holder -->
+
+
+</div><!--/#bookingSequence -->
+</div><!--/#dashboardBookingPage -->
+</div><!--/#contentWrapper -->
+
+
+
+
+
+<!--     FOOTER/COPYRIGHT     -->
+
+<div id="footer">
+<div id="footerInner">
+<div class="row m-accordion">
+<div class="footer-links">
+<h4>Member Benefits</h4>
+<ul>
+<li><a href="benefits.html">Explore Benefits</a></li>
+<li><a href="exchange.html">Exchange</a></li>
+<li><a href="discounts.html">Discounts</a></li>
+<li><a href="rewards.html">Rewards</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>Destinations</h4>
+<ul>
+<li><a href="destinations.html">Overview</a></li>
+<li><a href="search-destinations.html">Search Destinations</a></li>
+<li><a href="custom-request.html">Custom Request</a></li>
+<li><a href="trending.html">See What's Trending</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>Join for Free</h4>
+<ul>
+<li><a href="join.html">Get Started Now</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>About</h4>
+<ul>
+<li><a href="about.html">About DAE</a></li>
+<li><a href="company-overwiew.html">Company Overview</a></li>
+<li><a href="b2b.html">Business Solutions</a></li>
+</ul>
+</div>
+<div class="footer-links last">
+<h4>Contact</h4>
+<ul>
+<li><a href="contact.html">Get in Touch</a></li>
+<li><a href="contact-members.html">Owners/Members</a></li>
+<li><a href="contact-b2b.html">Business Solutions</a></li>
+</ul>
+</div>
+</div>
+<!--/.footer-links -->
+
+<div class="row">
+<div id="logoPhone">
+<div class="icon-dae_logo" itemprop="telephone"><a href="tel:+18004681799">800.468.1799</a></div>
+</div>
+<div id="footerSocial">
+<h5>Connect</h5>
+<ul>
+<li><a class="icon-facebook" href="https://www.facebook.com/daelive/" target="_blank"><span class="ir">Facebook</span></a></li>
+<li><a class="icon-twitter" href="https://twitter.com/dialanexchange" target="_blank"><span class="ir">Facebook</span></a></li>
+<li><a class="icon-linkedin" href="https://www.linkedin.com/company/dial-an-exchange_2" target="_blank"><span class="ir">Facebook</span></a></li>
+
+</ul>
+
+</div>
+</div>
+
+<div class="row">
+<ul id="footerLowerLinks">
+<li><a href="privacy.html">Privacy Policy</a></li>
+<li><a href="privacy.html">Terms & Conditions</a></li>
+<li><a href="privacy.html">Disclosure</a></li>
+</ul><!--/#footerLowerLinks -->
+
+<p id="copyright">&copy; 2016 Dial An Exchange Pty Ltd 1.25.7 | US</p>
+</div><!--/.row -->
+
+</div><!--/#footerInner -->
+</div><!--/#footer -->
+
+<a id="backToTop" class="icon-arrow-up" href="#"><span class="ir">Click to return to top of page</span></a>
+
+</div><!--/#container -->
+
+
+
+
+
+</form><!--/aspnetForm -->
+
+
+
+
+<div id="modalBonusWeeksWarning" class="modal">
+    <div class="modal-content icon-warning">
+    <a href="#!" class=" modal-action modal-close icon-close-empty"></a>
+      <p>Bonus weeks may only be placed on hold at least 15 days before the check-in date.</p>
+    </div>
+</div>
+
+<div id="modalRSGold" class="modal">
+    <div class="modal-content center">
+    <a href="#!" class=" modal-action modal-close icon-close-empty"></a>
+    <h4 class="h1">READY. SET. GOLD.</h4>
+      <p>With DAE Gold Advantage benefits, you have more access to more inventory, deeper discounts on DAEexchange services and the ability to exchange to non-timeshare resorts in desirable locations.</p>
+      <p class="strong">Unlock and book this vacation today and get a full year of Gold Advantage Benefits for a special price of <strike>$89</strike> $59.</p>
+    <div class="button-line">
+    <input type="submit" class="button med light ghost" value="LEARN MORE" />
+            <input type="submit" class="button med ghost gold" value="BOOK NOW" />
+            </div>
+    
+    </div>
+</div>
+
+<div id="modalDateWarning" class="modal" style="margin-top: 20vw;">
+    <div class="modal-content icon-warning">
+    <a href="#!" class=" modal-action modal-close icon-close-empty"></a>
+      <h4 class="h1">Please Note</h4>
+      <p>The dates chosen falls between two exchange week periods so the closest avaialble date ranges have been displayed for exchange results. Please review dates carefully before booking.</p>
+    </div>
+      
+  </div>
+
+
+</body>
+</html>

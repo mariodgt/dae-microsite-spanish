@@ -1,0 +1,972 @@
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483
+484
+485
+486
+.dash1 h3 {
+background: $dash1;
+    &:hover {
+    background-color:darken($dash1, 10%);
+  }
+}
+.dash2 h3{
+background: $dash2;
+&:hover {
+    background-color:darken($dash2, 10%);
+  }
+}
+.dash3 h3{
+background: $dash3;
+&:hover{
+    background-color:darken($dash3, 10%);
+  }
+}
+.dashbar  h3:focus {
+outline: 0;
+}
+ 
+ 
+ 
+[id$=dashboardPage] {
+    .row {
+        @include display-flex; 
+        width: 1104px;
+        max-width: 94vw;
+        padding: 0;
+        margin: auto;
+        }
+    [id$=headerBanner] {
+        background: url(images/hero-dashboard.jpg) no-repeat 50% 50%/cover;
+        font-size: 0;
+        min-height: 118px;
+        height: auto;
+        color: #fff;
+        ul {
+            @include display-flex; 
+            width: 1104px;
+            max-width: 94vw;
+            margin: 0 auto;
+            height: 100%;
+            min-height: 118px;
+            li{
+            font: normal 24px/1.2 $brand-font-light;
+            @include flex(1,1,25%);
+            @include align-self(flex-end);
+            margin-bottom: 12px;
+                * {
+                     
+                    width: 100%;
+                    display: inline-block;
+                }
+                label {
+                    font-size: 14px;
+                    color: #fff;
+                    width: 100%;
+                     
+                }
+                 
+                a {
+                    color: #fff;
+                }
+                &.icon-profile {
+                margin-top: 1em;
+                    &:before {
+                    font-size: 34px;
+                    }
+                }
+            }
+        }
+    }
+ 
+@media (max-width: 500px) and (orientation: portrait) {
+    #headerBanner ul {
+        -webit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        li {
+        -webkit-flex: 100%;
+        -flex: 100%;
+        }
+    }
+}
+ 
+ 
+ 
+ 
+[id$=warningStrip] {
+    background: $dash5;
+    margin: 3px 0 0;
+    & div{
+    min-height: 58px;
+        @include display-flex; 
+        @include align-items(center);
+        @include justify-content(space-between); 
+    width: 1104px;
+    max-width: 94vw;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 18px;
+        p{
+            &:before{
+            font-size: 25px;
+            width: auto;
+            margin-right: 12px;
+            }
+             
+        }/*p*/
+        span {
+            color: #000;
+                &:before {
+            font-size: 40px;
+            font-weight: bold;
+            }
+        }/*span*/
+    a {
+        color: #fff;
+        text-decoration: underline;
+        margin-left: 1em;
+    }
+     
+    }/*div*/
+ 
+}/*[id$=warningStrip]*/
+ 
+}/*[id$=dashboardPage]*/
+ 
+ 
+[id$=dashbarWrapper] {
+    padding-bottom: 118px;
+    h1 {
+        color: #999;
+        margin: 100px 0 64px;
+    }
+    h2 {
+        margin: 50px 0 30px;
+    }
+    h3 {
+    cursor: pointer;
+        color: #fff;
+        font: normal 21px/49px $brand-font;
+        padding-left: 54px;
+            span {
+            font-family:$brand-font-light;
+            display: none;
+                &:before {
+                    content: '\|';
+                    display: inline-block;
+                    margin: 0 .75em;
+                     
+                }
+            }
+        &:before {
+        content: '\e813';
+        font-family: dae;
+        transition: transform 0.3s ease-in-out;
+        position: relative;
+        left: -32px;
+        float: left;
+        font-size: 25px;
+         
+        }
+         
+         
+    } /*h3*/
+    .active h3:before {
+            transform:rotate(-225deg);
+        }
+     
+            ul {
+                width: 100%;
+            }
+    .dashbar li {
+        margin-bottom: 3px;
+    }
+ 
+ 
+}/*[id$=dashboardWrapper]*/
+ 
+ 
+@media (min-width: 1023px) {
+.dashbar h3 span{
+display: inline-block;
+}
+}
+@media (max-width: 373px) and (orientation: portrait){
+.dashbar h3 {
+font-size: 5vw;
+}
+}
+ 
+ 
+ 
+ 
+ 
+ 
+[id$=memberWallet] {
+    background: #EDEFF3;
+    > ul.row {
+        max-width: 99%;
+        padding: 10px 0;
+    margin-top: 3px;
+        >li {
+            background: #E1E3E7;
+            flex: 0 1 259px;
+            margin-bottom: 10px;
+            height: 205px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+                span {
+                    min-width: 108px;
+                    height: 108px;
+                    background: $dash6;
+                    border-radius: 50%;
+                    text-align: center;
+                    font: normal 40px/108px $brand-font-light;
+                    color: #fff;
+                    display: inline-block;
+                    margin-top: 25px;
+                    position: relative;
+                }
+                label {
+                    width: 100%;
+                    display: inline-block;
+                    color: #323232;
+                    font: normal 24px/1.2 $brand-font-light;
+                    margin-top: 19px;                   
+                    cursor: pointer;
+                }
+            }       
+            > .alert span:after{
+                content: '!';
+                font: normal 24px/33px $brand-font-bold;
+                background-color: $dash5;
+                width: 33px;
+                height: 33px;
+                display: inline-block;
+                border-radius: 50%;
+                position: absolute;
+                top: 1px;
+                right: 2px;
+            }    
+            > .badge:after {
+                content: 'START EARNING';
+                color: #5dbeb0;
+                background: #555;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+                position: absolute;
+                width: 218px;
+                height: 40px;
+                font: normal 18px/40px $brand-font;
+                right: -45px;
+                top: 43px;
+ 
+            }
+    }
+     
+    > ul {
+        > li.active,
+        > li:hover  {
+        span{
+            background: #fff;
+            color: #999;
+            }
+            label{
+            color: #fff;
+            }
+        }
+         
+        > [id$=depositCredits].active,
+        > [id$=depositCredits]:hover {
+            @include linear-gradient(40deg, $dash6 0%, #0071c7 100%);
+             
+        }
+        > [id$=weeksOnHold].active,
+        > [id$=weeksOnHold]:hover {
+            @include linear-gradient(68deg, #1691d5 0%, #0a51b6 100%);
+     
+        }
+        > [id$=myMessages].active,
+        > [id$=myMessages]:hover {
+            @include linear-gradient(47deg, #0068c2 0%, #4f38a0 100%);
+             
+        }
+        > [id$=daeRewards].active,
+        > [id$=daeRewards]:hover {
+            @include linear-gradient(45deg, #4f38a0 28%, #882892 100%);
+             
+        }
+    }
+    [id$=walletContent] {
+        .close-row {
+            position: relative;
+            height: 80px;
+                .icon-close-empty {
+                font-size: 45px;
+                position: absolute;
+                right: 0;
+                top: 20px;
+            }
+        }
+         
+        > div{
+        display: none;
+        }
+ 
+    [id$=Content] {
+        padding: 0 48px 136px;
+        border-top: 3px solid #fff;
+        font: normal 21px/25px $brand-font-light;
+            .head, label {
+                font: normal 14px/40px $brand-font;
+            }
+            label {
+            color: #fff;
+            width: 100%;
+            display: inline-block;
+            text-transform: uppercase;
+            }
+        .row  {
+            max-width: 100%;
+            > div {
+            min-width: 70px;
+            }
+            .col1 {
+                position: relative;
+                 
+            }
+            .col1, .col3, {
+                width: 100px;
+            }
+             
+             
+            &.head {
+            height: auto;
+            }   
+            &.entry [class^=col] {
+            padding-bottom: 16px;
+            }
+             
+            @media (min-width: 1024px) {
+                label {
+                display: none;
+                }
+                .col2 {
+                flex: 3 1 auto;
+            }   
+            .col4 {
+                width: 70px;
+            }
+            .col5 {
+                width: 134px;
+            }
+            .col6 {
+                width: 90px;
+            }
+             
+             
+             
+            }
+            @media (max-width: 1023px) {
+            .col2 {
+                order: 6;
+                width: 100%;
+                 margin-bottom: 48px;
+                 
+            }
+            &.head {
+            height: auto;
+            display: none;
+            text-transform: uppercase;
+            }   
+            }
+             
+             
+        } /*.row*/
+        .alert-row {
+            .col1:before {
+                content: '!';
+                font: normal 24px/33px $brand-font;
+                background-color: $dash5;
+                width: 33px;
+                height: 33px;
+                display: inline-block;
+                border-radius: 50%;
+                position: absolute;
+                top: -4px;
+                left: -45px;
+                text-align: center;
+            }
+            .col6 span {
+                background: $dash5;
+                font: normal 14px/28px $brand-font;
+                padding: 0 18px;
+                display: inline-block;
+            }
+        }
+    }/*[id$=depositCreditsContent]*/
+ 
+ 
+/* Blocks fitting responsive */
+    @media (min-width: 760px) {
+        ul {
+        &.row {
+            padding: 0;
+        }
+        > li {
+            margin-bottom: 10px;
+        }   
+        }
+    }
+    @media (min-width: 1107px) {
+        ul > li {
+        width: 259px;
+        }
+        [id$=depositCreditsContent] .row.entry .col1,
+        [id$=depositCreditsContent] .row.entry .col3 {
+        width: 134px;
+        }
+        [id$=depositCreditsContent] .row.entry .col5 {
+                width: 400px;
+            }
+        [id$=depositCreditsContent] .row.entry .col5 {
+                width: 200px;
+            }
+    }
+    @media (min-device-width: 768px) and (orientation: landscape) {
+    ul > li {
+        -webkit-flex: 0 1 24%;
+        flex: 0 1 24%;
+        }
+         
+    }   
+     
+     
+    @media (min-device-width: 667px) and (orientation: landscape) {
+        ul.row {
+            -weblit-justify-content: space-around;
+            justify-content: space-around;
+         > li {
+            -webkit-flex: 24%;
+            flex: 24%;
+            margin: 0 .5%;
+            }
+            [id$=depositCreditsContent] .row .col2 {
+            -webkit-flex: 224px;
+            flex: 224px;
+            }
+        }   
+    }   
+    @media (min-device-width: 767px) and (orientation: portrait) {
+        ul.row {
+             
+         > li {
+            -webkit-flex: 24%;
+            flex: 24%;
+            margin: 0 .5%;
+            }
+            [id$=depositCreditsContent] .row .col2 {
+            -webkit-flex: 224px;
+            flex: 224px;
+            }
+        }   
+    }   
+    @media (max-device-width: 736px) and (orientation: portrait) {
+        ul.row {
+            -webkit-justify-content: center;
+            justify-content: center;
+         > li {
+             
+            }
+             
+        }   
+    }
+     
+    } /* End walletContent */  
+             
+}/* End memberWallet */

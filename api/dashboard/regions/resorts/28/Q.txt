@@ -1,0 +1,15 @@
+<option value="">Select a Destination</option>
+<option value="Airlie Beach">Airlie Beach</option>
+<option value="Brisbane"> Brisbane</option>
+<option value="Bundaberg"> Bundaberg</option>
+<option value="Cairns"> Cairns</option>
+<option value="Gold Coast">Gold Coast</option>
+<option value="Hervey Bay">Hervey Bay</option>
+<option value="Mackay"> Mackay</option>
+<option value="Magnetic Island">Magnetic Island</option>
+<option value="Moreton Island">Moreton Island</option>
+<option value="Noosa">Noosa</option>
+<option value="NSW Border">NSW Border</option>
+<option value="Palm Cove">Palm Cove</option>
+<option value="Port Douglas">Port Douglas</option>
+<option value="Sunshine Coast">Sunshine Coast</option>

@@ -1,0 +1,35 @@
+{
+  "Q28": {
+    "EndpointID": "AUS",
+	"ResortID": "CASC",
+    "area": "Caloundra Sunshine Coast",
+    "collection": "Beach",
+	"country": "Australia",
+	"region": "Queensland",
+	"cid": "28",
+	"code": "Q",
+	"property":"Pacific View Resort",
+	"PropertyID":"PACV",
+	"availability": "cabo.html",
+    "excerpt": "Pristine coastline, lush hinterland, superb cuisine, action and adventure or just the perfect piece of sand on which to sit and ponder. ",
+	"text": "<p>Pacific View Timeshare Resort is located on Caloundra's picturesque Wickham Point, neatly tucked between the family haven of Kings Beach and Shelly Beach. Featuring stunning ocean views south to Bribie Island and across the Pacific Ocean to the great sand dunes of Moreton Island.</p><p>Just one hour from Brisbane, Caloundra is the southern gateway to the Sunshine Coast, and is said to mean ‘the beautiful place' in the language of the Aboriginal people who lived there. It is very popular with families with plenty of places youngsters can swim safely and good surf for mum and dad.</p><p>The Sunshine Coast is a popular destination and the coastline from Bribie Island, Caloundra, Maroochydore, Mooloolaba, Coolum through to Noosa Head is world class, with panoramic seascapes and inviting shorelines for surfing, sports or just lazing on the beach.</p><p>Pacific View Timeshare Resort comprises 30 two-bedroom units, each with a full kitchen, bathroom, LCD television and DVD player, wireless internet facilities, direct dial telephone, microwave, dishwasher, washing machine and dryer.</p><p>Water views are plentiful, whether ocean or the resort pool. Located&nbsp;over three wings,&nbsp;avid ocean viewers&nbsp;will enjoy the spectacular view from the waterfront units providing the opportunity to watch the great ships and ocean liners glide their way through the channel.</p><p>The units are compact, but bright and comfortable, and feature a balcony overlooking either the pool or ocean, or a private courtyard where you can enjoy the sea breezes while enjoying a ‘sundowner'.</p><p>Pacific View Timeshare Resort offers facilities that allow guests who simply wish to relax to enjoy their total holiday within the tropical resort grounds.</p><p>Savour the glorious Queensland weather and sun yourself by the large solar heated swimming pool and surrounding area. Or soak yourself in the outdoor heated spa, or one of two saunas.</p><p>Dine ‘al fresco' at the outdoor covered barbeque area, located alongside the communal Recreation Lounge.</p><p>When more energy is on offer, there's half court tennis - brilliant for the kids and family to enjoy together, or the large recreation lounge which provides table tennis, television and a fun environment for&nbsp;entertainment.</p><p>A mini library and lounges ensure there are alternative places for peace and quiet to access within the resort.</p><p>Activities close by include boating, fishing, sailing, swimming, water skiing, water slides, squash, tennis, golf, croquet and bowls.</p><p>For the surfers, Kings, Dicky and Kawana beaches are the spots to hit when you want to catch the waves. For a relaxing stroll, try areas such as Shelly Beach, Moffat Beach or Lake Currimundi for picnics and safe swimming for the children.</p><p>Caloundra has many good restaurants some located at Kings Beach &amp; Bullcock beach , with many attractions a short drive - Australia Zoo, The Ginger Factory, Mooloolaba Beach, Noosa Heads, Underwater World, Sunshine Plaza at Maroochydore and Kawana Waters which are a large shopping centres and ideal for a spot of retail therapy.</p><p>For evening entertainment, the resort is walking distance to a great selection of local clubs, pubs, restaurants and cafes.</p><p>A stay at Pacific View puts you at the centre of everything this wonderful area has to offer and it is the ideal choice for a laid back getaway.</p>",
+      "image": "images/destinations/thumbs/australia/queensland/australia_1.jpg",
+	  "resort": [{
+			"image": "<img src='images/resorts/pacific_view/photo_1-large.jpg' alt='Some alt description' />"
+			
+		}, {
+			
+			"image": "<img src='images/resorts/pacific_view/photo_1.jpg' alt='Some alt description'>"
+		}, {
+			"image": "<img src='images/resorts/pacific_view/photo_2.jpg' alt='Some alt description' />"
+		}, {
+			"image": "<img src='images/resorts/pacific_view/photo_3.jpg' alt='Some alt description' />"
+		}, {
+			"image": "<img src='images/resorts/pacific_view/photo_4.jpg' alt='Some alt description' />"
+			
+		}, {
+			"image": "<img src='images/resorts/pacific_view/photo_5.jpg' alt='Some alt description' />"
+		}, {
+			"image": "<img src='images/resorts/pacific_view/photo_6v.jpg' alt='Some alt description' data-video='TP-LNEU9tWw' />"
+		}]
+  }

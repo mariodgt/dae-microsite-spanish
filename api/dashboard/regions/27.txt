@@ -1,0 +1,15 @@
+<option value="">Select a Region</option>
+<option value="C">China</option>
+<option value="F">Hong Kong</option>
+<option value="G">India</option>
+<option value="B">Indonesia</option>
+<option value="J">Japan</option>
+<option value="M">Malaysia</option>
+<option value="N">Nepal</option>
+<option value="D">Pakistan</option>
+<option value="P">Philippines</option>
+<option value="S">Singapore</option>
+<option value="E">South Korea</option>
+<option value="H">Sri Lanka</option>
+<option value="K">Taiwan</option>
+<option value="T">Thailand</option>

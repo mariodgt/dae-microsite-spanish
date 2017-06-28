@@ -1,0 +1,490 @@
+/**
+ *
+ * slippry v1.3.1 - Responsive content slider for jQuery
+ * http://slippry.com
+ *
+ * Authors: Lukas Jakob Hafner - @saftsaak
+ *          Thomas Hurd - @SeenNotHurd
+ *
+ * Copyright 2015, booncon oy - http://booncon.com
+ *
+ *
+ * Released under the MIT license - http://opensource.org/licenses/MIT
+ */
+/* kenBurns animations, very basic */
+
+/* THIS CSS IS HIGHLY MODIFIED FROM OURIGINAL PLUGIN! DO NOT REPLACE!*/
+@-webkit-keyframes left-right {
+  0% {
+    -moz-transform: translateY(-20%) translateX(-10%);
+    -ms-transform: translateY(-20%) translateX(-10%);
+    -webkit-transform: translateY(-20%) translateX(-10%);
+    transform: translateY(-20%) translateX(-10%); }
+  100% {
+    -moz-transform: translateY(0%) translateX(10%);
+    -ms-transform: translateY(0%) translateX(10%);
+    -webkit-transform: translateY(0%) translateX(10%);
+    transform: translateY(0%) translateX(10%); } }
+@-moz-keyframes left-right {
+  0% {
+    -moz-transform: translateY(-20%) translateX(-10%);
+    -ms-transform: translateY(-20%) translateX(-10%);
+    -webkit-transform: translateY(-20%) translateX(-10%);
+    transform: translateY(-20%) translateX(-10%); }
+  100% {
+    -moz-transform: translateY(0%) translateX(10%);
+    -ms-transform: translateY(0%) translateX(10%);
+    -webkit-transform: translateY(0%) translateX(10%);
+    transform: translateY(0%) translateX(10%); } }
+@-ms-keyframes left-right {
+  0% {
+    -moz-transform: translateY(-20%) translateX(-10%);
+    -ms-transform: translateY(-20%) translateX(-10%);
+    -webkit-transform: translateY(-20%) translateX(-10%);
+    transform: translateY(-20%) translateX(-10%); }
+  100% {
+    -moz-transform: translateY(0%) translateX(10%);
+    -ms-transform: translateY(0%) translateX(10%);
+    -webkit-transform: translateY(0%) translateX(10%);
+    transform: translateY(0%) translateX(10%); } }
+@keyframes left-right {
+  0% {
+    -moz-transform: translateY(-20%) translateX(-10%);
+    -ms-transform: translateY(-20%) translateX(-10%);
+    -webkit-transform: translateY(-20%) translateX(-10%);
+    transform: translateY(-20%) translateX(-10%); }
+  100% {
+    -moz-transform: translateY(0%) translateX(10%);
+    -ms-transform: translateY(0%) translateX(10%);
+    -webkit-transform: translateY(0%) translateX(10%);
+    transform: translateY(0%) translateX(10%); } }
+@-webkit-keyframes right-left {
+  0% {
+    -moz-transform: translateY(0%) translateX(10%);
+    -ms-transform: translateY(0%) translateX(10%);
+    -webkit-transform: translateY(0%) translateX(10%);
+    transform: translateY(0%) translateX(10%); }
+  100% {
+    -moz-transform: translateY(-20%) translateX(-10%);
+    -ms-transform: translateY(-20%) translateX(-10%);
+    -webkit-transform: translateY(-20%) translateX(-10%);
+    transform: translateY(-20%) translateX(-10%); } }
+@-moz-keyframes right-left {
+  0% {
+    -moz-transform: translateY(0%) translateX(10%);
+    -ms-transform: translateY(0%) translateX(10%);
+    -webkit-transform: translateY(0%) translateX(10%);
+    transform: translateY(0%) translateX(10%); }
+  100% {
+    -moz-transform: translateY(-20%) translateX(-10%);
+    -ms-transform: translateY(-20%) translateX(-10%);
+    -webkit-transform: translateY(-20%) translateX(-10%);
+    transform: translateY(-20%) translateX(-10%); } }
+@-ms-keyframes right-left {
+  0% {
+    -moz-transform: translateY(0%) translateX(10%);
+    -ms-transform: translateY(0%) translateX(10%);
+    -webkit-transform: translateY(0%) translateX(10%);
+    transform: translateY(0%) translateX(10%); }
+  100% {
+    -moz-transform: translateY(-20%) translateX(-10%);
+    -ms-transform: translateY(-20%) translateX(-10%);
+    -webkit-transform: translateY(-20%) translateX(-10%);
+    transform: translateY(-20%) translateX(-10%); } }
+@keyframes right-left {
+  0% {
+    -moz-transform: translateY(0%) translateX(10%);
+    -ms-transform: translateY(0%) translateX(10%);
+    -webkit-transform: translateY(0%) translateX(10%);
+    transform: translateY(0%) translateX(10%); }
+  100% {
+    -moz-transform: translateY(-20%) translateX(-10%);
+    -ms-transform: translateY(-20%) translateX(-10%);
+    -webkit-transform: translateY(-20%) translateX(-10%);
+    transform: translateY(-20%) translateX(-10%); } }
+/* added to the original element calling slippry */
+
+.sy-box {
+	width: 100%;
+	overflow: hidden;
+	}
+	
+	[id$=testimonialsWrapper] .sy-box{
+		overflow: visible;
+		}
+.sy-box.sy-loading {
+  background: url("images/sy-loader.gif") 50% 50% no-repeat;
+  -moz-background-size: 32px;
+  -o-background-size: 32px;
+  -webkit-background-size: 32px;
+  background-size: 32px;
+  min-height: 40px; }
+  .sy-box.sy-loading .sy-slides-wrap, .sy-box.sy-loading .sy-pager {
+    visibility: hidden; }
+
+/* element that wraps the slides */
+.sy-slides-wrap {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+  .sy-slides-wrap .sy-controls {
+    display: block; }
+
+/* element that crops the visible area to the slides */
+.sy-slides-crop {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden; }
+
+/* list containing the slides */
+.sy-list {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute; }
+  .sy-list.horizontal {
+    -moz-transition: left ease;
+    -o-transition: left ease;
+    -webkit-transition: left ease;
+    transition: left ease; }
+  .sy-list.vertical {
+    -moz-transition: top ease;
+    -o-transition: top ease;
+    -webkit-transition: top ease;
+    transition: top ease; }
+
+/* single slide */
+.sy-slide {
+  position: absolute;
+  width: 100%;
+  z-index: 2; }
+  .sy-slide.kenburns {
+    width: 140%;
+    left: -20%; }
+    .sy-slide.kenburns.useCSS {
+      -moz-transition-property: opacity;
+      -o-transition-property: opacity;
+      -webkit-transition-property: opacity;
+      transition-property: opacity; }
+      .sy-slide.kenburns.useCSS.sy-ken:nth-child(1n) {
+        -webkit-animation-name: left-right;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-name: left-right;
+        -moz-animation-fill-mode: forwards;
+        -o-animation-name: left-right;
+        -o-animation-fill-mode: forwards;
+        animation-name: left-right;
+        animation-fill-mode: forwards; }
+      .sy-slide.kenburns.useCSS.sy-ken:nth-child(2n) {
+        -webkit-animation-name: right-left;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-name: right-left;
+        -moz-animation-fill-mode: forwards;
+        -o-animation-name: right-left;
+        -o-animation-fill-mode: forwards;
+        animation-name: right-left;
+        animation-fill-mode: forwards; }
+  .sy-slide.sy-active {
+    z-index: 3; }
+  .sy-slide > img {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    border: 0; }
+  .sy-slide > a {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%; }
+    .sy-slide > a > img {
+      margin: 0;
+      padding: 0;
+      display: block;
+      width: 100%;
+      border: 0; }
+
+/* next/ prev buttons, with arrows and clickable area a lot larger than the visible buttons */
+.sy-controls {
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding: 0;
+  margin: 0; }
+  .sy-controls li {
+    position: absolute;
+    width: 10%;
+    min-width: 4.2em;
+    height: 100%;
+    z-index: 33; }
+    .sy-controls li.sy-prev {
+      left: 0;
+      top: 0; }
+      
+    .sy-controls li.sy-next {
+      right: 0;
+      top: 0; }
+      
+    .sy-controls li a {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-indent: -9999px; }
+      .sy-controls li a:link, .sy-controls li a:visited {
+        opacity: 0.4; }
+      .sy-controls li a:hover, .sy-controls li a:focus {
+        opacity: 0.8;
+        outline: none; }
+		
+ .sy-controls li a:after {
+    content: "\e811";
+    text-align: center;
+    text-indent: 0;
+    line-height: 2.8em;
+    color: #111;
+    position: absolute;
+    width: 2.8em;
+    height: 2.8em;
+    left: 50%;
+    top: 50%;
+    margin-top: -1.4em;
+    margin-left: -1.4em;
+    -moz-border-radius: 50%;
+    color: #fff;
+    font-family: dae;
+    font-size: 60px;
+}
+.sy-controls .sy-prev a:after {
+    content: "\e810";
+		}
+  @media only screen and (max-device-width: 600px) {
+    .sy-controls {
+      display: block; }
+      .sy-controls li {
+        min-width: 2.1em; }
+        .sy-controls li a:after {
+          width: 1.4em;
+			height: 100%;
+			margin-top: -0.7em;
+			margin-left: -0.7em;
+			line-height: 100%;
+			font-size: 40px;
+			 } 
+		  
+		  
+		  
+		  }
+
+/* captions, styled fo the overlay variant */
+.sy-caption-wrap {
+  position: absolute;
+    top: 0;
+    z-index: 12;
+    left: 0;
+    width: 100%;
+	display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+	 }
+
+
+.sy-caption-wrap .sy-caption {
+    position: relative;
+    font-size: 4vw;
+    margin: 0 10vw;
+    width: 80vw;
+    color: #fff;
+	line-height: 1em;
+	text-align:center;
+	display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+		  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+		   -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+.sy-caption-wrap .sy-caption small{
+	font: normal .85em/.9 Korolev-light, sans-serif;
+    width: 100%;
+    display: inline-block;
+	}
+
+
+.sy-caption .button {
+    margin-top: 37px;
+    width: auto;
+    font-size: 18px;
+}
+	
+	
+	
+   
+  @media only screen and (max-device-width: 600px), screen and (max-width: 600px) {
+    .sy-caption-wrap {
+      left: 0;
+      bottom: 0.4em; }
+	  
+	.sy-caption-wrap .sy-caption {
+		left: 0;
+		padding: 1em 0;
+		font-size: 6vw;
+	}
+	
+	.sy-caption-wrap .sy-caption span{
+		font-size: 4vw;
+		line-height: normal;
+		max-width:60vw;
+	}
+	.static-banner .sy-caption-wrap .sy-caption {
+		font-size: 8vw;
+		width:100vw;
+	}
+	.static-banner .sy-caption-wrap .sy-caption span {
+  font-size: 4vw;
+}
+.sy-caption .button {
+    margin-top: 18px;
+}
+}/* @media max-width 600px*/
+
+/* pager bubbles */
+
+.sy-pager {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    margin: 0em 0 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    z-index: 3;
+    position: relative;
+    top: -30px;
+}
+  .sy-pager li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 6px 0 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; }
+    .sy-pager li.sy-active a {
+      background-color: #0095da; }
+    .sy-pager li a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: #fff;
+      text-indent: -9999px;
+      -moz-background-size: 12px;
+      -o-background-size: 12px;
+      -webkit-background-size: 12px;
+      background-size: 12px;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%; }
+      .sy-pager li a:link, .sy-pager li a:visited {
+        opacity: 1.0; }
+      .sy-pager li a:hover, .sy-pager li a:focus {
+        opacity: 0.6; }
+
+/* element to "keep/ fill" the space of the content, gets intrinsic height via js */
+.sy-filler {
+  width: 100%; }
+  .sy-filler.ready {
+    -moz-transition: padding 600ms ease;
+    -o-transition: padding 600ms ease;
+    -webkit-transition: padding 600ms ease;
+    transition: padding 600ms ease; }
+	
+	@media screen and (min-width: 766px) {
+  
+			
+		.sy-caption-wrap .sy-caption {
+			margin: auto auto;
+    width: 80vw;
+    font-size: 45px;
+    text-align: center;
+    max-width: 1104px;
+	    -webkit-align-self: flex-end;
+    -ms-flex-item-align: flex-end;
+    align-self: flex-end;
+		}
+		.sy-caption-wrap .sy-caption small {
+    font-size: 22px;
+}
+		.static-slider .sy-caption-wrap .sy-caption {
+			/*bottom: 40%*/
+		}
+		.sy-caption-wrap .sy-caption span {
+			font-size: 22px;
+			display: inline-block;
+			/*height: 70%;*/
+    display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+    -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -webkit-flex-pack: end;
+  -ms-flex-pack: end;
+  -moz-justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+		}
+	}
+	
+	
+	@media (max-width: 37.5em) and (orientation: portrait) {
+		.static-slider .sy-slides-wrap{
+		    max-height: 20vh;
+		}
+	.sy-slide > img {
+		margin: 0;
+		padding: 0;
+		display: block;
+		width: 100%;
+		border: 0;
+		height: 40vh;
+		width: auto;
+		margin-left: -50vw;
+	}
+	.sy-box .sy-controls li a,.sy-box .sy-controls li a:hover, .sy-box .sy-controls li a:focus {
+			opacity: 0;
+		}
+    
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .sy-caption .button {
+    margin-top: 18px;
+    }
+    .sy-caption-wrap .sy-caption span {
+    margin-top: 12px;
+    }
+    .sy-caption-wrap .sy-caption {
+    /*bottom: 10%;*/
+  }
+}
+
+
+
+

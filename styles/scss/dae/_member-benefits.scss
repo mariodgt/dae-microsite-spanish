@@ -1,0 +1,225 @@
+[id=pageTabs] [id$=TabContent] > .inner-wrapper {
+	
+	margin-top: 0;
+}
+
+#exchangeTabContent {
+	.button.large {
+		font-size: 22px;
+		@include breakpoint(phone-p) {
+		font-size: 20px;
+		}
+    	width: 300px;
+	}
+	.narrow {
+		max-width: 800px;
+
+	}
+	.row.center {
+		max-width: 92vw;
+	}
+	.video iframe{
+		width: 394px;
+		height: 222px;
+		max-width: 100%;
+		margin: 72px auto;
+	}
+	.intro-text{
+		margin-top: 26px;
+		a:any-link {
+			color: $brand-color;//iphone reset
+		}
+	}
+
+	.button-line {
+		padding: 70px 0;
+	}
+}
+
+#theResortsContent {
+	padding-top: 50px;
+	padding-bottom: 46px;
+	.flex {
+		@include flex-flow(row, wrap);
+	}
+	.col {
+		width: 100%;
+		
+		@include breakpoint(tablet) {
+			max-width: 46%;
+		}
+		@include breakpoint(desktop) {
+			max-width: 383px;
+			}
+		@include breakpoint(phone-p) {
+			    -webkit-flex-basis: 100%;
+			    flex-basis: 100%;
+			    &:first-child {
+			    margin-bottom: 4rem;
+			    }
+			}
+
+		}
+	#mapStats {
+		background: url(images/bg-the-resorts.png) no-repeat 50% 0/contain;
+			font: normal 45px/40px 'KorolevCondensed-Light', sans-serif;
+			@include breakpoint(tablet) {
+			font-size: 55px;
+			line-height: 50px;
+			padding-bottom: 80px;
+		}
+			ul {
+				text-align: right;
+				padding-right: 64px;
+				padding-top: 100px;
+			}
+	
+	}
+	.button-line {
+		@include justify-content(flex-start);
+		padding: 0;
+		li {
+			margin-left: 0;
+			margin-bottom: 12px;
+		}
+	}
+}	
+
+#sendAFriendContent,#registerBankGoContent,#upgradesContent,#cancellationProtectionContent,#lowFeesContent {
+	padding: 85px 0 58px;
+	.callout {
+		margin-top: -36px;
+		margin-bottom: 54px;
+		p:before {
+			margin-right: 40px;
+		}
+	}
+
+}
+
+
+
+#registerBankGoContent {
+ .intro-text {
+ 	margin-bottom: 6px;
+	a {
+		color: $brand-color;
+		text-decoration: underline;
+	}
+ }
+ .button-line{ 
+ 	margin-bottom: 22px;
+	}
+}
+
+.upgrade {
+	@include align-items(center);
+	padding-bottom: 34px;
+	span {
+		font-size: 30px;
+		padding: 22px;
+		width: auto;
+		@include breakpoint(phone) {
+			width: 100%;
+		}
+	}
+}
+#cancellationProtectionContent {
+}
+
+#lowFeesContent {
+	.total-block {
+		@include justify-content(space-around);
+		@include align-items(center);
+		margin-bottom: 66px;
+		@include breakpoint(phone-p) { 
+			-webkit-flex-flow: column wrap;
+			-ms-flex-flow: column wrap;
+			flex-flow: column wrap;
+		}
+	p {
+		width: auto;
+		display: inline-block;
+		}
+	.divider {
+		&:after {
+			content: '/';
+			font: normal 150px/1 $brand-font-thin;
+			top: 0;
+			@include breakpoint(phone-p) { 
+				content: '';
+			}
+		}
+	}/* .divider */
+		.price {
+			font: normal 100px/52% $brand-font-condensed-light;
+			text-align: center;
+			margin-top: -3px;
+			@include breakpoint(phone-p) { 
+				border-top: solid 1px #fff;
+				margin-top: 20px;
+				padding-top: 10px;
+			}
+			.h4 {
+				font-size: 22px;
+				color: #fff;
+				position: relative;
+    			top: -24px;
+				line-height: 0;
+			}
+			sup {
+				font-size: 40px;
+				top: -8px;
+				position: relative;
+			}
+			.usd {
+				font-size: 22px;
+			}
+			
+		} /* .price */
+	} /* .total-block */
+	small {
+		margin-top: 6px;
+		font: normal 16px/18px $brand-font-light;
+	}
+} /* #lowFeesContent */
+
+
+
+#registerBankGoContent {
+	.header-row.tight {
+		margin-bottom: -20px;
+	}
+	.callout {
+		margin-top: 75px;
+	}
+	@include breakpoint(phone-p) {
+		.form-column .row {
+		padding: 0;
+		}
+		.long .input-field, .long .sub-label {
+		    max-width: 80%;
+		}
+		.input-field label,.select-wrapper input.select-dropdown {
+			font-size:18px;
+		}
+	}
+
+}
+
+#content-discounts3 {
+	.check-list {
+		margin-bottom: 60px;
+	}
+	.note {
+		margin-bottom: 40px;
+	}
+}
+#content-discounts4 {
+    padding-bottom: 0;
+}
+
+#rewardsTableTabs {
+    margin-bottom: 36px;
+    padding-top: 0;
+}

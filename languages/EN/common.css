@@ -1,0 +1,12 @@
+.svg [id$=taglineBar] {
+	background: #06a2d6 url(images/footer-tag.svg) no-repeat 50% 50%;
+    height: 47px;
+    border-top: solid 10px #06a2d6;
+    border-bottom: solid 10px #06a2d6;
+    box-sizing: content-box;
+	}
+	
+	.no-svg [id$=taglineBar] {
+	background: #06a2d6 url(../../styles/footer-tag.png) no-repeat 50% 50%;
+	height: 67px;
+	}

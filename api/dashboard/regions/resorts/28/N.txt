@@ -1,0 +1,9 @@
+<option value="">Select a Destination</option>
+<option value="New South Wales">New South Wales</option>
+<option value="Batemans Bay">Batemans Bay</option>
+<option value=">Coffs Harbour">Coffs Harbour</option>
+<option value="Lake Macquarie">Lake Macquarie</option>
+<option value="Nelson Bay">Nelson Bay</option>
+<option value="Port Macquarie">Port Macquarie</option>
+<option value="Yamba">Yamba</option>
+<option value="Forster - Tuncurry">Forster - Tuncurry</option>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html class="no-js"><head>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Timeshares & Time Share Exchange Service-DAELive.com</title>
+
+
+<!-- ICONS FOR DEVICES -->
+
+
+<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+<!--    STYLESHEETS    -->
+
+<link rel='stylesheet' type='text/css' href='styles/slippry.css' />
+<link rel='stylesheet' type='text/css' href='styles/dae.css' />
+
+
+<!--[if lte IE 10]>
+<link rel='stylesheet' type='text/css' href='languages/common/ie-shim.css' />
+<script type='text/javascript' src='js/ie-shim.js'></script>
+<!-- <![endif]-->
+
+<!--      SCRIPTS      -->
+
+<script type='text/javascript' src='js/modernizr-custom.js'></script>
+<script type='text/javascript' src='js/jquery-1.10.2.min.js'></script>
+<script type='text/javascript' src='js/materialize.custom.min.js'></script>
+
+<script type='text/javascript' src='js/custom.js'></script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+
+<meta name="description" content="We offer our members both an international and domestic time share exchange service. We also provide our clients with an extensive selection of timeshares from across the globe." />
+<meta name="keywords" content="timeshare, time shares, timeshare exchange, timeshare exchange service, time share exchanges, timeshare exchange service, timeshare resorts"/>
+</head>
+
+
+<!--      BEGIN PAGE & ID     -->
+
+<body id="dashboardSearchPage">
+
+
+<!--      ASP.NET FORM PLACEHOLDER     -->
+
+<form method="post" action="./" id="aspnetForm"  >
+
+<input type="checkbox" id="offCanvasNav" />
+<div id="container">
+
+
+<!--      HEADER BAR      -->
+
+<header>
+<div id="headerInner">
+
+<div id="headerLeft">
+<div id="siteLogo">
+<img src="images/dae_logo_white.svg" alt="DAE" height="53" width="100" />
+</div><!--/#siteLogo -->
+
+</div><!--/#headerLeft -->
+
+
+<!--      MENU      -->
+
+<nav>
+<ul>
+<li><a href="benefits.html">Member Benefits </a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="join.html">Join for Free</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+
+<div id="headerRight">
+<div id="languageSelector" class="dd-proxy-trigger">
+<span>EN</span>
+    <ul id="languageList" class="dd-proxy" data-target="#languageListDD">
+    	<li data-lang="EN" class="selected">English</li>
+        <li data-lang="TH">Thai</li>
+        <li data-lang="ZH">Chinese</li>
+        <li data-lang="AR">Arabic</li>
+        <li data-lang="ES">Spanish</li>
+     </ul>
+     <!--This select is hidden. The list above changes its values-->
+	<select id="languageListDD" class="replaced">
+	<option selected="selected" value="EN">English</option>
+	<option value="TH">Thai</option>
+	<option value="ZH">Chinese</option>
+	<option value="AR">Arabic</option>
+	<option value="ES">Spanish</option>
+	</select>
+</div><!--/#languageSelector -->
+
+<!--LOGIN buttin and LOGIN Flyout -->
+<!--checkbox hides/shows login flyout w/o JS -->
+<input id="loginFlyoutTrigger" type="checkbox" style="display: none" />
+<div id="headerLogin">
+<label for="loginFlyoutTrigger" class="button ghost light small">LOGIN</label>
+
+<div id="loginFlyout" class="light">
+<div class="inner-wrapper">
+<h3 class="h1 alt">Login</h3>
+<div class="row">
+<div class="grid-1-2">
+<div class="input-field">
+          <input id="memberID" type="text"  autocomplete="off">
+          <label for="memberID">Email or Member #</label>
+        </div>    
+
+<p>Don't have an account? <a href="#"><u>Sign Up</u></a></p>
+</div><!--/.grid-1-2 -->
+<div class="grid-1-2">
+<div class="input-field">
+<input type="password" name="memberPW" autocomplete="off" />
+<label for="memberPW">Password</label>
+</div>
+<p><a href="#">Forgot password?</a></p>
+</div><!--/.grid-1-2 -->
+</div><!--/.row -->
+<div class="row">
+<div class="grid-1-2 end flex center-v">
+<div class="check">
+<input type="checkbox" id="rememberMe" name="rememberMe" checked />
+<label for="rememberMe">Remember me</label> 
+<!-- DEV NOTE: label MUST have a "for" attribute for checkbox replacement to work. 
+ASP.NET code: <asp:label AssociatedControlId="rememberMe" runat="server" ... />
+This will keep the names the same when ASP rewites the control names and IDs.
+-->
+
+</div><!--/.check -->
+
+<input type="submit" class="button ghost medium" value="GO" />
+</div><!--/.grid-1-2 -->
+
+</div><!--/.row -->
+
+<div class="row">
+<div class="or">OR</div>
+</div><!--/.row -->
+
+<div class="row">
+<div class="grid-1-2">
+<a href="#" class="icon-facebook button social ghost large">Login with Facebook</a>
+</div><!--/.grid-1-2 -->
+
+<div class="grid-1-2">
+<a href="#" class="icon-googleplus button social ghost large">Login with Google+</a>
+</div><!--/.grid-1-2 -->
+
+</div><!--/.row -->
+
+
+</div><!--/.inner-wrapper -->
+</div><!--/#loginFlyout -->
+
+
+</div><!--/#headerLogin -->
+<!--/LOGIN buttin and LOGIN Flyout -->
+
+<label class="icon-menu ir" for="offCanvasNav">Menu</label>
+</div><!--/#headerRight -->
+
+
+
+</div><!--/#headerInner -->
+</header>
+
+
+<!--      CONTENT WRAPPER     -->
+
+
+<div id="contentWrapper" class="static-slider">
+
+
+<!--     TOP SLIDER      -->
+
+
+<div id="headerBanner">
+	<ul>
+    	<li>
+            <label>NAME</label>
+            <span>Francis Taylor</span>
+        </li>
+        <li>
+            <label>MEMBER NUMBER</label>
+            <span>541689</span>
+        </li>
+        <li>
+            <label>MY REGION</label>
+            <span>Nor/Cen/Sou America</span>
+        </li>
+        <li class="icon-profile">My Profile</li>
+    
+    
+    </ul>
+     
+  </div><!--/#headerBanner -->
+  
+
+<div id="customMatchGrid" class="hold">
+<div class="row sr-grid"> 
+<h1 class="h3 row">YOUR MATCH RESULTS FOR:</h1>
+<dl class="match-block">
+<dt class="c">Australia/Queensland</dt>
+<dd><strong>2 Adults / 3 Children</strong></dd>
+<dt>Check-In date range:</dt>
+<dd><strong>Fri 17 Mar 2017 and Fri 24 Mar 2017</strong></dd>
+    </dl>
+</div>
+<div class="grid-holder">
+<div class="row sr-grid">  
+<ul class="list-boxes timeshares top-space">
+	<li>
+    <div>
+    <img src="images/destinations/australia/queensland/breakfree/thumb_1.jpg" width="259" height="180" alt="Ocean Reef Club" />
+    </div>
+    <div class="list-content">
+    	<div class="list-top">
+            <p>
+            Brisbane Fortitude Valley
+            <span>Brisbane, Queensland, AU</span>
+            </p>
+            <div><a href="detail.html" class="button medium ghost light">VIEW RESORT</a></div>
+    	</div>
+    	<div class="list-bottom icon-e">
+            <p><strong>5-12, November 2016</strong><br />
+            7 Night Exchange / $149<br />
+            1 Bedroom Deluxe Oceanfront / Sleeps 4
+        	</p>
+        <ul>
+        <li><a href="detail.html" class="button medium ghost light">BOOK</a></li>
+        </ul>
+        </div>
+    </div>
+    
+    
+    </li>
+  
+    
+</ul><!--/.list-boxes -->
+<h3 class="top-space bottom-space">Looking for more options? Below are some Rentals you might be interested in.</h2>
+<ul class="list-boxes rentals">
+    <li>
+    <div>
+    <img src="images/destinations/australia/queensland/breakfree/thumb_1.jpg" width="259" height="180" alt="Ocean Reef Club" />
+    </div>
+    <div class="list-content">
+        <div class="list-top">
+            <p>
+            Brisbane Fortitude Valley
+            <span>Brisbane, Queensland, AU</span>
+            </p>
+            <div><a href="detail.html" class="button medium ghost light">VIEW RESORT</a></div>
+        </div>
+        <div class="list-bottom icon-r">
+            <p><strong>5-12, November 2016</strong><br />
+            7 Night Exchange / $149<br />
+            1 Bedroom Deluxe Oceanfront / Sleeps 4
+            </p>
+        <ul>
+        <li><a href="detail.html" class="button medium ghost light">BOOK</a></li>
+        </ul>
+        </div>
+    </div>
+    
+    
+    </li>
+    <li>
+    <div>
+    <img src="images/destinations/australia/queensland/breakfree/thumb_1.jpg" width="259" height="180" alt="Ocean Reef Club" />
+    </div>
+    <div class="list-content">
+        <div class="list-top">
+            <p>
+            Brisbane Fortitude Valley
+            <span>Brisbane, Queensland, AU</span>
+            </p>
+            <div><a href="detail.html" class="button medium ghost light">VIEW RESORT</a></div>
+        </div>
+        <div class="list-bottom icon-r">
+            <p><strong>5-12, November 2016</strong><br />
+            7 Night Exchange / $149<br />
+            1 Bedroom Deluxe Oceanfront / Sleeps 4
+            </p>
+        <ul>
+        <li><a href="detail.html" class="button medium ghost light">BOOK</a></li>
+        </ul>
+        </div>
+    </div>
+    
+    
+    </li>
+    <li>
+    <div>
+    <img src="images/destinations/australia/queensland/breakfree/thumb_1.jpg" width="259" height="180" alt="Ocean Reef Club" />
+    </div>
+    <div class="list-content">
+        <div class="list-top">
+            <p>
+            Brisbane Fortitude Valley
+            <span>Brisbane, Queensland, AU</span>
+            </p>
+            <div><a href="detail.html" class="button medium ghost light">VIEW RESORT</a></div>
+        </div>
+        <div class="list-bottom icon-r">
+            <p><strong>5-12, November 2016</strong><br />
+            7 Night Exchange / $149<br />
+            1 Bedroom Deluxe Oceanfront / Sleeps 4
+            </p>
+        <ul>
+        <li><a href="detail.html" class="button medium ghost light">BOOK</a></li>
+        </ul>
+        </div>
+    </div>
+    
+    
+    </li>
+  
+    
+</ul><!--/.list-boxes -->
+</div><!--/.row /.sr-grid -->
+</div><!--/.row /.grid-holder -->
+
+
+
+
+</div><!--/#customMatchGrid / -->
+
+
+
+
+</div><!--/#contentWrapper -->
+
+
+
+
+
+
+
+<!--     FOOTER/COPYRIGHT     -->
+
+<div id="footer">
+<div id="footerInner">
+<div class="row m-accordion">
+<div class="footer-links">
+<h4>Member Benefits</h4>
+<ul>
+<li><a href="benefits.html">Explore Benefits</a></li>
+<li><a href="exchange.html">Exchange</a></li>
+<li><a href="discounts.html">Discounts</a></li>
+<li><a href="rewards.html">Rewards</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>Destinations</h4>
+<ul>
+<li><a href="destinations.html">Overview</a></li>
+<li><a href="search-destinations.html">Search Destinations</a></li>
+<li><a href="custom-request.html">Custom Request</a></li>
+<li><a href="trending.html">See What's Trending</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>Join for Free</h4>
+<ul>
+<li><a href="join.html">Get Started Now</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>About</h4>
+<ul>
+<li><a href="about.html">About DAE</a></li>
+<li><a href="company-overwiew.html">Company Overview</a></li>
+<li><a href="b2b.html">Business Solutions</a></li>
+</ul>
+</div>
+<div class="footer-links last">
+<h4>Contact</h4>
+<ul>
+<li><a href="contact.html">Get in Touch</a></li>
+<li><a href="contact-members.html">Owners/Members</a></li>
+<li><a href="contact-b2b.html">Business Solutions</a></li>
+</ul>
+</div>
+</div>
+<!--/.footer-links -->
+
+<div class="row">
+<div id="logoPhone">
+<div class="icon-dae_logo" itemprop="telephone"><a href="tel:+18004681799">800.468.1799</a></div>
+</div>
+<div id="footerSocial">
+<h5>Connect</h5>
+<ul>
+<li><a class="icon-facebook" href="https://www.facebook.com/daelive/" target="_blank"><span class="ir">Facebook</span></a></li>
+<li><a class="icon-twitter" href="https://twitter.com/dialanexchange" target="_blank"><span class="ir">Facebook</span></a></li>
+<li><a class="icon-linkedin" href="https://www.linkedin.com/company/dial-an-exchange_2" target="_blank"><span class="ir">Facebook</span></a></li>
+
+</ul>
+
+</div>
+</div>
+
+<div class="row">
+<ul id="footerLowerLinks">
+<li><a href="privacy.html">Privacy Policy</a></li>
+<li><a href="privacy.html">Terms & Conditions</a></li>
+<li><a href="privacy.html">Disclosure</a></li>
+</ul><!--/#footerLowerLinks -->
+
+<p id="copyright">&copy; 2016 Dial An Exchange Pty Ltd 1.25.7 | US</p>
+</div><!--/.row -->
+
+</div><!--/#footerInner -->
+</div><!--/#footer -->
+
+<a id="backToTop" class="icon-arrow-up" href="#"><span class="ir">Click to return to top of page</span></a>
+
+</div><!--/#container -->
+
+
+
+
+
+</form><!--/aspnetForm -->
+
+
+
+
+<div id="modalBonusWeeksWarning" class="modal">
+    <div class="modal-content icon-warning">
+    <a href="#!" class=" modal-action modal-close icon-close-empty"></a>
+      <p>Bonus weeks may only be placed on hold at least 15 days before the check-in date.</p>
+    </div>
+</div>
+
+<div id="modalRSGold" class="modal">
+    <div class="modal-content center">
+    <a href="#!" class=" modal-action modal-close icon-close-empty"></a>
+    <h4 class="h1">READY. SET. GOLD.</h4>
+      <p>With DAE Gold Advantage benefits, you have more access to more inventory, deeper discounts on DAEexchange services and the ability to exchange to non-timeshare resorts in desirable locations.</p>
+      <p class="strong">Unlock and book this vacation today and get a full year of Gold Advantage Benefits for a special price of <strike>$89</strike> $59.</p>
+    <div class="button-line">
+    <input type="submit" class="button med light ghost" value="LEARN MORE" />
+            <input type="submit" class="button med ghost gold" value="BOOK NOW" />
+            </div>
+    
+    </div>
+</div>
+
+<div id="modalDateWarning" class="modal" style="margin-top: 20vw;">
+    <div class="modal-content icon-warning">
+    <a href="#!" class=" modal-action modal-close icon-close-empty"></a>
+      <h4 class="h1">Please Note</h4>
+      <p>The dates chosen falls between two exchange week periods so the closest avaialble date ranges have been displayed for exchange results. Please review dates carefully before booking.</p>
+    </div>
+      
+  </div>
+
+
+</body>
+</html>

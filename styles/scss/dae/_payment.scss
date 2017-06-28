@@ -1,0 +1,49 @@
+.resort-info {
+	margin-top: 27px;
+    font: normal 21px/1.6 Korolev-Light, sans-serif;
+    margin-bottom: 5px;
+	strong {
+	 font-weight: normal;
+	 font-family: $brand-font;
+	}
+
+}
+
+[id^=paymentPromo] {
+	font: normal 22px/1 $brand-font;
+	margin-bottom: 40px;
+		.period {
+			font: normal 45px/1.2 $brand-font-light;
+				small {
+				font-size: 30px;
+				}
+			}
+		.price {
+		font: normal 75px/1 $brand-font-condensed-light;
+		}
+		.promo-text {
+		font: normal 18px/1.2 $brand-font;
+		p {
+		max-width: 100%;
+		}
+		}
+		@include breakpoint(phone-p) {
+			-webkit-flex: wrap;
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;
+			max-width: 90vw;
+		}
+		
+}//paymentPromo
+
+
+[id^=paymentForm] {
+	.inner-wrapper {
+		margin-top: 0;
+		padding-top: 72px;
+		padding-bottom: 72px;
+
+	}
+
+}//[id^=paymentForm]
+

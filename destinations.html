@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Timeshares & Time Share Exchange Service-DAELive.com</title>
+
+<!-- ICONS FOR DEVICES -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!--    STYLESHEETS    -->
+
+<link rel='stylesheet' type='text/css' href='styles/slippry.css' />
+<link rel='stylesheet' type='text/css' href='styles/dae.css' />
+<link rel="stylesheet" type="text/css" href="styles/tooltipster.bundle.min.css" />
+
+<!--[if lte IE 10]>
+<link rel='stylesheet' type='text/css' href='languages/common/ie-shim.css' />
+<script type='text/javascript' src='js/ie-shim.js'></script>
+<!-- <![endif]-->
+
+<!--      SCRIPTS      -->
+
+<script type='text/javascript' src='js/modernizr-custom.js'></script>
+<script type='text/javascript' src='js/jquery-1.10.2.min.js'></script>
+<script type='text/javascript' src='js/jquery-ui.custom.min.js'></script>
+<script type='text/javascript' src='js/materialize.custom.min.js'></script>
+<script type='text/javascript' src='js/slippry.js'></script>
+<script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
+<script type='text/javascript' src='js/custom.js'></script>
+<script type='text/javascript' src='js/dae.ajax.js'></script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<meta name="description" content="We offer our members both an international and domestic time share exchange service. We also provide our clients with an extensive selection of timeshares from across the globe." />
+<meta name="keywords" content="timeshare, time shares, timeshare exchange, timeshare exchange service, time share exchanges, timeshare exchange service, timeshare resorts"/>
+</head>
+
+<!--      BEGIN PAGE & ID     -->
+
+<body>
+
+
+<!--      ASP.NET FORM PLACEHOLDER     -->
+
+<form method="post" action="./" id="aspnetForm"  >
+	<!-- Member Bar -->
+<div id="memberBar"><a href="dashboard.html">Francis Taylor</a></div>
+
+<input type="checkbox" id="offCanvasNav" />
+<div id="container"> 
+
+<!--      HEADER BAR      -->
+
+<header>
+<div id="headerInner">
+<div id="headerLeft">
+<div id="siteLogo"> <img src="images/dae_logo_white.svg" alt="DAE" height="53" width="100" /> </div>
+<!--/#siteLogo --> 
+
+</div>
+<!--/#headerLeft --> 
+
+<!--      MENU      -->
+
+<nav>
+<ul>
+<li><a href="benefits.html">Member Benefits </a></li>
+<li>Destinations</li>
+<li><a href="join.html">Join for Free</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<div id="headerRight">
+<div id="languageSelector" class="dd-proxy-trigger"> <span>EN</span>
+<ul id="languageList" class="dd-proxy" data-target="#languageListDD">
+<li data-lang="EN" class="selected">English</li>
+<li data-lang="TH">Thai</li>
+<li data-lang="ZH">Chinese</li>
+<li data-lang="AR">Arabic</li>
+<li data-lang="ES">Spanish</li>
+</ul>
+<!--This select is hidden. The list above changes its values-->
+<select id="languageListDD" class="replaced">
+<option selected="selected" value="EN">English</option>
+<option value="TH">Thai</option>
+<option value="ZH">Chinese</option>
+<option value="AR">Arabic</option>
+<option value="ES">Spanish</option>
+</select>
+</div>
+<!--/#languageSelector --> 
+
+<!--LOGIN button and LOGIN Flyout --> 
+<!--checkbox hides/shows login flyout w/o JS -->
+<input id="loginFlyoutTrigger" type="checkbox" style="display: none" />
+<div id="headerLogin">
+<label for="loginFlyoutTrigger" class="button ghost light small">LOGIN</label>
+<div id="loginFlyout" class="light">
+<div class="inner-wrapper">
+<h3 class="h1 alt">Login</h3>
+<div class="row">
+<div class="grid-1-2">
+<div class="input-field">
+<input id="memberID" type="text"  autocomplete="off">
+<label for="memberID">Email or Member #</label>
+</div>
+<p>Don't have an account? <a href="#"><u>Sign Up</u></a></p>
+</div>
+<!--/.grid-1-2 -->
+<div class="grid-1-2">
+<div class="input-field">
+<input type="password" name="memberPW" autocomplete="off" />
+<label for="memberPW">Password</label>
+</div>
+<p><a href="#">Forgot password?</a></p>
+</div>
+<!--/.grid-1-2 --> 
+</div>
+<!--/.row -->
+<div class="row">
+<div class="grid-1-2 end flex center-v">
+<div class="check">
+<input type="checkbox" id="rememberMe" name="rememberMe" checked />
+<label for="rememberMe">Remember me</label>
+<!-- DEV NOTE: label MUST have a "for" attribute for checkbox replacement to work. 
+ASP.NET code: <asp:label AssociatedControlId="rememberMe" runat="server" ... />
+This will keep the names the same when ASP rewites the control names and IDs.
+--> 
+
+</div>
+<!--/.check -->
+
+<input type="submit" class="button ghost medium" value="GO" />
+</div>
+<!--/.grid-1-2 --> 
+
+</div>
+<!--/.row -->
+
+<div class="row">
+<div class="or">OR</div>
+</div>
+<!--/.row -->
+
+<div class="row">
+<div class="grid-1-2"> <a href="#" class="icon-facebook button social ghost large">Login with Facebook</a> </div>
+<!--/.grid-1-2 -->
+
+<div class="grid-1-2"> <a href="#" class="icon-googleplus button social ghost large">Login with Google+</a> </div>
+<!--/.grid-1-2 --> 
+
+</div>
+<!--/.row --> 
+
+</div>
+<!--/.inner-wrapper --> 
+</div>
+<!--/#loginFlyout --> 
+
+</div>
+<!--/#headerLogin --> 
+<!--/LOGIN button and LOGIN Flyout -->
+
+<label class="icon-menu ir" for="offCanvasNav">Menu</label>
+</div>
+<!--/#headerRight --> 
+
+</div>
+<!--/#headerInner --> 
+</header>
+
+<!--      CONTENT WRAPPER     -->
+
+<div id="contentWrapper" class="static-slider"> 
+<div id="destinationsPage">
+
+<!--     TOP SLIDER      -->
+
+<ul id="slider">
+<li> <img src="images/destinations/hero_destinations.jpg" alt="EXPLORE & BOOK DAE DESTINATIONS" /> </li>
+</ul>
+<!--/#slider --> 
+
+<!--     TABS     -->
+<div id="destinationsTabs"> 
+
+<!--     TAB TRIGGERS    -->
+<ul class="tabs">
+<li id="searchTab"><a href="#searchTabContent">SEARCH</a></li>
+<li id="customTab"><a href="#customTabContent">CUSTOM REQUEST</a></li>
+<li id="trendingTab"><a href="#trendingTabContent">SEE TRENDING</a></li>
+</ul>
+
+<!--     /TAB TRIGGERS     --> 
+
+<!--     TAB CONTENT      -->
+<div id="searchTabContent">
+<div id="searchFormBlock" class="row in-grid long">
+<label class="h3 med title-label">Focus my search within</label>	
+<ul id="graphicalSearch">
+			<li><input type="radio" name="region-map-choice" value="1" id="rmc-anzpi"/><label for="rmc-anzpi">Austrailia, New Zealand<br />&amp; Pacific Islands</label></li>
+			<li><input type="radio" name="region-map-choice" value="2" id="rmc-africa"/><label for="rmc-africa">Africa &amp; Middle East</label></li>
+			<li><input type="radio" name="region-map-choice" value="3" id="rmc-asia"/><label for="rmc-asia">Asia</label></li>
+			<li><input type="radio" name="region-map-choice" value="4" id="rmc-europe"/><label for="rmc-europe">Europe</label></li>
+			<li><input type="radio" name="region-map-choice" value="5" id="rmc-americas"/><label for="rmc-americas">The Americas</label></li>
+		</ul>	
+<div class="title-bar"> <span class="icon-back">Back</span> </div>
+<label class="h3 med title-label">Where would you like to go?</label>
+<select id="searchSelect">
+<option value="0" selected>Choose your option</option>
+<option value="27">Asia</option>
+<option value="28">Australia</option>
+<option value="1">Western Australia</option>
+<option value="2">New Zealand</option>
+<option value="3">Pacific Islands</option>
+<option value="29">Canada</option>
+<option value="30">Central America &amp; Caribbean</option>
+<option value="50">Cyprus</option>
+<option value="51">Egypt &amp; Surrounds</option>
+<option value="31">Europe - Central</option>
+<option value="32">Europe - Eastern</option>
+<option value="46">Europe - Other</option>
+<option value="33">France</option>
+<option value="54">Indo</option>
+<option value="34">Ireland</option>
+<option value="48">Italy</option>
+<option value="49">Malta</option>
+<option value="35">Mexico</option>
+<option value="36">Middle East</option>
+<option value="37">New Zealand</option>
+<option value="38">North Africa</option>
+<option value="47">Pacific Islands</option>
+<option value="39">Portugal</option>
+<option value="41">South Africa</option>
+<option value="40">South America</option>
+<option value="42">Southern Africa</option>
+<option value="43">Spain</option>
+<option value="44">UK</option>
+<option value="45">USA</option>
+</select>
+<div id="searchResultsBox">
+<h4>Select a region</h4>
+<ul id="searchOutput">
+
+</ul>
+</div>
+</div>
+
+<!--     SEARCH RESULTS     -->
+
+<div id="resultsListing" class="clip"> </div>
+<!--/#resultsListing --> 
+
+<!--     /SEARCH RESULTS     --> 
+
+<!--SEARCH DETAIL -->
+<div id="lightboxWrapper">
+<div class="lightbox row">
+<div id="lightboxTitle" class="row">
+<h3></h3>
+<a id="resortAvailability" href="#modalChooseAvailability" class="modal-trigger button medium ghost light see-availability">SEE AVAILABILITY</a> </div>
+<!--/#lightBoxTitle--> 
+</div>
+<!--/.lightbox /.row-->
+
+<div class="lightbox row">
+<div id="imageBox">
+<div></div>
+<ul class="thumbs">
+</ul>
+<!-- /.thumbs --> 
+</div>
+<!-- /#imageBox --> 
+
+</div>
+<!--/.lightbox /.row-->
+
+<div class="lightbox row light-row">
+	
+<div id="overviewTabContent">	
+<div id="lightboxText" class="excerpt row"> </div>
+<div class="mask">Show More</div>
+<!--/#lightBoxText-->
+<div id="lightboxImgs" class="row"> </div>
+<!--/#lightboxImgs--> 
+</div><!--/#overviewTabContent-->
+
+<div id="facilitiesTabContent">
+</div><!--/#overviewTabContent-->
+
+<div id="infoTabContent">
+</div><!--/#overviewTabContent-->
+
+<div id="reviewsTabContent">
+</div><!--/#overviewTabContent-->
+
+</div><!--/.lightbox /.row--> 
+</div>
+<!--/#lightboxWrapper --> 
+<!-- / SEARCH DETAIL --> 
+
+<!--     COLLECTIONS     -->
+<div id="collectionsBlock">
+<div id="callout-Collections" class="row in-grid gradient3 light tight">
+<div class="inner-wrapper">
+<div class="text-block">
+<h3 class="h1 icon-compass">Or Explore by Collection</h3>
+<h4>Hand-Curated Destinations and Packages</h4>
+</div>
+<!--/.text-block --> 
+
+</div>
+<!--/.inner-wrapper --> 
+</div>
+<!--/#callout-Collections -->
+
+<div id="collectionsListing">
+<div class="row grid-holder">
+<div class="row sr-grid">
+<div class="click-box center"> <img src="images/destinations/thumbs/collections/beach.jpg" alt="Beach Collection" />
+<div>
+<h3>Beach Collection</h3>
+</div>
+<a href="beach.html" class="button medium ghost">EXPLORE</a> </div>
+<div class="click-box center"> <img src="images/destinations/thumbs/collections/lake.jpg" alt="Lake Collection" />
+<div>
+<h3>Lake Collection</h3>
+</div>
+<a href="beach.html" class="button medium ghost">EXPLORE</a> </div>
+<div class="click-box center"> <img src="images/destinations/thumbs/collections/all-inclusive.jpg" alt="All-Inclusive Collection" />
+<div>
+<h3>All-Inclusive Collection</h3>
+</div>
+<a href="beach.html" class="button medium ghost">EXPLORE</a> </div>
+<div class="click-box center"> <img src="images/destinations/thumbs/collections/ski.jpg" alt="Ski Collection" />
+<div>
+<h3>Ski Collection</h3>
+</div>
+<a href="beach.html" class="button medium ghost">EXPLORE</a> </div>
+<div class="click-box center"> <img src="images/destinations/thumbs/collections/european.jpg" alt="European Collection" />
+<div>
+<h3>European Collection</h3>
+</div>
+<a href="beach.html" class="button medium ghost">EXPLORE</a> </div>
+<div class="click-box center"> <img src="images/destinations/thumbs/collections/urban-usa.jpg" alt="Urban USA Collection" />
+<div>
+<h3>Urban USA Collection</h3>
+</div>
+<a href="beach.html" class="button medium ghost">EXPLORE</a> </div>
+</div>
+<!--/.sr-grid --> 
+
+</div>
+<!--/.row /.grid-holder --> 
+
+<!--     /COLLECTIONS     --> 
+</div>
+<!--/#collectionsListing --> 
+
+</div>
+<!--/#collectionsBlock --> 
+</div>
+<!--  /#searchTabContent --> 
+<!--     /TAB CONTENT      --> 
+
+<!--     CUSTOM REQUEST TAB CONTENT     -->
+<div id="customTabContent">
+<div class="row in-grid sequence-panel">
+<div class="inner-wrapper">
+<div class="row">
+<p class="intro-text">Make a Custom Request and we'll find you a match. Our exChange Agents not only search our supply of inventory listed online, but also contact our resort partners around the world to provide you with a variety of vacation options that match your criteria.</p>
+</div>
+<div class="row">
+<label for="crf-Destination" class="h3 med title-label">Where would you like to go?</label>
+<div id="searchFormBlockC"  class="form-wrapper long">
+<select id="searchSelectC">
+<option value="0" selected>Choose your option</option>
+<option value="27">Asia</option>
+<option value="28">Australia</option>
+<option value="29">Canada</option>
+<option value="30">Central America &amp; Caribbean</option>
+<option value="50">Cyprus</option>
+<option value="51">Egypt &amp; Surrounds</option>
+<option value="31">Europe - Central</option>
+<option value="32">Europe - Eastern</option>
+<option value="46">Europe - Other</option>
+<option value="33">France</option>
+<option value="54">Indo</option>
+<option value="34">Ireland</option>
+<option value="48">Italy</option>
+<option value="49">Malta</option>
+<option value="35">Mexico</option>
+<option value="36">Middle East</option>
+<option value="37">New Zealand</option>
+<option value="38">North Africa</option>
+<option value="47">Pacific Islands</option>
+<option value="39">Portugal</option>
+<option value="41">South Africa</option>
+<option value="40">South America</option>
+<option value="42">Southern Africa</option>
+<option value="43">Spain</option>
+<option value="44">UK</option>
+<option value="45">USA</option>
+</select>
+<div id="searchResultsBoxC">
+<h4>Select a region</h4>
+<ul id="searchOutputC">
+</ul>
+</div>
+<div id="searchResultsDestination">
+<h4>Select a destination</h4>
+<ul id="searchDestinationC">
+</ul>
+<input type="hidden" name="destinationSelection" id="destinationSelection" value="" />
+</div>
+</div>
+<!--/.form-wrapper end top --> 
+</div>
+<!--/.row -->
+<div class="form-wrapper">
+<div class="row auto">
+<label>Select a check-in date</label>
+<div class="datepicker-wrapper">
+<input type="date" class="datepicker" id="crf-CheckIn" placeholder="Check-in date" aria-label="Check-in date"/>
+
+</div>
+<div class="datepicker-wrapper hidden">
+<input type="date" class="datepicker" id="crf-Check-Out" placeholder="Check-out date" aria-label="Check-out date"/>
+
+</div>
+<div id="hasFlexDate" class="check">
+<input type="checkbox" id="crf-FlexibleDate" name="crf-FlexibleDate" checked="">
+<label for="crf-FlexibleDate">My Check-In Date is Flexible</label>
+<span class="tooltip" title="Being flexible with your check-in date increases your chances for a match."></span> </div>
+<!--/.check --> 
+</div>
+<!--/.row --> 
+</div>
+<p class="row note">Note: You're only required to select a check-in date.</p>
+<!--/.form-wrapper -->
+<div class="form-wrapper">
+<div class="form-column">
+<div class="row">
+<label>Who is going?</label>
+<select id="crf-Adults" name="crf-Adults" aria-label="Number of adults traveling">
+<option value="0">Adults</option>
+<option value="1">1 Adult</option>
+<option value="2">2 Adults</option>
+<option value="3">3 Adult</option>
+<option value="4">4 Adults</option>
+</select>
+<select id="crf-Children" name="crf-Children" aria-label="Number of children traveling">
+<option value="0">Children</option>
+<option value="1">1 Child</option>
+<option value="2">2 Children</option>
+<option value="3">3 Children</option>
+<option value="4">4 Children</option>
+<option value="5">5 Children</option>
+<option value="6">6 Children</option>
+</select>
+</div>
+<!--/.row -->
+
+<div class="row long">
+<div class="input-field">
+<textarea id="crf-comments" class="materialize-textarea"></textarea>
+<label for="crf-comments">Comments</label>
+</div>
+</div>
+<!--/.row -->
+
+<div class="row">
+<label>How can we reach you with a match?</label>
+<div class="input-field">
+<input id="crf-first_name" type="text">
+<label for="crf-first_name">First Name</label>
+</div>
+<div class="input-field">
+<input id="crf-last_name" type="text">
+<label for="crf-last_name">Last Name</label>
+</div>
+</div>
+<div class="row">
+<div class="input-field">
+<input id="crf-email" type="email" class="validate">
+<label for="crf-email">Email</label>
+</div>
+<div class="input-field">
+<input id="crf-phone" type="tel" class="validate">
+<label for="crf-phone">Phone</label>
+</div>
+</div>
+<!--/.row -->
+
+<div class="row long">
+<label for="crf-Residence">Country of Residence</label>
+<select name="crf-Residence" id="crf-Residence">
+<option value="0">Choose Country</option>
+<option value="28">Australia</option>
+<option value="1">U.S.A.</option>
+<option value="2">U.K.</option>
+<option value="3">Etc...</option>
+</select>
+</div>
+<!--/.row -->
+
+<div id="crf-OwnerMemberRow" class="row check">
+<input type="checkbox" id="crf-OwnerMember" name="crf-OwnerMember" checked="">
+<label for="crf-OwnerMember">I am a Timeshare Owner or Club Member.</label>
+</div>
+<!--/.row -->
+<div id="crf-WantMatchesRow" class="row check">
+<input type="checkbox" id="crf-WantMatches" name="crf-WantMatches" checked="">
+<label for="crf-WantMatches">I am interested in receiving Rental matches.</label>
+</div>
+<!--/.row --> 
+
+</div>
+<!--/.form-column -->
+
+
+</div>
+<!--/.form-wrapper --> 
+<div class="row right top-space">
+<input id="crf-Submit" type="submit" value="SUBMIT" class="button medium ghost next-panel" />
+</div><!--/.row --> 
+</div>
+<!--/.inner-wrapper" --> 
+</div><!--/.row -->
+
+<div class="inner-wrapper panel-request-confirm sequence-panel"  style="display: none;">
+<div class="row center in-grid">
+<h1 class="c icon-happy">YOUR REQUEST HAS BEEN SUBMITTED.</h1>
+<p class="h3 c">Don't forget to check your email, Member message center and the "My Custom Requests" section of your dashboard for statuses and updates.</p>
+<a href="destinations.html#customTab" class="button large">SUBMIT ANOTHER REQUEST</a> </div>
+<div id="requestsList">
+<h3 class="med">Custom Requests Made This Session</h3>
+<ul>
+<li><span>Location One Name</span> <span class="icon-cancel"><a href="#">REMOVE</a></span></li>
+<li><span>Location Two Name</span> <span class="icon-cancel"><a href="#">REMOVE</a></span></li>
+</ul>
+</div>
+<!-- /#requestsList --> 
+
+</div>
+<!-- /#panelRequestSubmitted.inner-wrapper --> 
+
+</div>
+<!--/#customTabContent" --> 
+<!--     /TAB CONTENT      --> 
+
+<!--     TRENDING SEARCH RESULTS     -->
+<div id="trendingTabContent">
+<div class="inner-wrapper">
+<div class="row center">
+<h2 class="c">See What's Trending with Members</h2>
+<p class="intro-text">We confirm hundreds of trips each week, many of them through custom requests.<br />
+The list below shows the resort</p>
+</div>
+
+<div class="heading-row">
+<ul class="legend type">
+<li class="icon-e " title="Exchange"><span>Exchange</span></li>
+<li class="icon-b" title="Bonus week"><span>Bonus week</span></li>
+<li class="icon-r" title="Rental"><span>Rental</span></li>
+</ul>
+<div id="trendingSelectWrapper" class="long flex right">
+<select id="trendingSelect">
+<option value="0" selected>Show All</option>
+<option value="s">Something</option>
+<option value="se">Something else</option>
+</select>
+</div>
+</div>
+</div>
+<!--/.inner-wrapper" -->
+<div class="color-row">
+<div class="sr-grid">
+<ul class="list-boxes">
+<li>
+<div> <img src="images/destinations/mexico/images/thumbs/cabo/cabo_1.jpg" width="259" height="180" alt="Ocean Reef Club" /> </div>
+<div class="list-content">
+<div>
+<p> Ocean Reef Club<br />
+Extended Name Here <span>Cabo San Lucas, MX</span> </p>
+<div class="icon-inclusive">All-Inclusive</div>
+</div>
+<div class="list-bottom">
+<ul class="type">
+<li class="icon-e " title="Exchange"><span class="ir">Exchange</span></li>
+<li class="icon-b" title="Bonus week"><span class="ir">Bonus week</span></li>
+<li class="icon-r" title="Rental"><span class="ir">Rental</span></li>
+</ul>
+<ul class="button-line">
+<li>
+<input type="button" data-request="Ocean Reef Club" class="button medium ghost light data-request" value="REQUEST SIMILAR" />
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<div> <img src="images/destinations/mexico/images/thumbs/cabo/cabo_2.jpg" width="259" height="180" alt="Ocean Reef Club" /> </div>
+<div class="list-content">
+<div>
+<p> Azure Wave Spa Resort and Hotel <span>Cabo San Lucas, MX</span> </p>
+<div class="icon-inclusive">All-Inclusive</div>
+</div>
+<div class="list-bottom">
+<ul class="type">
+<li class="icon-e " title="Exchange"><span class="ir">Exchange</span></li>
+<li class="icon-b" title="Bonus week"><span class="ir">Bonus week</span></li>
+<li class="icon-r" title="Rental"><span class="ir">Rental</span></li>
+</ul>
+<ul class="button-line">
+<li>
+<input type="button" data-request="Azure Wave Spa Resort and Hotel" class="button medium ghost light data-request" value="REQUEST SIMILAR" />
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<div> <img src="images/destinations/mexico/images/thumbs/cabo/cabo_3.jpg" width="259" height="180" alt="Ocean Reef Club" /> </div>
+<div class="list-content">
+<div>
+<p> Deep Blue by Secrets<br />
+Extended Name Here <span>Cabo San Lucas, MX</span> </p>
+<div class="icon-inclusive">All-Inclusive</div>
+</div>
+<div class="list-bottom">
+<ul class="type">
+<li class="icon-e " title="Exchange"><span class="ir">Exchange</span></li>
+<li class="icon-b" title="Bonus week"><span class="ir">Bonus week</span></li>
+<li class="icon-r" title="Rental"><span class="ir">Rental</span></li>
+</ul>
+<ul class="button-line">
+<li>
+<input type="button" data-request="Deep Blue by Secrets" class="button medium ghost light data-request" value="REQUEST SIMILAR" />
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<div> <img src="images/destinations/mexico/images/thumbs/cabo/cabo_4.jpg" width="259" height="180" alt="Ocean Reef Club" /> </div>
+<div class="list-content">
+<div>
+<p> The Royal Palace<br />
+Extended Name Here <span>Cabo San Lucas, MX</span> </p>
+<div class="icon-inclusive">All-Inclusive</div>
+</div>
+<div class="list-bottom">
+<ul class="type">
+<li class="icon-e " title="Exchange"><span class="ir">Exchange</span></li>
+<li class="icon-b" title="Bonus week"><span class="ir">Bonus week</span></li>
+<li class="icon-r" title="Rental"><span class="ir">Rental</span></li>
+</ul>
+<ul class="button-line">
+<li>
+<input type="button" data-request="The Royal Palace" class="button medium ghost light data-request" value="REQUEST SIMILAR" />
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+<!--/.list-boxes --> 
+<div id="trendingForm" style="display: none;">
+<input id="tr-ResortRequestName" type="hidden" value="[resort injected here from data attribute]" />
+<div class="sequence-panel">
+<div class="form-wrapper">
+<div class="row auto">
+<label>Select a check-in date</label>
+<div class="datepicker-wrapper">
+<input type="date" class="datepicker" id="tr-CheckIn" placeholder="Check-in date" aria-label="check-in date" />
+</div>
+<div class="datepicker-wrapper hidden">
+<input type="date" class="datepicker" id="tr-Check-Out" placeholder="Check-out date" aria-label="check-out date" />
+</div>
+<div id="hasFlexDate2" class="check">
+<input type="checkbox" id="tr-FlexibleDate" name="tr-FlexibleDate" checked="">
+<label for="tr-FlexibleDate">My Check-In Date is Flexible</label>
+<span class="tooltip" title="Being flexible with your check-in date increases your chances for a match."></span> </div>
+<!--/.check --> 
+</div>
+<!--/.row --> 
+</div>
+<!--/.form-wrapper -->
+
+<div class="form-wrapper">
+<div class="form-column">
+<div class="row">
+<label>Who is going?</label>
+<select id="tr-Adults" name="tr-Adults" aria-label="Number of adults traveling">
+<option value="0">Adults</option>
+<option value="1">1 Adult</option>
+<option value="2">2 Adults</option>
+<option value="3">3 Adult</option>
+<option value="4">4 Adults</option>
+</select>
+<select id="tr-Children" name="tr-Children" aria-label="Number of children traveling">
+<option value="0">Children</option>
+<option value="1">1 Child</option>
+<option value="2">2 Children</option>
+<option value="3">3 Children</option>
+<option value="4">4 Children</option>
+<option value="5">5 Children</option>
+<option value="6">6 Children</option>
+</select>
+</div>
+<!--/.row -->
+
+<div class="row long">
+<div class="input-field">
+<textarea id="tr-comments" class="materialize-textarea"></textarea>
+<label for="tr-comments">Type comments here.</label>
+</div>
+</div>
+<!--/.row -->
+<div id="tr-WantMatchesRow" class="row check">
+<input type="checkbox" id="tr-WantMatches" name="tr-WantMatches" checked="">
+<label for="tr-WantMatches">I am interested in receiving Rental matches.</label>
+</div>
+<!--/.row --> 
+
+</div>
+<!--/.form-column -->
+
+
+
+</div>
+<!--/.form-wrapper --> 
+<div class="row right top-space">
+<button id="tr-Next" type="button" class="button medium ghost next-panel" >NEXT</button>
+</div>
+<!--/.row --> 
+</div>
+<!-- /trendingFormPart -->
+
+<div class="sequence-panel">
+<div class="form-wrapper">
+<div class="form-column">
+<div class="row">
+<label>How can we reach you with a match?</label>
+<div class="input-field">
+<input id="tr-first_name" type="text">
+<label for="tr-first_name">First Name</label>
+</div>
+<div class="input-field">
+<input id="tr-last_name" type="text">
+<label for="tr-last_name">Last Name</label>
+</div>
+</div>
+<div class="row">
+<div class="input-field">
+<input id="tr-email" type="email" class="validate">
+<label for="tr-email">Email</label>
+</div>
+<div class="input-field">
+<input id="tr-phone" type="tel" class="validate">
+<label for="tr-phone">Phone</label>
+</div>
+</div>
+<!--/.row -->
+
+<div class="row long">
+<label for="tr-Residence">Country of Residence</label>
+<select name="tr-Residence" id="tr-Residence">
+<option value="0">Choose Country</option>
+<option value="28">Australia</option>
+<option value="1">U.S.A.</option>
+<option value="2">U.K.</option>
+<option value="3">Etc...</option>
+</select>
+</div>
+<!--/.row -->
+
+<div id="tr-OwnerMemberRow" class="row check">
+<input type="checkbox" id="tr-OwnerMember" name="tr-OwnerMember" checked="">
+<label for="tr-OwnerMember">I am a Timeshare Owner or Club Member.</label>
+</div>
+<!--/.row --> 
+
+</div>
+<!--/.form-column -->
+
+
+</div>
+<!--/.form-wrapper --> 
+<div class="row right top-space">
+<input id="tr-Submit" type="submit" value="SUBMIT" class="button medium ghost next-panel" />
+</div><!--/.row --> 
+</div>
+<!--/# trendingFormPart2-->
+
+<div class="panel-request-confirm sequence-panel">
+<div class="row center in-grid">
+<h1 class="c icon-happy">YOUR REQUEST HAS BEEN SUBMITTED.</h1>
+<p class="h3 c">Don't forget to check your email, Member message center and the "My&nbsp;Custom&nbsp;Requests" section of your dashboard for statuses and updates.</p>
+</div>
+<!--/.row --> 
+</div>
+<!--/# trendingFormPart3--> 
+
+</div>
+<!--/#trendingForm.row -->
+
+</div>
+<!--/.sr-grid -->
+
+
+<div class="foot-bar"> <span class="icon-back">New Search</span> <span class="icon-back">My Dashboard</span> </div>
+</div>
+<!--/.color-row --> 
+</div>
+<!--/#trendingTabContent" --> 
+<!--     /TAB CONTENT      --> 
+
+</div>
+<!-- /#destinationsTabs     --> 
+<!--     /TABS     -->
+
+<div id="notAMember" class="row gradient3 light tight">
+<div class="inner-wrapper">
+<div class="text-block">
+<h2 class="h1">NOT A MEMBER YET?</h2>
+</div>
+<!--/.text-block -->
+
+<hr />
+
+<!--     CHECKBOX LIST      -->
+<div class="check-list">
+<ul>
+<li>No annual Membership fees</li>
+<li>Low exchange fee</li>
+<li>Free custom request and match service</li>
+<li>Book and confirm instantly</li>
+<li>Bank a week for up to three years</li>
+</ul>
+<ul>
+<li>Keep your existing exchange company</li>
+<li>Free access for family and friends</li>
+<li>No complicated trading formulas</li>
+<li>Hold inventory for 24 hours</li>
+<li>Powerful discounts and rewards</li>
+</ul>
+</div>
+<!--/.check-list -->
+
+<div class="row flex center"> <a href="#" class="button large ghost wide">JOIN FOR FREE</a> </div>
+
+<!--     /CHECKBOX LIST      --> 
+
+</div>
+<!--/.inner-wrapper --> 
+</div>
+<!--/#notAMember --> 
+
+
+
+</div><!--/#destinationsPage --> 
+</div><!--/#contentWrapper --> 
+
+<!--     FOOTER/COPYRIGHT     -->
+
+<div id="footer">
+<div id="footerInner">
+<div class="row m-accordion">
+<div class="footer-links">
+<h4>Member Benefits</h4>
+<ul>
+<li><a href="benefits.html">Explore Benefits</a></li>
+<li><a href="exchange.html">Exchange</a></li>
+<li><a href="discounts.html">Discounts</a></li>
+<li><a href="rewards.html">Rewards</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>Destinations</h4>
+<ul>
+<li><a href="destinations.html">Overview</a></li>
+<li><a href="search-destinations.html">Search Destinations</a></li>
+<li><a href="custom-request.html">Custom Request</a></li>
+<li><a href="trending.html">See What's Trending</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>Join for Free</h4>
+<ul>
+<li><a href="join.html">Get Started Now</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>About</h4>
+<ul>
+<li><a href="about.html">About DAE</a></li>
+<li><a href="company-overwiew.html">Company Overview</a></li>
+<li><a href="b2b.html">Business Solutions</a></li>
+</ul>
+</div>
+<div class="footer-links last">
+<h4>Contact</h4>
+<ul>
+<li><a href="contact.html">Get in Touch</a></li>
+<li><a href="contact-members.html">Owners/Members</a></li>
+<li><a href="contact-b2b.html">Business Solutions</a></li>
+</ul>
+</div>
+</div>
+<!--/.footer-links -->
+
+<div class="row">
+<div id="logoPhone">
+<div class="icon-dae_logo" itemprop="telephone"><a href="tel:+18004681799">800.468.1799</a></div>
+</div>
+<div id="footerSocial">
+<h5>Connect</h5>
+<ul>
+<li><a class="icon-facebook" href="https://www.facebook.com/daelive/" target="_blank"><span class="ir">Facebook</span></a></li>
+<li><a class="icon-twitter" href="https://twitter.com/dialanexchange" target="_blank"><span class="ir">Facebook</span></a></li>
+<li><a class="icon-linkedin" href="https://www.linkedin.com/company/dial-an-exchange_2" target="_blank"><span class="ir">Facebook</span></a></li>
+</ul>
+</div>
+</div>
+<div class="row">
+<ul id="footerLowerLinks">
+<li><a href="privacy.html">Privacy Policy</a></li>
+<li><a href="privacy.html">Terms & Conditions</a></li>
+<li><a href="privacy.html">Disclosure</a></li>
+</ul>
+<!--/#footerLowerLinks -->
+
+<p id="copyright">&copy; 2016 Dial An Exchange Pty Ltd 1.25.7 | US</p>
+</div>
+<!--/.row --> 
+
+</div>
+<!--/#footerInner --> 
+</div>
+<!--/#footer --> 
+
+<a id="backToTop" class="icon-arrow-up" href="#"><span class="ir">Click to return to top of page</span></a> 
+</div><!--/#container -->
+
+
+
+
+
+</form>
+<!--/aspnetForm -->
+<div id="modalChooseAvailability" class="modal">
+        <div class="modal-content">
+        <a href="#!" class=" modal-action modal-close icon-close-empty"></a>
+          [CALENDAR GOES HERE]
+        </div>
+</div><!--/#modalChooseAvailability -->
+</body>
+</html>

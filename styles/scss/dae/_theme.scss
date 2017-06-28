@@ -1,0 +1,129 @@
+/* Structure */
+$site-inner-width : 1140px;
+$site-v-space : 80px;
+
+
+/*Colors*/
+$brand-color : #06a2d5;
+$brand-color-dark : #002d5b;
+$link-color: #06a2d5;
+$button-color : #06a2d5;
+$button-color-hover : #002d5b;
+$footer-color : #001529;
+$footer-header : #a3a4a4;
+$footer-link : #ffffff;
+$footer-link-hover : #06a1d5;
+$listbox-color : #395069;
+$arrow-color : #ef4e22;
+$required-color : #ec008b;
+$total : #005abb; /*bright blue formerly #085fbd;*/
+$gray-bg : #eef0f4;
+$dark-gray-bg : #8d8d8d;
+$light-gray-bg : #f6f7f9;
+$header-dark-gray : #777777;
+$gold : #a17a30;
+$pink : #ee1996;
+
+
+/*Dashboard*/
+$dash1 : #48b0f7;/*blue*/
+$dash2 : #11cfbf;/*green*/
+$dash3 : #7950d4;/*purple*/
+$dash4 : #ef4e22;/*orange*/
+$dash5 : #ec008b;/*pink*/
+$dash6 : #34b6e4;/*near brand blue*/
+$dash7 : #921E91;/*purple*/
+$dash8 : #5dbeb0;/*dusty green*/
+
+
+/*Legends*/
+$exchange : #06a1d5;
+$bonus : #ec008b;
+$rental : #ef4e22;
+
+/* e.g. Menubar */
+$gradient1-1 : #33B5E3;
+$gradient1-2 : #0059BB;
+$gradient1-3 : #91258F;
+
+$gradient2-1 : #0097D2;
+$gradient2-2 : #406BB9;
+$gradient2-3 : #862C97;
+
+$gradient3-1 : #277590;
+$gradient3-2 : #10356f;
+$gradient3-3 : #591d58;
+
+
+/* Brand fonts */
+$brand-font : Korolev-Medium,sans-serif;
+$brand-font-light : Korolev-Light, sans-serif;
+$brand-font-thin : Korolev-Thin, sans-serif;
+$brand-font-bold : Korolev-Bold, sans-serif;
+$brand-font-compressed : KorolevCondensed-Medium, sans-serif;
+$brand-font-condensed-thin : KorolevCondensed-Thin, sans-serif;
+$brand-font-condensed-light : KorolevCondensed-Light, sans-serif;
+$base-font-size : 20px;
+
+/* Header Size */
+$h1-size : 45px;
+$h2-size : 30px;
+$h3-size : 26px;
+$h4-size : 20px;
+$h5-size : 18px;
+$p-size : 18px;
+
+/*Boxes*/
+$box1-color : #06a2d5; /*blue*/
+$box2-color : #ec008b; /*pink*/
+$box3-color : #5dbeb0; /*turq*/
+
+
+/*Socials*/
+$social-icon : #808A94;
+$social-icon-hover : #00a1d5;
+
+
+$off-black: rgba(0, 0, 0, 0.87);
+
+/*Forms*/
+$dropdown-bg-color: #fff;
+$dropdown-hover-bg-color: #fff;
+$dropdown-color: #000;
+$dropdown-hover-color: $brand-color;
+$dropdown-item-height: 50px;
+
+$select-border: 1px solid #f2f2f2;
+$select-background: rgba(255, 255, 255, 0.90);
+$select-focus: 1px solid rgb(229, 151, 0);
+$select-padding: 5px;
+$select-radius: 2px;
+$select-disabled-color: rgba(0,0,0,.3);
+
+
+$input-height: 47px;
+$input-border-color: #ccc;
+$input-border: 1px solid #ccc;
+$input-background: #fff;
+$input-error-color: #c00;
+$input-success-color: green;
+$input-focus-color: lightblue;
+$input-font-size: 22px;
+$input-margin: 0 0 15px 0;
+$input-padding-left: 12px;
+$input-padding: 0 0 0 $input-padding-left;
+$input-transition: all .3s;
+$label-font-size: 20px;
+$label-color: $brand-color;
+$input-disabled-color: rgba(0,0,0, .26) ;
+$input-disabled-solid-color: #BDBDBD ;
+$input-disabled-border: 1px dotted #efefef;
+$placeholder-text-color: #666;
+
+
+$datepicker-focus: #f2f2f2;
+$datepicker-date-bg: $brand-color;
+$datepicker-selected-outfocus: #fff;
+$datepicker-weekday-bg: #fff;
+$datepicker-year: rgba(255,255,255,.4);
+$datepicker-selected: $brand-color;

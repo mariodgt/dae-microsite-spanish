@@ -1,0 +1,115 @@
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+
+/* Breakpoints */
+/*Header breaks below 968px */
+
+ @mixin breakpoint($point) {
+   @if $point == header {
+     @media (max-width: 968px) { @content ; }
+  }
+  @if $point == x-wide {
+     @media (min-width: 1025px) { @content ; }
+  }
+  @if $point == desktop {
+     @media (min-width: 1025px) { @content ; }
+  }
+  @if $point == below-desktop {
+     @media (max-width: 1024px) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (min-width: 800px) { @content ; }
+  }
+ 
+  @else if $point == tablet-w {
+     @media (min-width: 768) { @content ; }
+  }
+  @else if $point == tablet-p {
+     @media (max-width: 768px) and (orientation: portrait) { @content ; }
+  }
+  @else if $point == below-tablet {
+     @media (max-width: 767px) { @content ; }
+  }
+   @else if $point == phablet {
+     @media (min-width: 600px)  { @content ; }
+  }
+  @else if $point == phone {
+     @media (max-width: 37.5em)  { @content ; }
+  }
+  @else if $point == phone-viewport {
+     @media (max-device-width: 37.5em)  { @content ; }
+  }
+   @else if $point == phone-p {
+     @media (max-device-width: 37.5em) and (orientation: portrait)  { @content ; }
+
+  }
+}
+
+/* Usage
+@include breakpoint(desktop) {
+		max-width: 1104px;
+	}
+ */
+
+/* CSS Transition
+	Usage: @include transition(width,0.3s,ease-out);
+ */
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
+@mixin font-size( $decimal-size, $keyword: null ) {
+  @if $keyword{ font-size: $keyword; }
+  @else { font-size: $decimal-size * $base-font-multiplier * 16px;}
+  font-size: $decimal-size * 1rem;
+}
+
+
+ @mixin linear-gradient($direction, $color-stops...) {
+  @if is-direction($direction) == false {
+    $color-stops: $direction, $color-stops;
+    $direction: 45deg;
+  }
+
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
+@mixin linear-gradient-image($bg-image, $bg-repeat, $bg-position, $bg-size, $direction, $color-stops...) {
+  @if is-direction($direction) == false {
+    $color-stops: $direction, $color-stops;
+    $direction: 45deg;
+  }
+
+  background: nth(nth($color-stops, 1), 1) url($bg-image) $bg-repeat $bg-position;
+  background:  url($bg-image) $bg-repeat $bg-position, -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background:  url($bg-image)$bg-repeat $bg-position, linear-gradient($direction, $color-stops);
+  background-size: $bg-size;
+}
+
+
+/* Headings */
+@mixin header($h-font-size, $h-font-leading, $h-brand-font, $h-font-color) {
+	font: normal $h-font-size#{"/"}$h-font-leading $h-brand-font;
+	color: $h-font-color;
+}
+
+/* Placeholder Text */
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}
+
+

@@ -1,0 +1,176 @@
+[id$=footer] {
+	background: $footer-color;
+    padding-top: 80px;
+    padding-bottom: 46px;
+	
+	[id$=footerInner] {
+		width: 1082px;
+		max-width: 96vw;
+		margin: 0 auto;
+	}
+	.row:first-child {
+	@include justify-content(flex-start);
+	}
+	*{
+		color: #fff;
+	}
+	.footer-links {
+	min-width: 196px;
+	margin-bottom: 67px;
+	font-size: 18px;
+		 h4 {
+		margin-bottom: 15px;
+		color: $footer-header;
+			a {
+			color: $footer-header;
+				&:hover {
+				color: $footer-link-hover;
+				}
+			}
+		}
+		li a {
+		line-height: 30px;
+		color: $footer-link;
+			&:hover {
+				color: $footer-link-hover;
+				}
+		}
+	}
+	
+	[id$=logoPhone] {
+		color: #fff;
+		.icon-dae_logo:before {
+			font-size: 110px;
+			line-height: 100px;
+			width: 199px;
+			text-align: left;
+			border-right: solid 1px #525D68;
+			}
+		
+		a {
+			font-size: 40px;
+
+			line-height: 40px;
+			display: inline-block;
+			top: -17px;
+			position: relative;
+			left: 17px;
+			font-family: $brand-font-light;
+			letter-spacing: -.036em;
+			}
+		
+	}
+	[id$=footerSocial] {
+		left: -6px;
+		position: relative;
+		h5 {
+			text-indent: 6px;
+			margin-bottom: 17px;
+			margin-top: 6px;
+			letter-spacing: -.03em;
+		}
+		li{
+			display: inline-block;
+				margin-left: 6px;
+			a {
+				color: $footer-color;
+				
+				&:hover {
+				background: transparent;
+				
+				}
+				
+				&:before {
+				background: $social-icon;
+				width: 46px;
+				height: 46px;
+				line-height: 46px
+				}
+				&:hover:before {
+				background: $social-icon-hover;
+				}
+				
+			}	
+		}
+	}
+	
+		
+	[id$=footerLowerLinks], [id$=copyright] {
+		font-size: 16px;
+		letter-spacing: -.03em;
+			a:hover {
+			color: $footer-link-hover;
+			}
+	}		
+	[id$=footerLowerLinks] li {
+			display: inline-block;
+			
+					& + li:before {
+					content: ' / ';
+					padding: 0 .3em;
+				}	
+		}
+		[id$=footerSocial], [id$=copyright] {
+		width: auto;
+		}
+		
+		@include breakpoint(tablet) {
+		[id$=footerSocial], [id$=copyright] {
+		width: 282px;
+		}
+		}
+	
+}
+
+[id$=backToTop] {
+	display: none;
+	position: fixed;
+	right: 1vw;
+	bottom: 1vw;
+	z-index: 1000;
+		&:before {
+		height: 57px;
+		width: 57px;
+		background: #000;
+		color: #fff;
+		line-height: 57px;
+		font-size: 30px;
+			&:hover {
+			background: $button-color;
+			}
+		}
+}
+
+@include breakpoint(phone) {
+
+	[id$=footer] {
+		.row {
+		width: 92vw;
+		margin-left: 4vw;
+		}
+		.footer-links {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 18px;
+		}
+		[id$=footerLowerLinks] {
+		margin-bottom: 20px;
+		}
+		
+		[id$=logoPhone] {
+			width: 100%;
+			.icon-dae_logo:before {
+			font-size: 62px;
+			line-height: 78px;
+			width: 40%;
+			margin-bottom: 20px;
+			}
+			a {
+			font-size: 7.5vw;
+			line-height: 40px;
+    		top: -12px;
+    		left: 0px;
+		}
+		}
+	}
+}

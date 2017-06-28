@@ -1,0 +1,229 @@
+
+
+[id$=confirmedVacations] h2 {
+	margin-bottom: 16px;
+}
+
+[id$=confirmedVacations] .button {
+margin-top: 84px;
+margin-bottom: 74px;
+	
+}
+
+@media (max-width: 493px) {
+
+[id$=confirmedVacations] .counter-wrapper{
+   display: none;
+}
+
+#vcCount {
+	color: #444;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    background: url(images/suitcase.jpg) no-repeat 50% 0/contain;
+    padding: 8vh 0;
+}
+#vcCount .digit {
+    color: #fff;
+    display: inline-block;
+    background: #444;
+    border-radius: 4px;
+    margin: .07em;
+    width: 1em;
+    position: relative;
+    sub: -1em;
+    line-height: 1.3em;
+}
+#vcCount .digit:after {
+  content:'';
+  display: inline-block;
+  border-bottom: solid 1px #555;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: .55em;
+  box-shadow: 0px 2px 3px rgba(0,0,0,.5)
+}
+
+}
+
+@media (min-width: 494px) {
+	#vcCount {
+		display: none;
+	}
+
+.flip-counter.default .digit {
+  position: relative;
+  z-index: 0;
+  width: 75px;
+  height: 122px;
+  margin-left: 20px;
+  background-color: #363A40;
+  text-align: center;
+  line-height: 13px;
+  -webkit-text-stroke: 2px;
+  -webkit-perspective: 300px;
+  -moz-perspective: 300px;
+  -ms-perspective: 300px;
+  perspective: 300px;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(82, 88, 97, 0.5);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(82, 88, 97, 0.5);
+  box-shadow: 1px 1px 5px 0px rgba(82, 88, 97, 0.5);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.flip-counter.default .digit:last-child {
+  margin-left: 0;
+}
+.flip-counter.default .digit span {
+  position: absolute;
+  left: 0;
+  height: 56px;
+  width: 75px;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 100px;
+  font-family: 'Korolev-Medium', sans-serif;
+  font-weight: normal;
+  text-indent: 2px;
+  background-color: #40464D;
+  color: white;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  text-shadow: 1px 1px 1px #000;
+}
+.flip-counter.default .digit span.front {
+  top: 0;
+  padding-top: 56px;
+}
+.flip-counter.default .digit span.back {
+    bottom: 0;
+    margin-bottom: 10px;
+    height: 56px;
+	border-bottom: solid 1px #555;
+	box-shadow: 0px 1px 0px #111;
+}
+.flip-counter.default .digit .line {
+  position: absolute;
+  z-index: 10;
+  height: 56px;
+  width: 75px;
+  border-bottom: 1px solid rgba(82, 88, 97, 0.7);
+  -webkit-box-shadow: 0px 5px 7px -4px rgba(82, 88, 97, 0.7);
+  -moz-box-shadow: 0px 5px 7px -4px rgba(82, 88, 97, 0.7);
+  box-shadow: 0px 5px 7px -4px rgba(82, 88, 97, 0.7);
+}
+.flip-counter.default .digit .hinge {
+  position: absolute;
+  z-index: 5;
+  height: 56px;
+  width: 75px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  -moz-transition: -moz-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+.flip-counter.default .digit .hinge span {
+  height: 0px;
+  z-index: 5;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-counter.default .digit .hinge span.front {
+  padding-top: 56px;
+}
+.flip-counter.default .digit .hinge span.back {
+  height: 56px;
+  margin-bottom: 0px;
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+.flip-counter.default .digit.animate .hinge {
+  -webkit-transform: rotateX(-180deg);
+  -moz-transform: rotateX(-180deg);
+  -ms-transform: rotateX(-180deg);
+  -o-transform: rotateX(-180deg);
+  transform: rotateX(-180deg);
+}
+.flip-counter.default .digit-delimiter {
+    padding-top: 62px;
+    margin-right: -10px;
+    font-family: 'Korolev-Bold', sans-serif;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 50px;
+    color: #525861;
+    text-indent: 6.66666667px;
+    text-shadow: 1px 1px 5px rgba(82, 88, 97, 0.5);
+}
+.counter-wrapper {
+    position: relative;
+    margin-top: 4px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack:center;
+	-moz-box-pack:center;
+	-webkit-flex-pack:center;
+	-ms-flex-pack:center;
+	-moz-justify-content:center;
+	-webkit-justify-content:center;
+	justify-content:center;
+}
+.flip-counter {
+  position: relative;
+  list-style-type: none;
+}
+.flip-counter li {
+  float: right;
+}
+span.front, span.back {
+    line-height: 0;
+}
+.no-csstransforms3d span.back {
+  display: none;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+
+
+[id$=confirmedVacations] .counter-wrapper{
+	background: url(images/suitcase.jpg) no-repeat 50% 0;
+    padding-top: 230px;
+    padding-bottom: 108px;
+	width: 100%;
+}
+
+}

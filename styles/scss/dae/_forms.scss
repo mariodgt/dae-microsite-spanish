@@ -1,0 +1,895 @@
+.required-legend, .error,
+#contentWrapper .light .required-legend {
+	color: $required-color;
+	font: normal 16px/1.2 $brand-font-light;
+	margin-bottom: 16px;
+}
+ .error {   
+	display: inline-block;
+    width: 100%;
+}
+.member-form.disabled .required-row .error{
+	padding-left: 136px;
+	margin-top: -16px;
+}
+.no-placeholder .ir {
+color: inherit;
+font-size: inherit;
+line-height: inherit;
+}
+
+label {
+color: $brand-color;
+font-size: 20px;
+}
+
+
+input { 
+	@include placeholder {
+    font-family: $brand-font-light;
+	color: #000;
+	}
+}
+.light input { 
+	@include placeholder {
+    font-family: $brand-font-light;
+	color: #fff;
+	}
+}
+input:-webkit-autofill { -webkit-box-shadow:0 0 0 500px transparent inset; }
+
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dropdown-content {
+  background-color: $dropdown-bg-color;
+  margin: 0;
+  display: none;
+  min-width: 100px;
+  max-height: 650px;
+  overflow-y: auto;
+  opacity: 0;
+  position: absolute;
+  z-index: 999;
+  border: solid 1px #ccc;
+  will-change: width, height;
+  li {
+    clear: both;
+    color: $off-black;
+    cursor: pointer;
+    min-height: $dropdown-item-height;
+    line-height: 1.5rem;
+    width: 100%;
+    text-align: left;
+    text-transform: none;
+    
+    &.divider {
+      min-height: 0;
+      height: 1px;
+    }
+    & > a,
+    & > span {
+      font: normal #{$input-font-size}/1.2 $brand-font-light;
+      color: $dropdown-color;
+      display: block;
+      padding: (($dropdown-item-height - 22) / 2) 16px;
+    }
+	&:first-child > a,
+    &:first-child > span {
+	font-family: $brand-font;
+	}
+
+    & > span > label {
+      top: 1px;
+      left: 3px;
+      height: 18px;
+    }
+	&:hover,
+    &.active,
+    &.selected {
+      background-color: $dropdown-hover-bg-color;
+	  color: $brand-color;
+	  & span {
+	  color: $brand-color;
+	  }
+    }
+    &.active.selected {
+      background-color: darken($dropdown-hover-bg-color, 5%);
+    }
+
+    // Icon alignment override
+    & > a > i {
+      height: inherit;
+      line-height: inherit;
+    }
+  }
+}
+
+select:focus {
+  outline: $select-focus;
+}
+
+/* Text inputs */
+
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea {
+
+  // General Styles
+  background-color: transparent;
+  border: none;
+  border-bottom: $input-border;
+  border-radius: 0;
+  outline: none;
+  height: $input-height;
+  width: 100%;
+  font: normal #{$input-font-size}/1.2 $brand-font-light;
+  margin: $input-margin;
+  padding: $input-padding;
+  box-shadow: none;
+  transition: $input-transition;
+
+  // Disabled input style
+  &:disabled,
+  &[readonly="readonly"] {
+    color: $input-disabled-color;
+    border-bottom: $input-disabled-border;
+    -webkit-text-fill-color: rgba(0, 0, 0, 1);
+    -webkit-opacity: 1;
+  }
+
+  // Disabled label style
+  &:disabled+label,
+  &[readonly="readonly"]+label {
+    color: $input-disabled-color;
+  }
+
+  // Focused input style
+  &:focus:not([readonly]) {
+    border-bottom: 1px solid $input-focus-color;
+    box-shadow: 0 1px 0 0 $input-focus-color;
+  }
+
+  // Focused label style
+  &:focus:not([readonly])+label {
+    color: $input-focus-color;
+  }
+
+  // Valid Input Style
+  &.valid,
+  &:focus.valid {
+    border-bottom: 1px solid $input-success-color;
+    box-shadow: 0 1px 0 0 $input-success-color;
+  }
+
+  // Custom Success Message
+  &.valid + label:after,
+  &:focus.valid + label:after {
+    content: attr(data-success);
+    color: $input-success-color;
+    opacity: 1;
+  }
+
+  // Invalid Input Style
+  &.invalid,
+  &:focus.invalid {
+    border-bottom: #999;
+    box-shadow: 0 1px 0 0 red;
+  }
+
+  // Custom Error message
+  &.invalid + label:after,
+  &:focus.invalid + label:after {
+    content: attr(data-error);
+    color: $input-error-color;
+    opacity: 1;
+  }
+
+  // Full width label when using validate for error messages
+  &.validate + label {
+    width: 100%;
+    pointer-events: none;
+  }
+
+  // Form Message Shared Styles
+  & + label:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 65px;
+    opacity: 0;
+    transition: .2s opacity ease-out, .2s color ease-out;
+  }
+}
+/* /Text inputs */
+
+ // Short selects, e.g. "Mr"
+  [id=contentWrapper] .row.short {
+  	.select-wrapper {
+		width: 8rem;
+	}
+	.select-dropdown {
+    max-width: 100%;
+}
+  }
+
+// Styling for input field wrapper
+.input-field {
+  position: relative;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  .long & {
+  width: 367px;
+  max-width: 94vw;
+  }
+  label {
+    color: #000;
+    position: absolute;
+    top: 0.8rem;
+    left: $input-padding-left;
+    font: normal #{$input-font-size}/1.2 $brand-font-light;
+    cursor: text;
+    transition: .2s ease-out;
+	&.active {
+	  transform: translateY(-140%);
+	  color: #06a2d5;
+	  font-size: 13px;
+	  margin-bottom: -20px;
+	  width: 100%;
+	  text-transform: uppercase;
+	}
+  }
+
+
+  
+ 
+
+  // Prefix Icon
+  .prefix {
+    position: absolute;
+    width: $input-height;
+    font-size: 2rem;
+    transition: color .2s;
+
+    &.active { color: $input-focus-color; }
+  }
+
+  .prefix ~ input,
+  .prefix ~ textarea {
+    margin-left: 3rem;
+    width: 92%;
+    width: calc(100% - 3rem);
+  }
+
+  .prefix ~ textarea { padding-top: .8rem; }
+  .prefix ~ label { margin-left: 3rem; }
+}
+// END -- Styling for input field wrapper
+
+
+/* Textarea */
+
+// Default textarea
+textarea {
+  width: 100%;
+  height: $input-height;
+  background-color: transparent;
+
+  &.materialize-textarea {
+    overflow-y: hidden; /* prevents scroll bar flash */
+    padding: 1.6rem 0; /* prevents text jump on Enter keypress */
+    resize: none;
+    min-height: $input-height;
+  }
+}/* /Textarea */
+
+// For textarea autoresize
+.hiddendiv {
+  display: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word; /* future version of deprecated 'word-wrap' */
+  padding-top: 1.2rem; /* prevents text jump on Enter keypress */
+}
+
+
+/* Select Field */
+
+select { display: none; }
+select.browser-default { display: block; }
+
+select {
+  background-color: $select-background;
+  width: 100%;
+  padding: $select-padding;
+  border: $select-border;
+  border-radius: $select-radius;
+  height: $input-height;
+}
+
+.select-label {
+  position: absolute;
+}
+
+.select-wrapper {
+  position: relative;
+      padding-left: 0;
+	  .long.long & {
+	  	width: 367px;
+    	max-width: 100%;
+		@include breakpoint(phone) {
+		width: auto;
+	}
+	  }
+	  input.select-dropdown {
+		position: relative;
+		cursor: pointer;
+		background-color: transparent;
+		border: none;
+		border-bottom: $input-border;
+		outline: none;
+		height: $input-height;
+		line-height: $input-height;
+		font-size: $input-font-size;
+		margin: $input-margin;
+		padding: $input-padding;
+		display: block;
+	  }
+
+  span.caret {
+    color: initial;
+    position: absolute;
+    right: 14px;
+    top: 8px;
+	 &:after {
+        content: '\E80E';
+		font-family: dae;
+        font-size: 30px;
+      }
+
+   
+  }
+
+  & + label {
+    position: absolute;
+    top: -14px;
+    font-size: $label-font-size;
+  }
+}/* /Select Field */
+
+ .disabled {
+      color: $input-disabled-color;
+    }
+
+// Disabled styles
+select:disabled {
+  color: rgba(0,0,0,.3);
+}
+
+.select-wrapper input.select-dropdown:disabled {
+  color: rgba(0,0,0,.3);
+  cursor: default;
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -ms-user-select: none; /* IE10+ */
+  border-bottom: 1px solid rgba(0,0,0,.3);
+}
+
+.select-wrapper i {
+  color: $select-disabled-color;
+}
+
+.select-dropdown li.disabled,
+.select-dropdown li.disabled > span,
+.select-dropdown li.optgroup {
+  color: $select-disabled-color;
+  background-color: transparent;
+}
+
+// Prefix Icons
+.prefix ~ .select-wrapper {
+  margin-left: 3rem;
+  width: 92%;
+  width: calc(100% - 3rem);
+}
+
+.prefix ~ label { margin-left: 3rem; 
+}
+
+.check {
+position: relative;
+cursor: pointer;
+@include display-flex; 
+line-height: 30px;
+&.row{
+@include justify-content($justify: flex-start);
+}
+}
+.check-row li {
+position: relative;
+}
+
+input[type=checkbox] {
+    height: 30px;
+    width: 30px;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    vertical-align: middle;
+    margin: 0;
+	
+}
+.check input[type=radio] + label {
+    padding-left: 30px;
+    line-height: 30px;
+}
+
+.check label:before {
+	content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+	line-height: 30px;
+    background: $brand-color;
+	color: #fff;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 38px;
+	    margin-right: 10px;
+    font-size: 38px;
+	font-family: dae;
+    vertical-align: middle;
+		.light & {
+		color: #000;
+		background: #666;
+		background: rgba(255,255,255,0.35);
+		}
+}
+
+
+
+
+input[type=checkbox]:checked + label:before {
+content: '\E814';
+}
+.row.check .checkbox + label span {
+    position: relative;
+    display: inline-block;
+    padding-left: 64px;
+}
+.check > li + li {
+	margin-left: 2em;
+}
+
+.datepicker-wrapper {
+	position: relative;
+	overflow: hidden;
+		&.picker__input {
+			width: 212px;
+		}
+		&:after {
+		content: '\e828';
+		font-family: dae;
+		font-size: 36px;
+		color: #666;
+		position: absolute;
+		right: 0;
+		top: 3px;
+		pointer-events: none;
+		}
+}
+.form-wrapper {
+	.select-wrapper {
+    width: 212px;
+	}
+	.row.auto {
+		width: auto;
+	}
+ .row > label {
+	margin-top: 30px;
+	width: 100%;
+  display: inline-block;
+	}
+}	
+.form-column .row {
+width: 640px;
+max-width: 94vw;
+margin-bottom: 0;
+@include display-flex; 
+@include justify-content($justify: flex-start);
+@include flex-flow(row,wrap);
+	&.check + .row.check label {
+		margin-top: 1em;
+		}
+	input[id^=crf],input[id^=tr],input[id^=rae] {
+    max-width: 212px; 
+	}
+  &.required-legend {
+  margin-bottom: 30px;
+  }
+}
+
+.form-wrapper {
+@include display-flex; 
+.row {
+	@include align-items(baseline); 
+ }
+}
+
+.form-column + .form-column {
+@include align-self(flex-end); 
+
+}
+
+.row .form-column.full-column {
+    @include flex(1, 1, 50%);
+    @include breakpoint(tablet-p) {
+    width: 100%;
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%;
+    }
+    @include align-self(flex-start);
+		.sub-title {
+			    font: normal 18px/1.2em $brand-font;
+				height: 60px;
+				margin-top: 12px;
+				position: relative;
+		}
+		.row {
+		    width: auto;
+			}
+			
+}
+
+
+@media (min-width: 640px) {
+.form-column .row{
+input + input, div + div, span + span {
+	margin-left: 83px;
+	}
+	}
+}
+
+[id=hasFlexDate] {
+margin-top: 10px;
+}
+
+textarea.materialize-textarea {
+    padding: 0;
+
+ 
+  }
+ 
+ #trendingTabContent {
+ .intro-text {
+    margin-bottom: 55px;
+}
+
+ h2.c {
+    margin-top: -32px;
+    margin-bottom: 17px;
+ }
+ }
+  
+  #trendingForm {
+  margin-bottom: 0;
+  }
+  
+  .sequence-panel + .sequence-panel,
+  .sequence-holder .sequence-panel{
+  	display: none;
+	}
+  
+  [id^=trendingForm] .sequence-panel{
+  padding-bottom: 50px;
+  padding-top: 50px;
+  }
+  
+  
+  @media (max-width: 1023px) {
+  [id^=trendingFormPart] .form-wrapper {
+  -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+	  }
+  }
+  
+[id$=formsColumnWrapper] {  
+  
+	.select-wrapper {
+	    margin-top: 21px;
+			
+			input.select-dropdown {
+			padding-left: 28px;
+			box-sizing: border-box;
+				span{
+					color: $required-color;
+				}
+			}
+			
+		
+		
+	}		
+	p a {
+		color: #000;
+		padding-left: 24px;
+		font: normal 16px/1.2 $brand-font-light;
+			&:hover {
+				color: $brand-color;
+			}
+		
+		}
+		
+	.check {
+		margin-top: 45px;
+		margin-bottom: 30px;
+    @include justify-content(flex-start);
+		label {
+			color: #000;
+			font: normal 18px/30px $brand-font-light;
+		}
+	}	
+}
+
+.select-wrapper,
+	.datepicker-wrapper {
+		margin-right: 1rem;
+	}
+ .member-form.disabled .select-wrapper {
+    margin-right: 0;
+ }
+
+
+@media (min-width: 558px) {
+	.select-wrapper + .select-wrapper,
+	.datepicker-wrapper + .datepicker-wrapper {
+		margin-left: 78px;
+		margin-right: 0;
+	}
+}
+
+
+
+
+/* Radio Buttons */
+
+// Remove default Radio Buttons
+[type="radio"]:not(:checked),
+[type="radio"]:checked {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 25px;
+  font-size: 1rem;
+  transition: .28s ease;
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  user-select: none;
+}
+
+[type="radio"] + label:before,
+[type="radio"] + label:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  width: 16px;
+  height: 16px;
+  z-index: 0;
+  transition: .28s ease;
+  
+background: transparent;
+}
+
+/* Unchecked styles */
+[type="radio"]:not(:checked) + label:before,
+[type="radio"]:not(:checked) + label:after,
+[type="radio"]:checked + label:before,
+[type="radio"]:checked + label:after,
+[type="radio"].with-gap:checked + label:before,
+[type="radio"].with-gap:checked + label:after {
+  border-radius: 50%;
+}
+
+[type="radio"]:not(:checked) + label:before,
+[type="radio"]:not(:checked) + label:after {
+  border: 2px solid $brand-color;
+}
+
+[type="radio"]:not(:checked) + label:after {
+  z-index: -1;
+  transform: scale(0);
+}
+
+/* Checked styles */
+[type="radio"]:checked + label:before {
+  border: 2px solid transparent;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"].with-gap:checked + label:before,
+[type="radio"].with-gap:checked + label:after {
+  border: 2px solid $brand-color;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"].with-gap:checked + label:after {
+  background-color: $brand-color;
+  z-index: 0;
+}
+
+[type="radio"]:checked + label:after {
+  transform: scale(1.02);
+}
+
+/* Radio With gap */
+[type="radio"].with-gap:checked + label:after {
+  transform: scale(.5);
+}
+
+/* Focused styles */
+[type="radio"].tabbed:focus + label:before {
+  box-shadow: 0 0 0 10px rgba(0,0,0,.1);
+}
+
+/* Disabled Radio With gap */
+[type="radio"].with-gap:disabled:checked + label:before {
+  border: 2px solid rgba(0,0,0,0.26);
+}
+
+[type="radio"].with-gap:disabled:checked + label:after {
+  border: none;
+  background-color: rgba(0,0,0,0.26);
+}
+
+/* Disabled style */
+[type="radio"]:disabled:not(:checked) + label:before,
+[type="radio"]:disabled:checked + label:before {
+  background-color: transparent;
+  border-color: rgba(0,0,0,0.26);
+}
+
+[type="radio"]:disabled + label {
+  color: rgba(0,0,0,0.26);
+}
+
+[type="radio"]:disabled:not(:checked) + label:before {
+  border-color: rgba(0,0,0,0.26);
+}
+
+[type="radio"]:disabled:checked + label:after {
+  background-color: rgba(0,0,0,0.26);
+  border-color: rgba(0,0,0,0.26);
+}
+
+.required-row .input-field,
+.required-row.input-field{
+	position: relative;
+  align-self: flex-end;//FF fix for select alignment
+	&:before {
+		content: '*';
+		position: absolute;
+		margin-left: -4px;
+		color: $required-color;
+		top: 12px;
+		}
+}
+.disabled .required-row .input-field:before,
+.disabled .required-row .input-field:before{
+	content: '';
+	}
+#contentWrapper .sub-label {
+	font-size: 16px;
+	color: $brand-color;
+	display: none;
+}
+#contentWrapper .long .sub-label {
+	max-width: 367px;
+    padding-left: 22px;
+	margin-bottom: 0;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: Korolev-Medium;
+}
+
+.form-column.grid-1-2 {
+    margin: 0 auto;
+}
+
+
+.info,.form-x {
+	cursor: pointer;
+    position: absolute;
+    right: -34px;
+    top: 0;
+    width: 28px;
+    height: 30px;
+    display: inline-block;
+	text-decoration: none!important;
+	color: #000;
+	}
+.light .info,.total-block .info {
+color: #fff;
+}	
+.input-field,
+.datepicker-wrapper {
+	position: relative;
+	.info,.form-x {
+	&:after {
+	font-size: 35px;
+	line-height: 30px;
+	
+	}
+	}
+}
+
+#contentWrapper .input-field.has-error {
+	.info:after {
+		content: '\e81a';
+		font-family: dae;
+		color: $brand-color;
+	}
+	.sub-label {
+		display: block;
+	}
+}	
+
+#contentWrapper .check-button {
+    @include display-flex;
+    @include justify-content(space-between);
+    @include align-items(center);
+	& > div:first-child {
+	    padding: 35px 0;
+		label {
+			font-size: 18px;
+    		color: #000;
+		}
+		}
+}
+
+.sequence-form {
+		display: none;
+	}
+	
+	
+.payment-tac {
+	position: relative;
+	input[type="checkbox"] + label {
+		color: #000;
+		font: normal 18px/1.2 $brand-font;
+		span {
+		position: relative;
+		display: inline-block;
+		padding-left: 64px;
+		}
+		&:before {
+		position: absolute;
+		}
+	}
+
+}//	.payment-tac
+	
